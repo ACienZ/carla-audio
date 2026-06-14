@@ -55,3 +55,6 @@ profiler.csv
 .env
 .venv
 devcontainer.json
+
+
+.DS_Store
