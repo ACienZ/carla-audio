@@ -1,0 +1,919 @@
+[1;35mBuildUE4Plugins.sh: Downloading STREETMAP plugin.[0m
+[1;35mBuildUE4Plugins.sh: StreetMap Success![0m
+[1;35mSetup.sh: Generating CMake configuration files.[0m
+[1;35mSetup.sh: boost-1.84.0-c10 already installed.[0m
+[1;35mSetup.sh: rpclib-v2.2.1_c5-c10 already installed.[0m
+[1;35mSetup.sh: gtest-1.8.1-c10 already installed.[0m
+[1;35mSetup.sh: recast-c10 already installed.[0m
+[1;35mSetup.sh: Libpng already installed.[0m
+[1;35mSetup.sh: Xerces-c already installed.[0m
+[1;35mSetup.sh: Eigen already installed.[0m
+[1;35mSetup.sh: Sqlite already installed.[0m
+[1;35mSetup.sh: PROJ already installed.[0m
+[1;35mSetup.sh: Patchelf already installed.[0m
+[1;35mSetup.sh: CARLA version ef3412669-dirty.[0m
+[1;35mSetup.sh: Success![0m
+[1;35mBuildLibCarla.sh: Building LibCarla "Server.Release" configuration.[0m
+ninja: no work to do.
+[0/1] Install the project...
+-- Install configuration: "Server"
+[1;35mBuildLibCarla.sh: Success![0m
+[1;35mBuildOSM2ODR.sh: Building OSM2ODR.[0m
+-- Eclipse version is set to 3.6 (Helios). Adjust CMAKE_ECLIPSE_VERSION if this is wrong.
+-- CMAKE_BINARY_DIR: /home/test/carla-0.9.16/Build/libosm2dr-build
+-- CMAKE_SOURCE_DIR: /home/test/carla-0.9.16/Build/libosm2dr-source
+-- 
+-- Platform: 
+--     Host: Linux-6.8.0-124-generic x86_64
+--     Target: Linux-6.8.0-124-generic x86_64
+--     CMake: 3.22.1
+--     CMake generator: Ninja
+--     CMake build tool: /usr/bin/ninja
+--     Compiler: Clang 10.0.1
+-- 
+-- Found Proj: /home/test/carla-0.9.16/Build/proj-install/lib/libproj.a
+-- Could NOT find X11 (missing: X11_X11_INCLUDE_PATH X11_X11_LIB) 
+-- Enabled features: Linux-6.8.0-124-generic x86_64 Clang 10.0.1 Release Proj
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/test/carla-0.9.16/Build/libosm2dr-build
+ninja: no work to do.
+[0/1] Install the project...
+-- Install configuration: "Release"
+-- Up-to-date: /home/test/carla-0.9.16/PythonAPI/carla/dependencies/lib/libosm2odr.a
+-- Up-to-date: /home/test/carla-0.9.16/PythonAPI/carla/dependencies/include/OSM2ODR.h
+/home/test/UnrealEngine_4.26/Engine/Source/ThirdParty/Linux/LibCxx/include/c++/v1
+/home/test/UnrealEngine_4.26/Engine/Source/ThirdParty/Linux/LibCxx/lib/Linux/x86_64-unknown-linux-gnu
+-- Eclipse version is set to 3.6 (Helios). Adjust CMAKE_ECLIPSE_VERSION if this is wrong.
+-- CMAKE_BINARY_DIR: /home/test/carla-0.9.16/Build/libosm2dr-build-server
+-- CMAKE_SOURCE_DIR: /home/test/carla-0.9.16/Build/libosm2dr-source
+-- 
+-- Platform: 
+--     Host: Linux-6.8.0-124-generic x86_64
+--     Target: Linux-6.8.0-124-generic x86_64
+--     CMake: 3.22.1
+--     CMake generator: Ninja
+--     CMake build tool: /usr/bin/ninja
+--     Compiler: Clang 10.0.1
+-- 
+-- Found Proj: /home/test/carla-0.9.16/Build/proj-install-server/lib/libproj.a
+-- Could NOT find X11 (missing: X11_X11_INCLUDE_PATH X11_X11_LIB) 
+-- Enabled features: Linux-6.8.0-124-generic x86_64 Clang 10.0.1 Release Proj
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/test/carla-0.9.16/Build/libosm2dr-build-server
+ninja: no work to do.
+[0/1] Install the project...
+-- Install configuration: "Release"
+-- Up-to-date: /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/CarlaDependencies/lib/libosm2odr.a
+-- Up-to-date: /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/CarlaDependencies/include/OSM2ODR.h
+-- Eclipse version is set to 3.6 (Helios). Adjust CMAKE_ECLIPSE_VERSION if this is wrong.
+-- CMAKE_BINARY_DIR: /home/test/carla-0.9.16/Build/libosm2dr-build-server
+-- CMAKE_SOURCE_DIR: /home/test/carla-0.9.16/Build/libosm2dr-source
+-- 
+-- Platform: 
+--     Host: Linux-6.8.0-124-generic x86_64
+--     Target: Linux-6.8.0-124-generic x86_64
+--     CMake: 3.22.1
+--     CMake generator: Ninja
+--     CMake build tool: /usr/bin/ninja
+--     Compiler: Clang 10.0.1
+-- 
+-- Found Proj: /home/test/carla-0.9.16/Build/proj-install-server/lib/libproj.a
+-- Could NOT find X11 (missing: X11_X11_INCLUDE_PATH X11_X11_LIB) 
+-- Enabled features: Linux-6.8.0-124-generic x86_64 Clang 10.0.1 Release Proj
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/test/carla-0.9.16/Build/libosm2dr-build-server
+ninja: no work to do.
+[0/1] Install the project...
+-- Install configuration: "Release"
+-- Up-to-date: /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/CarlaDependencies/lib/libosm2odr.a
+-- Up-to-date: /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/CarlaDependencies/include/OSM2ODR.h
+[1;35mBuildOSM2ODR.sh:  OSM2ODR Success![0m
+[1;35mBuildUE4Plugins.sh: Downloading STREETMAP plugin.[0m
+[1;35mBuildUE4Plugins.sh: StreetMap Success![0m
+[1;35mBuildCarlaUE4.sh: Using Unreal Engine at '/home/test/UnrealEngine_4.26'[0m
+Removing existing SimReady Plugin ThirdParty dependencies
+Pulling SimReady dependencies
+Pulling MDL dependencies
+Installing and patching Engine Material source
+Success: HLSLMaterialTranslator.cpp newer than /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Converters/MDL/Dependencies/Engine/HLSLMaterialTranslator.cpp.patch
+         Continuing without installing and patching Engine Material source
+[1;35mBuildCarlaUE4.sh: Build CarlaUE4 project.[0m
+make[1]: Entering directory '/home/test/carla-0.9.16/Unreal/CarlaUE4'
+bash "/home/test/UnrealEngine_4.26/Engine/Build/BatchFiles/Linux/RunMono.sh" "/home/test/UnrealEngine_4.26/Engine/Binaries/DotNET/UnrealBuildTool.exe" CarlaUE4Editor Linux Development  -project="/home/test/carla-0.9.16/Unreal/CarlaUE4/CarlaUE4.uproject" 
+
+Running Mono...
+
+Fixing inconsistent case in filenames.
+Setting up Mono
+~/UnrealEngine_4.26/Engine ~/carla-0.9.16/Unreal/CarlaUE4
+Using 'git status' to determine working set for adaptive non-unity build (/home/test/UnrealEngine_4.26).
+Building CarlaUE4Editor...
+[Upgrade]
+[Upgrade] Using backward-compatible build settings. The latest version of UE4 sets the following values by default, which may require code changes:
+[Upgrade]     bLegacyPublicIncludePaths = false                 => Omits subfolders from public include paths to reduce compiler command line length. (Previously: true).
+[Upgrade]     ShadowVariableWarningLevel = WarningLevel.Error   => Treats shadowed variable warnings as errors. (Previously: WarningLevel.Warning).
+[Upgrade]     PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs   => Set in build.cs files to enables IWYU-style PCH model. See https://docs.unrealengine.com/en-US/Programming/BuildTools/UnrealBuildTool/IWYU/index.html. (Previously: PCHUsageMode.UseSharedPCHs).
+[Upgrade] Suppress this message by setting 'DefaultBuildSettings = BuildSettingsVersion.V2;' in CarlaUE4Editor.Target.cs, and explicitly overriding settings that differ from the new defaults.
+[Upgrade]
+Performing 12 actions (24 in parallel)
+[1/12] Compile Module.Carla.2_of_4.cpp
+[3/12] Compile Module.Carla.3_of_4.cpp
+[2/12] Compile Module.Carla.gen.5_of_8.cpp
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Intermediate/Build/Linux/B4D820EA/UE4Editor/Development/Carla/Module.Carla.3_of_4.cpp:2:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/SemanticSegmentationCamera.cpp:8:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/SemanticSegmentationCamera.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/ShaderBasedSensor.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/SceneCaptureSensor.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/PixelReader.h:18:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Game/CarlaEngine.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Recorder/CarlaRecorder.h:22:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Recorder/CarlaRecorderAnimVehicleWheels.h:11:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Vehicle/CarlaWheeledVehicle.h:22:
+[1m/home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Vehicle/WheeledVehicleMovementComponentNW.h:120:61: [0m[0;1;35mwarning: [0m[1m'UWheeledVehicleMovementComponent' is deprecated: PhysX is deprecated. Use the UChaosWheeledVehicleMovementComponent fron the ChaosVehiclePhysics Plugin. Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile. [-Wdeprecated-declarations][0m
+class CARLA_API UWheeledVehicleMovementComponentNW : public UWheeledVehicleMovementComponent
+[0;1;32m                                                            ^
+[0m[1m/home/test/UnrealEngine_4.26/Engine/Plugins/Runtime/PhysXVehicles/Source/PhysXVehicles/Public/WheeledVehicleMovementComponent.h:202:7: [0m[0;1;30mnote: [0m'UWheeledVehicleMovementComponent' has been explicitly marked deprecated here[0m
+class UE_DEPRECATED(4.26, "PhysX is deprecated. Use the UChaosWheeledVehicleMovementComponent fron the ChaosVehiclePhysics Plugin.") UWheeledVehicleMovementComponent;
+[0;1;32m      ^
+[0m[1m/home/test/UnrealEngine_4.26/Engine/Source/Runtime/Core/Public/Misc/CoreMiscDefines.h:234:43: [0m[0;1;30mnote: [0mexpanded from macro 'UE_DEPRECATED'[0m
+#define UE_DEPRECATED(Version, Message) [[deprecated(Message " Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.")]]
+[0;1;32m                                          ^
+[0mIn file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Intermediate/Build/Linux/B4D820EA/UE4Editor/Development/Carla/Module.Carla.3_of_4.cpp:2:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/SemanticSegmentationCamera.cpp:8:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/SemanticSegmentationCamera.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/ShaderBasedSensor.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/SceneCaptureSensor.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/PixelReader.h:18:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Game/CarlaEngine.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Recorder/CarlaRecorder.h:22:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Recorder/CarlaRecorderAnimVehicleWheels.h:11:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Vehicle/CarlaWheeledVehicle.h:22:
+[1m/home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Vehicle/WheeledVehicleMovementComponentNW.h:148:66: [0m[0;1;35mwarning: [0m[1m'UVehicleWheel' is deprecated: PhysX is deprecated. Use the UChaosVehicleWheel from the ChaosVehiclePhysics Plugin. Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile. [-Wdeprecated-declarations][0m
+        virtual const void* GetTireData(physx::PxVehicleWheels* Wheels, UVehicleWheel* Wheel);
+[0;1;32m                                                                        ^
+[0m[1m/home/test/UnrealEngine_4.26/Engine/Plugins/Runtime/PhysXVehicles/Source/PhysXVehicles/Public/VehicleWheel.h:37:7: [0m[0;1;30mnote: [0m'UVehicleWheel' has been explicitly marked deprecated here[0m
+class UE_DEPRECATED(4.26, "PhysX is deprecated. Use the UChaosVehicleWheel from the ChaosVehiclePhysics Plugin.") UVehicleWheel;
+[0;1;32m      ^
+[0m[1m/home/test/UnrealEngine_4.26/Engine/Source/Runtime/Core/Public/Misc/CoreMiscDefines.h:234:43: [0m[0;1;30mnote: [0mexpanded from macro 'UE_DEPRECATED'[0m
+#define UE_DEPRECATED(Version, Message) [[deprecated(Message " Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.")]]
+[0;1;32m                                          ^
+[0mIn file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Intermediate/Build/Linux/B4D820EA/UE4Editor/Development/Carla/Module.Carla.3_of_4.cpp:2:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/SemanticSegmentationCamera.cpp:8:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/SemanticSegmentationCamera.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/ShaderBasedSensor.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/SceneCaptureSensor.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/PixelReader.h:18:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Game/CarlaEngine.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Recorder/CarlaRecorder.h:22:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Recorder/CarlaRecorderAnimVehicleWheels.h:11:
+[1m/home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Vehicle/CarlaWheeledVehicle.h:73:47: [0m[0;1;35mwarning: [0m[1m'AWheeledVehicle' is deprecated: PhysX is deprecated. Use the AWheeledVehiclePawn from the ChaosVehiclePhysics Plugin. Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile. [-Wdeprecated-declarations][0m
+class CARLA_API ACarlaWheeledVehicle : public AWheeledVehicle
+[0;1;32m                                              ^
+[0m[1m/home/test/UnrealEngine_4.26/Engine/Plugins/Runtime/PhysXVehicles/Source/PhysXVehicles/Public/WheeledVehicle.h:22:7: [0m[0;1;30mnote: [0m'AWheeledVehicle' has been explicitly marked deprecated here[0m
+class UE_DEPRECATED(4.26, "PhysX is deprecated. Use the AWheeledVehiclePawn from the ChaosVehiclePhysics Plugin.") AWheeledVehicle;
+[0;1;32m      ^
+[0m[1m/home/test/UnrealEngine_4.26/Engine/Source/Runtime/Core/Public/Misc/CoreMiscDefines.h:234:43: [0m[0;1;30mnote: [0mexpanded from macro 'UE_DEPRECATED'[0m
+#define UE_DEPRECATED(Version, Message) [[deprecated(Message " Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.")]]
+[0;1;32m                                          ^
+[0mIn file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Intermediate/Build/Linux/B4D820EA/UE4Editor/Development/Carla/Module.Carla.3_of_4.cpp:2:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/SemanticSegmentationCamera.cpp:8:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/SemanticSegmentationCamera.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/ShaderBasedSensor.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/SceneCaptureSensor.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/PixelReader.h:18:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Game/CarlaEngine.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Recorder/CarlaRecorder.h:22:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Recorder/CarlaRecorderAnimVehicleWheels.h:11:
+[1m/home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Vehicle/CarlaWheeledVehicle.h:189:26: [0m[0;1;35mwarning: [0m[1m'UWheeledVehicleMovementComponent4W' is deprecated: PhysX is deprecated. Use the UChaosWheeledVehicleMovementComponent from the ChaosVehiclePhysics Plugin. Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile. [-Wdeprecated-declarations][0m
+  void SetWheelCollision(UWheeledVehicleMovementComponent4W *Vehicle4W, const FVehiclePhysicsControl &PhysicsControl);
+[0;1;32m                         ^
+[0m[1m/home/test/UnrealEngine_4.26/Engine/Plugins/Runtime/PhysXVehicles/Source/PhysXVehicles/Public/WheeledVehicleMovementComponent4W.h:153:7: [0m[0;1;30mnote: [0m'UWheeledVehicleMovementComponent4W' has been explicitly marked deprecated here[0m
+class UE_DEPRECATED(4.26, "PhysX is deprecated. Use the UChaosWheeledVehicleMovementComponent from the ChaosVehiclePhysics Plugin.") UWheeledVehicleMovementComponent4W;
+[0;1;32m      ^
+[0m[1m/home/test/UnrealEngine_4.26/Engine/Source/Runtime/Core/Public/Misc/CoreMiscDefines.h:234:43: [0m[0;1;30mnote: [0mexpanded from macro 'UE_DEPRECATED'[0m
+#define UE_DEPRECATED(Version, Message) [[deprecated(Message " Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.")]]
+[0;1;32m                                          ^
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Intermediate/Build/Linux/B4D820EA/UE4Editor/Development/Carla/Module.Carla.gen.5_of_8.cpp:5:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Carla/Radar.gen.cpp:8:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/Radar.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/Sensor.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Game/CarlaEpisode.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Actor/ActorDispatcher.h:11:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Actor/ActorRegistry.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Actor/CarlaActor.h:11:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Vehicle/CarlaWheeledVehicle.h:22:
+[1m/home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Vehicle/WheeledVehicleMovementComponentNW.h:120:61: [0m[0;1;35mwarning: [0m[1m'UWheeledVehicleMovementComponent' is deprecated: PhysX is deprecated. Use the UChaosWheeledVehicleMovementComponent fron the ChaosVehiclePhysics Plugin. Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile. [-Wdeprecated-declarations][0m
+class CARLA_API UWheeledVehicleMovementComponentNW : public UWheeledVehicleMovementComponent
+[0;1;32m                                                            ^
+[0m[1m/home/test/UnrealEngine_4.26/Engine/Plugins/Runtime/PhysXVehicles/Source/PhysXVehicles/Public/WheeledVehicleMovementComponent.h:202:7: [0m[0;1;30mnote: [0m'UWheeledVehicleMovementComponent' has been explicitly marked deprecated here[0m
+class UE_DEPRECATED(4.26, "PhysX is deprecated. Use the UChaosWheeledVehicleMovementComponent fron the ChaosVehiclePhysics Plugin.") UWheeledVehicleMovementComponent;
+[0;1;32m      ^
+[0m[1m/home/test/UnrealEngine_4.26/Engine/Source/Runtime/Core/Public/Misc/CoreMiscDefines.h:234:43: [0m[0;1;30mnote: [0mexpanded from macro 'UE_DEPRECATED'[0m
+#define UE_DEPRECATED(Version, Message) [[deprecated(Message " Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.")]]
+[0;1;32m                                          ^
+[0mIn file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Intermediate/Build/Linux/B4D820EA/UE4Editor/Development/Carla/Module.Carla.gen.5_of_8.cpp:5:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Carla/Radar.gen.cpp:8:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/Radar.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/Sensor.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Game/CarlaEpisode.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Actor/ActorDispatcher.h:11:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Actor/ActorRegistry.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Actor/CarlaActor.h:11:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Vehicle/CarlaWheeledVehicle.h:22:
+[1m/home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Vehicle/WheeledVehicleMovementComponentNW.h:148:66: [0m[0;1;35mwarning: [0m[1m'UVehicleWheel' is deprecated: PhysX is deprecated. Use the UChaosVehicleWheel from the ChaosVehiclePhysics Plugin. Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile. [-Wdeprecated-declarations][0m
+        virtual const void* GetTireData(physx::PxVehicleWheels* Wheels, UVehicleWheel* Wheel);
+[0;1;32m                                                                        ^
+[0m[1m/home/test/UnrealEngine_4.26/Engine/Plugins/Runtime/PhysXVehicles/Source/PhysXVehicles/Public/VehicleWheel.h:37:7: [0m[0;1;30mnote: [0m'UVehicleWheel' has been explicitly marked deprecated here[0m
+class UE_DEPRECATED(4.26, "PhysX is deprecated. Use the UChaosVehicleWheel from the ChaosVehiclePhysics Plugin.") UVehicleWheel;
+[0;1;32m      ^
+[0m[1m/home/test/UnrealEngine_4.26/Engine/Source/Runtime/Core/Public/Misc/CoreMiscDefines.h:234:43: [0m[0;1;30mnote: [0mexpanded from macro 'UE_DEPRECATED'[0m
+#define UE_DEPRECATED(Version, Message) [[deprecated(Message " Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.")]]
+[0;1;32m                                          ^
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Intermediate/Build/Linux/B4D820EA/UE4Editor/Development/Carla/Module.Carla.2_of_4.cpp:3:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Lights/CarlaLight.cpp:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Game/CarlaStatics.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Game/CarlaEpisode.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Actor/ActorDispatcher.h:11:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Actor/ActorRegistry.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Actor/CarlaActor.h:11:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Vehicle/CarlaWheeledVehicle.h:22:
+[1m/home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Vehicle/WheeledVehicleMovementComponentNW.h:120:61: [0m[0;1;35mwarning: [0m[1m'UWheeledVehicleMovementComponent' is deprecated: PhysX is deprecated. Use the UChaosWheeledVehicleMovementComponent fron the ChaosVehiclePhysics Plugin. Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile. [-Wdeprecated-declarations][0m
+class CARLA_API UWheeledVehicleMovementComponentNW : public UWheeledVehicleMovementComponent
+[0;1;32m                                                            ^
+[0m[1m/home/test/UnrealEngine_4.26/Engine/Plugins/Runtime/PhysXVehicles/Source/PhysXVehicles/Public/WheeledVehicleMovementComponent.h:202:7: [0m[0;1;30mnote: [0m'UWheeledVehicleMovementComponent' has been explicitly marked deprecated here[0m
+class UE_DEPRECATED(4.26, "PhysX is deprecated. Use the UChaosWheeledVehicleMovementComponent fron the ChaosVehiclePhysics Plugin.") UWheeledVehicleMovementComponent;
+[0;1;32m      ^
+[0m[1m/home/test/UnrealEngine_4.26/Engine/Source/Runtime/Core/Public/Misc/CoreMiscDefines.h:234:43: [0m[0;1;30mnote: [0mexpanded from macro 'UE_DEPRECATED'[0m
+#define UE_DEPRECATED(Version, Message) [[deprecated(Message " Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.")]]
+[0;1;32m                                          ^
+[0mIn file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Intermediate/Build/Linux/B4D820EA/UE4Editor/Development/Carla/Module.Carla.2_of_4.cpp:3:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Lights/CarlaLight.cpp:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Game/CarlaStatics.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Game/CarlaEpisode.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Actor/ActorDispatcher.h:11:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Actor/ActorRegistry.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Actor/CarlaActor.h:11:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Vehicle/CarlaWheeledVehicle.h:22:
+[1m/home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Vehicle/WheeledVehicleMovementComponentNW.h:148:66: [0m[0;1;35mwarning: [0m[1m'UVehicleWheel' is deprecated: PhysX is deprecated. Use the UChaosVehicleWheel from the ChaosVehiclePhysics Plugin. Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile. [-Wdeprecated-declarations][0m
+        virtual const void* GetTireData(physx::PxVehicleWheels* Wheels, UVehicleWheel* Wheel);
+[0;1;32m                                                                        ^
+[0m[1m/home/test/UnrealEngine_4.26/Engine/Plugins/Runtime/PhysXVehicles/Source/PhysXVehicles/Public/VehicleWheel.h:37:7: [0m[0;1;30mnote: [0m'UVehicleWheel' has been explicitly marked deprecated here[0m
+class UE_DEPRECATED(4.26, "PhysX is deprecated. Use the UChaosVehicleWheel from the ChaosVehiclePhysics Plugin.") UVehicleWheel;
+[0;1;32m      ^
+[0m[1m/home/test/UnrealEngine_4.26/Engine/Source/Runtime/Core/Public/Misc/CoreMiscDefines.h:234:43: [0m[0;1;30mnote: [0mexpanded from macro 'UE_DEPRECATED'[0m
+#define UE_DEPRECATED(Version, Message) [[deprecated(Message " Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.")]]
+[0;1;32m                                          ^
+[0mIn file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Intermediate/Build/Linux/B4D820EA/UE4Editor/Development/Carla/Module.Carla.gen.5_of_8.cpp:5:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Carla/Radar.gen.cpp:8:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/Radar.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/Sensor.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Game/CarlaEpisode.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Actor/ActorDispatcher.h:11:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Actor/ActorRegistry.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Actor/CarlaActor.h:11:
+[1m/home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Vehicle/CarlaWheeledVehicle.h:73:47: [0m[0;1;35mwarning: [0m[1m'AWheeledVehicle' is deprecated: PhysX is deprecated. Use the AWheeledVehiclePawn from the ChaosVehiclePhysics Plugin. Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile. [-Wdeprecated-declarations][0m
+class CARLA_API ACarlaWheeledVehicle : public AWheeledVehicle
+[0;1;32m                                              ^
+[0m[1m/home/test/UnrealEngine_4.26/Engine/Plugins/Runtime/PhysXVehicles/Source/PhysXVehicles/Public/WheeledVehicle.h:22:7: [0m[0;1;30mnote: [0m'AWheeledVehicle' has been explicitly marked deprecated here[0m
+class UE_DEPRECATED(4.26, "PhysX is deprecated. Use the AWheeledVehiclePawn from the ChaosVehiclePhysics Plugin.") AWheeledVehicle;
+[0;1;32m      ^
+[0m[1m/home/test/UnrealEngine_4.26/Engine/Source/Runtime/Core/Public/Misc/CoreMiscDefines.h:234:43: [0m[0;1;30mnote: [0mexpanded from macro 'UE_DEPRECATED'[0m
+#define UE_DEPRECATED(Version, Message) [[deprecated(Message " Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.")]]
+[0;1;32m                                          ^
+[0mIn file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Intermediate/Build/Linux/B4D820EA/UE4Editor/Development/Carla/Module.Carla.gen.5_of_8.cpp:5:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Carla/Radar.gen.cpp:8:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/Radar.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/Sensor.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Game/CarlaEpisode.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Actor/ActorDispatcher.h:11:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Actor/ActorRegistry.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Actor/CarlaActor.h:11:
+[1m/home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Vehicle/CarlaWheeledVehicle.h:189:26: [0m[0;1;35mwarning: [0m[1m'UWheeledVehicleMovementComponent4W' is deprecated: PhysX is deprecated. Use the UChaosWheeledVehicleMovementComponent from the ChaosVehiclePhysics Plugin. Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile. [-Wdeprecated-declarations][0m
+  void SetWheelCollision(UWheeledVehicleMovementComponent4W *Vehicle4W, const FVehiclePhysicsControl &PhysicsControl);
+[0;1;32m                         ^
+[0m[1m/home/test/UnrealEngine_4.26/Engine/Plugins/Runtime/PhysXVehicles/Source/PhysXVehicles/Public/WheeledVehicleMovementComponent4W.h:153:7: [0m[0;1;30mnote: [0m'UWheeledVehicleMovementComponent4W' has been explicitly marked deprecated here[0m
+class UE_DEPRECATED(4.26, "PhysX is deprecated. Use the UChaosWheeledVehicleMovementComponent from the ChaosVehiclePhysics Plugin.") UWheeledVehicleMovementComponent4W;
+[0;1;32m      ^
+[0m[1m/home/test/UnrealEngine_4.26/Engine/Source/Runtime/Core/Public/Misc/CoreMiscDefines.h:234:43: [0m[0;1;30mnote: [0mexpanded from macro 'UE_DEPRECATED'[0m
+#define UE_DEPRECATED(Version, Message) [[deprecated(Message " Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.")]]
+[0;1;32m                                          ^
+[0mIn file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Intermediate/Build/Linux/B4D820EA/UE4Editor/Development/Carla/Module.Carla.2_of_4.cpp:3:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Lights/CarlaLight.cpp:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Game/CarlaStatics.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Game/CarlaEpisode.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Actor/ActorDispatcher.h:11:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Actor/ActorRegistry.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Actor/CarlaActor.h:11:
+[1m/home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Vehicle/CarlaWheeledVehicle.h:73:47: [0m[0;1;35mwarning: [0m[1m'AWheeledVehicle' is deprecated: PhysX is deprecated. Use the AWheeledVehiclePawn from the ChaosVehiclePhysics Plugin. Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile. [-Wdeprecated-declarations][0m
+class CARLA_API ACarlaWheeledVehicle : public AWheeledVehicle
+[0;1;32m                                              ^
+[0m[1m/home/test/UnrealEngine_4.26/Engine/Plugins/Runtime/PhysXVehicles/Source/PhysXVehicles/Public/WheeledVehicle.h:22:7: [0m[0;1;30mnote: [0m'AWheeledVehicle' has been explicitly marked deprecated here[0m
+class UE_DEPRECATED(4.26, "PhysX is deprecated. Use the AWheeledVehiclePawn from the ChaosVehiclePhysics Plugin.") AWheeledVehicle;
+[0;1;32m      ^
+[0m[1m/home/test/UnrealEngine_4.26/Engine/Source/Runtime/Core/Public/Misc/CoreMiscDefines.h:234:43: [0m[0;1;30mnote: [0mexpanded from macro 'UE_DEPRECATED'[0m
+#define UE_DEPRECATED(Version, Message) [[deprecated(Message " Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.")]]
+[0;1;32m                                          ^
+[0mIn file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Intermediate/Build/Linux/B4D820EA/UE4Editor/Development/Carla/Module.Carla.2_of_4.cpp:3:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Lights/CarlaLight.cpp:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Game/CarlaStatics.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Game/CarlaEpisode.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Actor/ActorDispatcher.h:11:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Actor/ActorRegistry.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Actor/CarlaActor.h:11:
+[1m/home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Vehicle/CarlaWheeledVehicle.h:189:26: [0m[0;1;35mwarning: [0m[1m'UWheeledVehicleMovementComponent4W' is deprecated: PhysX is deprecated. Use the UChaosWheeledVehicleMovementComponent from the ChaosVehiclePhysics Plugin. Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile. [-Wdeprecated-declarations][0m
+  void SetWheelCollision(UWheeledVehicleMovementComponent4W *Vehicle4W, const FVehiclePhysicsControl &PhysicsControl);
+[0;1;32m                         ^
+[0m[1m/home/test/UnrealEngine_4.26/Engine/Plugins/Runtime/PhysXVehicles/Source/PhysXVehicles/Public/WheeledVehicleMovementComponent4W.h:153:7: [0m[0;1;30mnote: [0m'UWheeledVehicleMovementComponent4W' has been explicitly marked deprecated here[0m
+class UE_DEPRECATED(4.26, "PhysX is deprecated. Use the UChaosWheeledVehicleMovementComponent from the ChaosVehiclePhysics Plugin.") UWheeledVehicleMovementComponent4W;
+[0;1;32m      ^
+[0m[1m/home/test/UnrealEngine_4.26/Engine/Source/Runtime/Core/Public/Misc/CoreMiscDefines.h:234:43: [0m[0;1;30mnote: [0mexpanded from macro 'UE_DEPRECATED'[0m
+#define UE_DEPRECATED(Version, Message) [[deprecated(Message " Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.")]]
+[0;1;32m                                          ^
+[0mIn file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Intermediate/Build/Linux/B4D820EA/UE4Editor/Development/Carla/Module.Carla.gen.5_of_8.cpp:15:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Carla/SafeDistanceSensor.gen.cpp:8:
+[1m/home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/SafeDistanceSensor.h:27:10: [0m[0;1;31merror: [0m[1mdeclaration of 'Tick' overrides a 'final' function[0m
+    void Tick(float DeltaSeconds) override;
+[0;1;32m         ^
+[0m[1m/home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/Sensor.h:66:8: [0m[0;1;30mnote: [0moverridden virtual function is here[0m
+  void Tick(const float DeltaTime) final;
+[0;1;32m       ^
+[0mIn file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Intermediate/Build/Linux/B4D820EA/UE4Editor/Development/Carla/Module.Carla.3_of_4.cpp:3:
+[1m/home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/Sensor.cpp:30:18: [0m[0;1;35mwarning: [0m[1mdeclaration shadows a field of 'ASensor' [-Wshadow][0m
+  UCarlaEpisode* Episode = UCarlaStatics::GetCurrentEpisode(GetWorld());
+[0;1;32m                 ^
+[0m[1m/home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/Sensor.h:143:24: [0m[0;1;30mnote: [0mprevious declaration is here[0m
+  const UCarlaEpisode *Episode = nullptr;
+[0;1;32m                       ^
+[0mIn file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Intermediate/Build/Linux/B4D820EA/UE4Editor/Development/Carla/Module.Carla.3_of_4.cpp:3:
+[1m/home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/Sensor.cpp:132:18: [0m[0;1;35mwarning: [0m[1mdeclaration shadows a field of 'ASensor' [-Wshadow][0m
+  UCarlaEpisode* Episode = UCarlaStatics::GetCurrentEpisode(GetWorld());
+[0;1;32m                 ^
+[0m[1m/home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/Sensor.h:143:24: [0m[0;1;30mnote: [0mprevious declaration is here[0m
+  const UCarlaEpisode *Episode = nullptr;
+[0;1;32m                       ^
+[0mIn file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Intermediate/Build/Linux/B4D820EA/UE4Editor/Development/Carla/Module.Carla.3_of_4.cpp:4:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/SensorFactory.cpp:20:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/CarlaDependencies/include/carla/sensor/SensorRegistry.h:129:
+[1m/home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/SafeDistanceSensor.h:27:10: [0m[0;1;31merror: [0m[1mdeclaration of 'Tick' overrides a 'final' function[0m
+    void Tick(float DeltaSeconds) override;
+[0;1;32m         ^
+[0m[1m/home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/Sensor.cpp:59:15: [0m[0;1;30mnote: [0moverridden virtual function is here[0m
+void ASensor::Tick(const float DeltaTime)
+[0;1;32m              ^
+[0mIn file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Intermediate/Build/Linux/B4D820EA/UE4Editor/Development/Carla/Module.Carla.3_of_4.cpp:12:
+[1m/home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/V2X/PathLossModel.cpp:32:43: [0m[0;1;35mwarning: [0m[1mdeclaration shadows a field of 'PathLossModel' [-Wshadow][0m
+void PathLossModel::SetParams(const float TransmitPower,
+[0;1;32m                                          ^
+[0m[1m/home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/V2X/PathLossModel.h:91:11: [0m[0;1;30mnote: [0mprevious declaration is here[0m
+    float TransmitPower;           // dBm
+[0;1;32m          ^
+[0mIn file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Intermediate/Build/Linux/B4D820EA/UE4Editor/Development/Carla/Module.Carla.3_of_4.cpp:12:
+[1m/home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/V2X/PathLossModel.cpp:33:43: [0m[0;1;35mwarning: [0m[1mdeclaration shadows a field of 'PathLossModel' [-Wshadow][0m
+                              const float ReceiverSensitivity,
+[0;1;32m                                          ^
+[0m[1m/home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/V2X/PathLossModel.h:92:11: [0m[0;1;30mnote: [0mprevious declaration is here[0m
+    float ReceiverSensitivity;     // dBm
+[0;1;32m          ^
+[0mIn file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Intermediate/Build/Linux/B4D820EA/UE4Editor/Development/Carla/Module.Carla.3_of_4.cpp:12:
+[1m/home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/V2X/PathLossModel.cpp:34:43: [0m[0;1;35mwarning: [0m[1mdeclaration shadows a static data member of 'PathLossModel' [-Wshadow][0m
+                              const float Frequency,
+[0;1;32m                                          ^
+[0m[1m/home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/V2X/PathLossModel.cpp:19:23: [0m[0;1;30mnote: [0mprevious declaration is here[0m
+double PathLossModel::Frequency = 5.9f * std::pow(10, 9);
+[0;1;32m                      ^
+[0m[1m/home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/V2X/PathLossModel.cpp:35:43: [0m[0;1;35mwarning: [0m[1mdeclaration shadows a field of 'PathLossModel' [-Wshadow][0m
+                              const float combined_antenna_gain,
+[0;1;32m                                          ^
+[0m[1m/home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/V2X/PathLossModel.h:99:11: [0m[0;1;30mnote: [0mprevious declaration is here[0m
+    float combined_antenna_gain; // 10.0 dBi
+[0;1;32m          ^
+[0mIn file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Intermediate/Build/Linux/B4D820EA/UE4Editor/Development/Carla/Module.Carla.3_of_4.cpp:12:
+[1m/home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/V2X/PathLossModel.cpp:36:43: [0m[0;1;35mwarning: [0m[1mdeclaration shadows a field of 'PathLossModel' [-Wshadow][0m
+                              const float path_loss_exponent,
+[0;1;32m                                          ^
+[0m[1m/home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/V2X/PathLossModel.h:94:11: [0m[0;1;30mnote: [0mprevious declaration is here[0m
+    float path_loss_exponent; // no unit, default 2.7;
+[0;1;32m          ^
+[0mIn file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Intermediate/Build/Linux/B4D820EA/UE4Editor/Development/Carla/Module.Carla.3_of_4.cpp:12:
+[1m/home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/V2X/PathLossModel.cpp:37:43: [0m[0;1;35mwarning: [0m[1mdeclaration shadows a field of 'PathLossModel' [-Wshadow][0m
+                              const float reference_distance_fspl,
+[0;1;32m                                          ^
+[0m[1m/home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/V2X/PathLossModel.h:90:11: [0m[0;1;30mnote: [0mprevious declaration is here[0m
+    float reference_distance_fspl; // m
+[0;1;32m          ^
+[0mIn file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Intermediate/Build/Linux/B4D820EA/UE4Editor/Development/Carla/Module.Carla.3_of_4.cpp:12:
+[1m/home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/V2X/PathLossModel.cpp:38:43: [0m[0;1;35mwarning: [0m[1mdeclaration shadows a field of 'PathLossModel' [-Wshadow][0m
+                              const float filter_distance,
+[0;1;32m                                          ^
+[0m[1m/home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/V2X/PathLossModel.h:95:11: [0m[0;1;30mnote: [0mprevious declaration is here[0m
+    float filter_distance;    // in meters  default 500.0
+[0;1;32m          ^
+[0mIn file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Intermediate/Build/Linux/B4D820EA/UE4Editor/Development/Carla/Module.Carla.3_of_4.cpp:12:
+[1m/home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/V2X/PathLossModel.cpp:39:42: [0m[0;1;35mwarning: [0m[1mdeclaration shadows a field of 'PathLossModel' [-Wshadow][0m
+                              const bool use_etsi_fading,
+[0;1;32m                                         ^
+[0m[1m/home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/V2X/PathLossModel.h:97:10: [0m[0;1;30mnote: [0mprevious declaration is here[0m
+    bool use_etsi_fading;
+[0;1;32m         ^
+[0mIn file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Intermediate/Build/Linux/B4D820EA/UE4Editor/Development/Carla/Module.Carla.3_of_4.cpp:12:
+[1m/home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/V2X/PathLossModel.cpp:40:43: [0m[0;1;35mwarning: [0m[1mdeclaration shadows a field of 'PathLossModel' [-Wshadow][0m
+                              const float custom_fading_stddev)
+[0;1;32m                                          ^
+[0m[1m/home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/V2X/PathLossModel.h:98:11: [0m[0;1;30mnote: [0mprevious declaration is here[0m
+    float custom_fading_stddev;
+[0;1;32m          ^
+[0mIn file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Intermediate/Build/Linux/B4D820EA/UE4Editor/Development/Carla/Module.Carla.3_of_4.cpp:12:
+[1m/home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/V2X/PathLossModel.cpp:57:43: [0m[0;1;35mwarning: [0m[1mdeclaration shadows a field of 'PathLossModel' [-Wshadow][0m
+void PathLossModel::SetScenario(EScenario scenario)
+[0;1;32m                                          ^
+[0m[1m/home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/V2X/PathLossModel.h:93:15: [0m[0;1;30mnote: [0mprevious declaration is here[0m
+    EScenario scenario;
+[0;1;32m              ^
+[0mIn file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Intermediate/Build/Linux/B4D820EA/UE4Editor/Development/Carla/Module.Carla.3_of_4.cpp:12:
+[1m/home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/V2X/PathLossModel.cpp:228:66: [0m[0;1;35mwarning: [0m[1mdeclaration shadows a field of 'PathLossModel' [-Wshadow][0m
+                                                         FVector CurrentActorLocation,
+[0;1;32m                                                                 ^
+[0m[1m/home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/V2X/PathLossModel.h:78:13: [0m[0;1;30mnote: [0mprevious declaration is here[0m
+    FVector CurrentActorLocation;
+[0;1;32m            ^
+[0mIn file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Intermediate/Build/Linux/B4D820EA/UE4Editor/Development/Carla/Module.Carla.3_of_4.cpp:12:
+[1m/home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/V2X/PathLossModel.cpp:423:56: [0m[0;1;35mwarning: [0m[1mdeclaration shadows a field of 'PathLossModel' [-Wshadow][0m
+bool PathLossModel::GetLocationIfVehicle(const FVector CurrentActorLocation, const FHitResult &HitInfo, const double reference_z, FVector &location)
+[0;1;32m                                                       ^
+[0m[1m/home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/V2X/PathLossModel.h:78:13: [0m[0;1;30mnote: [0mprevious declaration is here[0m
+    FVector CurrentActorLocation;
+[0;1;32m            ^
+[0mIn file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Intermediate/Build/Linux/B4D820EA/UE4Editor/Development/Carla/Module.Carla.3_of_4.cpp:15:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Server/CarlaServer.cpp:10:
+[1m/home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Game/CarlaHUD.h:63:3: [0m[0;1;35mwarning: [0m[1m'UWheeledVehicleMovementComponent' is deprecated: PhysX is deprecated. Use the UChaosWheeledVehicleMovementComponent fron the ChaosVehiclePhysics Plugin. Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile. [-Wdeprecated-declarations][0m
+  UWheeledVehicleMovementComponent* DebugVehicle{nullptr};
+[0;1;32m  ^
+[0m[1m/home/test/UnrealEngine_4.26/Engine/Plugins/Runtime/PhysXVehicles/Source/PhysXVehicles/Public/WheeledVehicleMovementComponent.h:202:7: [0m[0;1;30mnote: [0m'UWheeledVehicleMovementComponent' has been explicitly marked deprecated here[0m
+class UE_DEPRECATED(4.26, "PhysX is deprecated. Use the UChaosWheeledVehicleMovementComponent fron the ChaosVehiclePhysics Plugin.") UWheeledVehicleMovementComponent;
+[0;1;32m      ^
+[0m[1m/home/test/UnrealEngine_4.26/Engine/Source/Runtime/Core/Public/Misc/CoreMiscDefines.h:234:43: [0m[0;1;30mnote: [0mexpanded from macro 'UE_DEPRECATED'[0m
+#define UE_DEPRECATED(Version, Message) [[deprecated(Message " Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.")]]
+[0;1;32m                                          ^
+[0mIn file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Intermediate/Build/Linux/B4D820EA/UE4Editor/Development/Carla/Module.Carla.3_of_4.cpp:15:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Server/CarlaServer.cpp:10:
+[1m/home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Game/CarlaHUD.h:64:36: [0m[0;1;35mwarning: [0m[1m'UWheeledVehicleMovementComponent' is deprecated: PhysX is deprecated. Use the UChaosWheeledVehicleMovementComponent fron the ChaosVehiclePhysics Plugin. Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile. [-Wdeprecated-declarations][0m
+  void AddDebugVehicleForTelemetry(UWheeledVehicleMovementComponent* Veh) { DebugVehicle = Veh; }
+[0;1;32m                                   ^
+[0m[1m/home/test/UnrealEngine_4.26/Engine/Plugins/Runtime/PhysXVehicles/Source/PhysXVehicles/Public/WheeledVehicleMovementComponent.h:202:7: [0m[0;1;30mnote: [0m'UWheeledVehicleMovementComponent' has been explicitly marked deprecated here[0m
+class UE_DEPRECATED(4.26, "PhysX is deprecated. Use the UChaosWheeledVehicleMovementComponent fron the ChaosVehiclePhysics Plugin.") UWheeledVehicleMovementComponent;
+[0;1;32m      ^
+[0m[1m/home/test/UnrealEngine_4.26/Engine/Source/Runtime/Core/Public/Misc/CoreMiscDefines.h:234:43: [0m[0;1;30mnote: [0mexpanded from macro 'UE_DEPRECATED'[0m
+#define UE_DEPRECATED(Version, Message) [[deprecated(Message " Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.")]]
+[0;1;32m                                          ^
+[0mIn file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Intermediate/Build/Linux/B4D820EA/UE4Editor/Development/Carla/Module.Carla.2_of_4.cpp:14:
+[1m/home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/MapGen/SoilTypeManager.cpp:26:23: [0m[0;1;35mwarning: [0m[1mdeclaration shadows a field of 'ASoilTypeManager' [-Wshadow][0m
+    ALargeMapManager* LargeMapManager = (ALargeMapManager*) UGameplayStatics::GetActorOfClass(GetWorld(), ALargeMapManager::StaticClass());
+[0;1;32m                      ^
+[0m[1m/home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/MapGen/SoilTypeManager.h:54:21: [0m[0;1;30mnote: [0mprevious declaration is here[0m
+  ALargeMapManager* LargeMapManager;
+[0;1;32m                    ^
+[0mIn file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Intermediate/Build/Linux/B4D820EA/UE4Editor/Development/Carla/Module.Carla.2_of_4.cpp:22:
+[1m/home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Recorder/CarlaRecorder.cpp:223:3: [0m[0;1;35mwarning: [0m[1m'UVehicleAnimInstance' is deprecated: PhysX is deprecated. Use the UVehicleAnimationInstance from the ChaosVehiclePhysics Plugin. Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile. [-Wdeprecated-declarations][0m
+  UVehicleAnimInstance* VehicleAnim = Cast<UVehicleAnimInstance>(SkeletalMesh->GetAnimInstance());
+[0;1;32m  ^
+[0m[1m/home/test/UnrealEngine_4.26/Engine/Plugins/Runtime/PhysXVehicles/Source/PhysXVehicles/Public/VehicleAnimInstance.h:65:7: [0m[0;1;30mnote: [0m'UVehicleAnimInstance' has been explicitly marked deprecated here[0m
+class UE_DEPRECATED(4.26, "PhysX is deprecated. Use the UVehicleAnimationInstance from the ChaosVehiclePhysics Plugin.") UVehicleAnimInstance;
+[0;1;32m      ^
+[0m[1m/home/test/UnrealEngine_4.26/Engine/Source/Runtime/Core/Public/Misc/CoreMiscDefines.h:234:43: [0m[0;1;30mnote: [0mexpanded from macro 'UE_DEPRECATED'[0m
+#define UE_DEPRECATED(Version, Message) [[deprecated(Message " Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.")]]
+[0;1;32m                                          ^
+[0mIn file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Intermediate/Build/Linux/B4D820EA/UE4Editor/Development/Carla/Module.Carla.2_of_4.cpp:22:
+[1m/home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Recorder/CarlaRecorder.cpp:223:44: [0m[0;1;35mwarning: [0m[1m'UVehicleAnimInstance' is deprecated: PhysX is deprecated. Use the UVehicleAnimationInstance from the ChaosVehiclePhysics Plugin. Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile. [-Wdeprecated-declarations][0m
+  UVehicleAnimInstance* VehicleAnim = Cast<UVehicleAnimInstance>(SkeletalMesh->GetAnimInstance());
+[0;1;32m                                           ^
+[0m[1m/home/test/UnrealEngine_4.26/Engine/Plugins/Runtime/PhysXVehicles/Source/PhysXVehicles/Public/VehicleAnimInstance.h:65:7: [0m[0;1;30mnote: [0m'UVehicleAnimInstance' has been explicitly marked deprecated here[0m
+class UE_DEPRECATED(4.26, "PhysX is deprecated. Use the UVehicleAnimationInstance from the ChaosVehiclePhysics Plugin.") UVehicleAnimInstance;
+[0;1;32m      ^
+[0m[1m/home/test/UnrealEngine_4.26/Engine/Source/Runtime/Core/Public/Misc/CoreMiscDefines.h:234:43: [0m[0;1;30mnote: [0mexpanded from macro 'UE_DEPRECATED'[0m
+#define UE_DEPRECATED(Version, Message) [[deprecated(Message " Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.")]]
+[0;1;32m                                          ^
+[0mIn file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Intermediate/Build/Linux/B4D820EA/UE4Editor/Development/Carla/Module.Carla.2_of_4.cpp:22:
+[1m/home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Recorder/CarlaRecorder.cpp:227:9: [0m[0;1;35mwarning: [0m[1m'UWheeledVehicleMovementComponent' is deprecated: PhysX is deprecated. Use the UChaosWheeledVehicleMovementComponent fron the ChaosVehiclePhysics Plugin. Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile. [-Wdeprecated-declarations][0m
+  const UWheeledVehicleMovementComponent* WheeledVehicleMovementComponent = VehicleAnim->GetWheeledVehicleMovementComponent();
+[0;1;32m        ^
+[0m[1m/home/test/UnrealEngine_4.26/Engine/Plugins/Runtime/PhysXVehicles/Source/PhysXVehicles/Public/WheeledVehicleMovementComponent.h:202:7: [0m[0;1;30mnote: [0m'UWheeledVehicleMovementComponent' has been explicitly marked deprecated here[0m
+class UE_DEPRECATED(4.26, "PhysX is deprecated. Use the UChaosWheeledVehicleMovementComponent fron the ChaosVehiclePhysics Plugin.") UWheeledVehicleMovementComponent;
+[0;1;32m      ^
+[0m[1m/home/test/UnrealEngine_4.26/Engine/Source/Runtime/Core/Public/Misc/CoreMiscDefines.h:234:43: [0m[0;1;30mnote: [0mexpanded from macro 'UE_DEPRECATED'[0m
+#define UE_DEPRECATED(Version, Message) [[deprecated(Message " Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.")]]
+[0;1;32m                                          ^
+[0mIn file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Intermediate/Build/Linux/B4D820EA/UE4Editor/Development/Carla/Module.Carla.2_of_4.cpp:22:
+[1m/home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Recorder/CarlaRecorder.cpp:238:15: [0m[0;1;35mwarning: [0m[1mdeclaration shadows a field of 'ACarlaRecorder' [-Wshadow][0m
+    WheelInfo Info;
+[0;1;32m              ^
+[0m[1m/home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Recorder/CarlaRecorder.h:196:21: [0m[0;1;30mnote: [0mprevious declaration is here[0m
+  CarlaRecorderInfo Info;
+[0;1;32m                    ^
+[0mIn file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Intermediate/Build/Linux/B4D820EA/UE4Editor/Development/Carla/Module.Carla.2_of_4.cpp:48:
+[1m/home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Recorder/CarlaReplayerHelper.cpp:334:3: [0m[0;1;35mwarning: [0m[1m'UVehicleAnimInstance' is deprecated: PhysX is deprecated. Use the UVehicleAnimationInstance from the ChaosVehiclePhysics Plugin. Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile. [-Wdeprecated-declarations][0m
+  UVehicleAnimInstance* VehicleAnim = Cast<UVehicleAnimInstance>(SkeletalMesh->GetAnimInstance());
+[0;1;32m  ^
+[0m[1m/home/test/UnrealEngine_4.26/Engine/Plugins/Runtime/PhysXVehicles/Source/PhysXVehicles/Public/VehicleAnimInstance.h:65:7: [0m[0;1;30mnote: [0m'UVehicleAnimInstance' has been explicitly marked deprecated here[0m
+class UE_DEPRECATED(4.26, "PhysX is deprecated. Use the UVehicleAnimationInstance from the ChaosVehiclePhysics Plugin.") UVehicleAnimInstance;
+[0;1;32m      ^
+[0m[1m/home/test/UnrealEngine_4.26/Engine/Source/Runtime/Core/Public/Misc/CoreMiscDefines.h:234:43: [0m[0;1;30mnote: [0mexpanded from macro 'UE_DEPRECATED'[0m
+#define UE_DEPRECATED(Version, Message) [[deprecated(Message " Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.")]]
+[0;1;32m                                          ^
+[0mIn file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Intermediate/Build/Linux/B4D820EA/UE4Editor/Development/Carla/Module.Carla.2_of_4.cpp:48:
+[1m/home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Recorder/CarlaReplayerHelper.cpp:334:44: [0m[0;1;35mwarning: [0m[1m'UVehicleAnimInstance' is deprecated: PhysX is deprecated. Use the UVehicleAnimationInstance from the ChaosVehiclePhysics Plugin. Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile. [-Wdeprecated-declarations][0m
+  UVehicleAnimInstance* VehicleAnim = Cast<UVehicleAnimInstance>(SkeletalMesh->GetAnimInstance());
+[0;1;32m                                           ^
+[0m[1m/home/test/UnrealEngine_4.26/Engine/Plugins/Runtime/PhysXVehicles/Source/PhysXVehicles/Public/VehicleAnimInstance.h:65:7: [0m[0;1;30mnote: [0m'UVehicleAnimInstance' has been explicitly marked deprecated here[0m
+class UE_DEPRECATED(4.26, "PhysX is deprecated. Use the UVehicleAnimationInstance from the ChaosVehiclePhysics Plugin.") UVehicleAnimInstance;
+[0;1;32m      ^
+[0m[1m/home/test/UnrealEngine_4.26/Engine/Source/Runtime/Core/Public/Misc/CoreMiscDefines.h:234:43: [0m[0;1;30mnote: [0mexpanded from macro 'UE_DEPRECATED'[0m
+#define UE_DEPRECATED(Version, Message) [[deprecated(Message " Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.")]]
+[0;1;32m                                          ^
+[0mIn file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Intermediate/Build/Linux/B4D820EA/UE4Editor/Development/Carla/Module.Carla.2_of_4.cpp:62:
+[1m/home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/PixelReader.cpp:48:32: [0m[0;1;35mwarning: [0m[1m'RHICreateRenderQuery' is deprecated: CreateRenderQuery API is deprecated; use RHICreateRenderQueryPool and suballocate queries there Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile. [-Wdeprecated-declarations][0m
+    FRenderQueryRHIRef Query = RHICreateRenderQuery(RQT_AbsoluteTime);
+[0;1;32m                               ^
+[0m[1m/home/test/UnrealEngine_4.26/Engine/Source/Runtime/RHI/Public/RHICommandList.h:5437:1: [0m[0;1;30mnote: [0m'RHICreateRenderQuery' has been explicitly marked deprecated here[0m
+UE_DEPRECATED(4.23, "CreateRenderQuery API is deprecated; use RHICreateRenderQueryPool and suballocate queries there")
+[0;1;32m^
+[0m[1m/home/test/UnrealEngine_4.26/Engine/Source/Runtime/Core/Public/Misc/CoreMiscDefines.h:234:43: [0m[0;1;30mnote: [0mexpanded from macro 'UE_DEPRECATED'[0m
+#define UE_DEPRECATED(Version, Message) [[deprecated(Message " Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.")]]
+[0;1;32m                                          ^
+[0mIn file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Intermediate/Build/Linux/B4D820EA/UE4Editor/Development/Carla/Module.Carla.2_of_4.cpp:67:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/SafeDistanceSensor.cpp:2:
+[1m/home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/SafeDistanceSensor.h:27:10: [0m[0;1;31merror: [0m[1mdeclaration of 'Tick' overrides a 'final' function[0m
+    void Tick(float DeltaSeconds) override;
+[0;1;32m         ^
+[0m[1m/home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/Sensor.h:66:8: [0m[0;1;30mnote: [0moverridden virtual function is here[0m
+  void Tick(const float DeltaTime) final;
+[0;1;32m       ^
+[0m4 warnings and 1 error generated.
+[0mIn file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Intermediate/Build/Linux/B4D820EA/UE4Editor/Development/Carla/Module.Carla.2_of_4.cpp:3:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Lights/CarlaLight.cpp:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Game/CarlaStatics.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Game/CarlaEpisode.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Actor/ActorDispatcher.h:11:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Actor/ActorRegistry.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Actor/CarlaActor.h:10:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Actor/ActorData.h:17:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/DataStream.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/AsyncDataStream.h:14:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/CarlaDependencies/include/carla/streaming/Stream.h:10:
+[1m/home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/CarlaDependencies/include/carla/streaming/detail/Stream.h:53:28: [0m[0;1;31merror: [0m[1mcalling a private constructor of class 'UCarlaEpisode'[0m
+      _shared_state->Write(std::move(buffers)...);
+[0;1;32m                           ^
+[0m[1m/home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/AsyncDataStream.h:197:10: [0m[0;1;30mnote: [0min instantiation of function template specialization 'carla::streaming::detail::Stream<carla::streaming::detail::MultiStreamState>::Write<std::__1::shared_ptr<carla::BufferView> &, const UCarlaEpisode &, TSet<AActor *, DefaultKeyFuncs<AActor *, false>, FDefaultSetAllocator> &>' requested here[0m
+  Stream.Write(ViewHeader, std::forward<ArgsT>(Args)...);
+[0;1;32m         ^
+[0m[1m/home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/SafeDistanceSensor.cpp:96:16: [0m[0;1;30mnote: [0min instantiation of function template specialization 'FAsyncDataStreamTmpl<carla::streaming::detail::Stream<carla::streaming::detail::MultiStreamState> >::Send<ASafeDistanceSensor, const UCarlaEpisode &, TSet<AActor *, DefaultKeyFuncs<AActor *, false>, FDefaultSetAllocator> &>' requested here[0m
+        Stream.Send(*this, GetEpisode(), DetectedActors);
+[0;1;32m               ^
+[0m[1m/home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Game/CarlaEpisode.h:40:3: [0m[0;1;30mnote: [0mdeclared private here[0m
+  GENERATED_BODY()
+[0;1;32m  ^
+[0m[1m/home/test/UnrealEngine_4.26/Engine/Source/Runtime/CoreUObject/Public/UObject/ObjectMacros.h:628:29: [0m[0;1;30mnote: [0mexpanded from macro 'GENERATED_BODY'[0m
+#define GENERATED_BODY(...) BODY_MACRO_COMBINE(CURRENT_FILE_ID,_,__LINE__,_GENERATED_BODY);
+[0;1;32m                            ^
+[0m[1m/home/test/UnrealEngine_4.26/Engine/Source/Runtime/CoreUObject/Public/UObject/ObjectMacros.h:623:37: [0m[0;1;30mnote: [0mexpanded from macro 'BODY_MACRO_COMBINE'[0m
+#define BODY_MACRO_COMBINE(A,B,C,D) BODY_MACRO_COMBINE_INNER(A,B,C,D)
+[0;1;32m                                    ^
+[0m[1m/home/test/UnrealEngine_4.26/Engine/Source/Runtime/CoreUObject/Public/UObject/ObjectMacros.h:622:43: [0m[0;1;30mnote: [0mexpanded from macro 'BODY_MACRO_COMBINE_INNER'[0m
+#define BODY_MACRO_COMBINE_INNER(A,B,C,D) A##B##C##D
+[0;1;32m                                          ^
+[0m[1m<scratch space>:2:1: [0m[0;1;30mnote: [0mexpanded from here[0m
+CarlaUE4_Plugins_Carla_Source_Carla_Game_CarlaEpisode_h_40_GENERATED_BODY
+[0;1;32m^
+[0m[1m/home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Carla/CarlaEpisode.generated.h:126:2: [0m[0;1;30mnote: [0mexpanded from macro 'CarlaUE4_Plugins_Carla_Source_Carla_Game_CarlaEpisode_h_40_GENERATED_BODY'[0m
+        CarlaUE4_Plugins_Carla_Source_Carla_Game_CarlaEpisode_h_40_ENHANCED_CONSTRUCTORS \
+[0;1;32m        ^
+[0m[1m/home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Carla/CarlaEpisode.generated.h:90:9: [0m[0;1;30mnote: [0mexpanded from macro 'CarlaUE4_Plugins_Carla_Source_Carla_Game_CarlaEpisode_h_40_ENHANCED_CONSTRUCTORS'[0m
+        NO_API UCarlaEpisode(const UCarlaEpisode&); \
+[0;1;32m               ^
+[0mIn file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Intermediate/Build/Linux/B4D820EA/UE4Editor/Development/Carla/Module.Carla.2_of_4.cpp:3:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Lights/CarlaLight.cpp:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Game/CarlaStatics.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Game/CarlaEpisode.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Actor/ActorDispatcher.h:11:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Actor/ActorRegistry.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Actor/CarlaActor.h:10:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Actor/ActorData.h:17:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/DataStream.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/AsyncDataStream.h:14:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/CarlaDependencies/include/carla/streaming/Stream.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/CarlaDependencies/include/carla/streaming/detail/MultiStreamState.h:11:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/CarlaDependencies/include/carla/streaming/detail/StreamStateBase.h:10:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/CarlaDependencies/include/carla/streaming/detail/Session.h:9:
+[1m/home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/CarlaDependencies/include/carla/streaming/detail/tcp/ServerSession.h:69:7: [0m[0;1;31merror: [0m[1mstatic_assert failed due to requirement 'are_same<std::__1::shared_ptr<carla::BufferView>, std::__1::shared_ptr<carla::BufferView>, UCarlaEpisode, TSet<AActor *, DefaultKeyFuncs<AActor *, false>, FDefaultSetAllocator> >::value' "This function only accepts arguments of type BufferView."[0m
+      static_assert(
+[0;1;32m      ^
+[0m[1m/home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/CarlaDependencies/include/carla/streaming/detail/MultiStreamState.h:40:33: [0m[0;1;30mnote: [0min instantiation of function template specialization 'carla::streaming::detail::tcp::ServerSession::MakeMessage<std::__1::shared_ptr<carla::BufferView>, UCarlaEpisode, TSet<AActor *, DefaultKeyFuncs<AActor *, false>, FDefaultSetAllocator> >' requested here[0m
+        auto message = Session::MakeMessage(buffers...);
+[0;1;32m                                ^
+[0m[1m/home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/CarlaDependencies/include/carla/streaming/detail/Stream.h:53:22: [0m[0;1;30mnote: [0min instantiation of function template specialization 'carla::streaming::detail::MultiStreamState::Write<std::__1::shared_ptr<carla::BufferView>, UCarlaEpisode, TSet<AActor *, DefaultKeyFuncs<AActor *, false>, FDefaultSetAllocator> >' requested here[0m
+      _shared_state->Write(std::move(buffers)...);
+[0;1;32m                     ^
+[0m[1m/home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/AsyncDataStream.h:197:10: [0m[0;1;30mnote: [0min instantiation of function template specialization 'carla::streaming::detail::Stream<carla::streaming::detail::MultiStreamState>::Write<std::__1::shared_ptr<carla::BufferView> &, const UCarlaEpisode &, TSet<AActor *, DefaultKeyFuncs<AActor *, false>, FDefaultSetAllocator> &>' requested here[0m
+  Stream.Write(ViewHeader, std::forward<ArgsT>(Args)...);
+[0;1;32m         ^
+[0m[1m/home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/SafeDistanceSensor.cpp:96:16: [0m[0;1;30mnote: [0min instantiation of function template specialization 'FAsyncDataStreamTmpl<carla::streaming::detail::Stream<carla::streaming::detail::MultiStreamState> >::Send<ASafeDistanceSensor, const UCarlaEpisode &, TSet<AActor *, DefaultKeyFuncs<AActor *, false>, FDefaultSetAllocator> &>' requested here[0m
+        Stream.Send(*this, GetEpisode(), DetectedActors);
+[0;1;32m               ^
+[0mIn file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Intermediate/Build/Linux/B4D820EA/UE4Editor/Development/Carla/Module.Carla.2_of_4.cpp:3:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Lights/CarlaLight.cpp:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Game/CarlaStatics.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Game/CarlaEpisode.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Actor/ActorDispatcher.h:11:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Actor/ActorRegistry.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Actor/CarlaActor.h:10:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Actor/ActorData.h:17:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/DataStream.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/AsyncDataStream.h:14:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/CarlaDependencies/include/carla/streaming/Stream.h:9:
+[1m/home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/CarlaDependencies/include/carla/streaming/detail/MultiStreamState.h:40:45: [0m[0;1;31merror: [0m[1mcalling a private constructor of class 'UCarlaEpisode'[0m
+        auto message = Session::MakeMessage(buffers...);
+[0;1;32m                                            ^
+[0m[1m/home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/CarlaDependencies/include/carla/streaming/detail/Stream.h:53:22: [0m[0;1;30mnote: [0min instantiation of function template specialization 'carla::streaming::detail::MultiStreamState::Write<std::__1::shared_ptr<carla::BufferView>, UCarlaEpisode, TSet<AActor *, DefaultKeyFuncs<AActor *, false>, FDefaultSetAllocator> >' requested here[0m
+      _shared_state->Write(std::move(buffers)...);
+[0;1;32m                     ^
+[0m[1m/home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/AsyncDataStream.h:197:10: [0m[0;1;30mnote: [0min instantiation of function template specialization 'carla::streaming::detail::Stream<carla::streaming::detail::MultiStreamState>::Write<std::__1::shared_ptr<carla::BufferView> &, const UCarlaEpisode &, TSet<AActor *, DefaultKeyFuncs<AActor *, false>, FDefaultSetAllocator> &>' requested here[0m
+  Stream.Write(ViewHeader, std::forward<ArgsT>(Args)...);
+[0;1;32m         ^
+[0m[1m/home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/SafeDistanceSensor.cpp:96:16: [0m[0;1;30mnote: [0min instantiation of function template specialization 'FAsyncDataStreamTmpl<carla::streaming::detail::Stream<carla::streaming::detail::MultiStreamState> >::Send<ASafeDistanceSensor, const UCarlaEpisode &, TSet<AActor *, DefaultKeyFuncs<AActor *, false>, FDefaultSetAllocator> &>' requested here[0m
+        Stream.Send(*this, GetEpisode(), DetectedActors);
+[0;1;32m               ^
+[0m[1m/home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Game/CarlaEpisode.h:40:3: [0m[0;1;30mnote: [0mdeclared private here[0m
+  GENERATED_BODY()
+[0;1;32m  ^
+[0m[1m/home/test/UnrealEngine_4.26/Engine/Source/Runtime/CoreUObject/Public/UObject/ObjectMacros.h:628:29: [0m[0;1;30mnote: [0mexpanded from macro 'GENERATED_BODY'[0m
+#define GENERATED_BODY(...) BODY_MACRO_COMBINE(CURRENT_FILE_ID,_,__LINE__,_GENERATED_BODY);
+[0;1;32m                            ^
+[0m[1m/home/test/UnrealEngine_4.26/Engine/Source/Runtime/CoreUObject/Public/UObject/ObjectMacros.h:623:37: [0m[0;1;30mnote: [0mexpanded from macro 'BODY_MACRO_COMBINE'[0m
+#define BODY_MACRO_COMBINE(A,B,C,D) BODY_MACRO_COMBINE_INNER(A,B,C,D)
+[0;1;32m                                    ^
+[0m[1m/home/test/UnrealEngine_4.26/Engine/Source/Runtime/CoreUObject/Public/UObject/ObjectMacros.h:622:43: [0m[0;1;30mnote: [0mexpanded from macro 'BODY_MACRO_COMBINE_INNER'[0m
+#define BODY_MACRO_COMBINE_INNER(A,B,C,D) A##B##C##D
+[0;1;32m                                          ^
+[0m[1m<scratch space>:2:1: [0m[0;1;30mnote: [0mexpanded from here[0m
+CarlaUE4_Plugins_Carla_Source_Carla_Game_CarlaEpisode_h_40_GENERATED_BODY
+[0;1;32m^
+[0m[1m/home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Carla/CarlaEpisode.generated.h:126:2: [0m[0;1;30mnote: [0mexpanded from macro 'CarlaUE4_Plugins_Carla_Source_Carla_Game_CarlaEpisode_h_40_GENERATED_BODY'[0m
+        CarlaUE4_Plugins_Carla_Source_Carla_Game_CarlaEpisode_h_40_ENHANCED_CONSTRUCTORS \
+[0;1;32m        ^
+[0m[1m/home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Carla/CarlaEpisode.generated.h:90:9: [0m[0;1;30mnote: [0mexpanded from macro 'CarlaUE4_Plugins_Carla_Source_Carla_Game_CarlaEpisode_h_40_ENHANCED_CONSTRUCTORS'[0m
+        NO_API UCarlaEpisode(const UCarlaEpisode&); \
+[0;1;32m               ^
+[0mIn file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Intermediate/Build/Linux/B4D820EA/UE4Editor/Development/Carla/Module.Carla.2_of_4.cpp:3:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Lights/CarlaLight.cpp:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Game/CarlaStatics.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Game/CarlaEpisode.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Actor/ActorDispatcher.h:11:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Actor/ActorRegistry.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Actor/CarlaActor.h:10:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Actor/ActorData.h:17:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/DataStream.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/AsyncDataStream.h:14:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/CarlaDependencies/include/carla/streaming/Stream.h:9:
+[1m/home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/CarlaDependencies/include/carla/streaming/detail/MultiStreamState.h:51:45: [0m[0;1;31merror: [0m[1mcalling a private constructor of class 'UCarlaEpisode'[0m
+        auto message = Session::MakeMessage(buffers...);
+[0;1;32m                                            ^
+[0m[1m/home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Game/CarlaEpisode.h:40:3: [0m[0;1;30mnote: [0mdeclared private here[0m
+  GENERATED_BODY()
+[0;1;32m  ^
+[0m[1m/home/test/UnrealEngine_4.26/Engine/Source/Runtime/CoreUObject/Public/UObject/ObjectMacros.h:628:29: [0m[0;1;30mnote: [0mexpanded from macro 'GENERATED_BODY'[0m
+#define GENERATED_BODY(...) BODY_MACRO_COMBINE(CURRENT_FILE_ID,_,__LINE__,_GENERATED_BODY);
+[0;1;32m                            ^
+[0m[1m/home/test/UnrealEngine_4.26/Engine/Source/Runtime/CoreUObject/Public/UObject/ObjectMacros.h:623:37: [0m[0;1;30mnote: [0mexpanded from macro 'BODY_MACRO_COMBINE'[0m
+#define BODY_MACRO_COMBINE(A,B,C,D) BODY_MACRO_COMBINE_INNER(A,B,C,D)
+[0;1;32m                                    ^
+[0m[1m/home/test/UnrealEngine_4.26/Engine/Source/Runtime/CoreUObject/Public/UObject/ObjectMacros.h:622:43: [0m[0;1;30mnote: [0mexpanded from macro 'BODY_MACRO_COMBINE_INNER'[0m
+#define BODY_MACRO_COMBINE_INNER(A,B,C,D) A##B##C##D
+[0;1;32m                                          ^
+[0m[1m<scratch space>:2:1: [0m[0;1;30mnote: [0mexpanded from here[0m
+CarlaUE4_Plugins_Carla_Source_Carla_Game_CarlaEpisode_h_40_GENERATED_BODY
+[0;1;32m^
+[0m[1m/home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Carla/CarlaEpisode.generated.h:126:2: [0m[0;1;30mnote: [0mexpanded from macro 'CarlaUE4_Plugins_Carla_Source_Carla_Game_CarlaEpisode_h_40_GENERATED_BODY'[0m
+        CarlaUE4_Plugins_Carla_Source_Carla_Game_CarlaEpisode_h_40_ENHANCED_CONSTRUCTORS \
+[0;1;32m        ^
+[0m[1m/home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Carla/CarlaEpisode.generated.h:90:9: [0m[0;1;30mnote: [0mexpanded from macro 'CarlaUE4_Plugins_Carla_Source_Carla_Game_CarlaEpisode_h_40_ENHANCED_CONSTRUCTORS'[0m
+        NO_API UCarlaEpisode(const UCarlaEpisode&); \
+[0;1;32m               ^
+[0mIn file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Intermediate/Build/Linux/B4D820EA/UE4Editor/Development/Carla/Module.Carla.2_of_4.cpp:2:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Game/TaggerDelegate.cpp:10:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Game/Tagger.h:13:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/CarlaDependencies/include/carla/rpc/ObjectLabel.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/CarlaDependencies/include/carla/MsgPack.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/CarlaDependencies/include/carla/Buffer.h:11:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/CarlaDependencies/include/carla/Logging.h:43:
+In file included from ThirdParty/Linux/LibCxx/include/c++/v1/iostream:37:
+In file included from ThirdParty/Linux/LibCxx/include/c++/v1/ios:215:
+In file included from ThirdParty/Linux/LibCxx/include/c++/v1/__locale:14:
+In file included from ThirdParty/Linux/LibCxx/include/c++/v1/string:504:
+In file included from ThirdParty/Linux/LibCxx/include/c++/v1/string_view:175:
+In file included from ThirdParty/Linux/LibCxx/include/c++/v1/__string:57:
+In file included from ThirdParty/Linux/LibCxx/include/c++/v1/algorithm:643:
+[1m/home/test/UnrealEngine_4.26/Engine/Source/ThirdParty/Linux/LibCxx/include/c++/v1/memory:4393:5: [0m[0;1;31merror: [0m[1mstatic_assert failed due to requirement 'is_constructible<const carla::streaming::detail::tcp::MessageTmpl<2>, std::__1::shared_ptr<carla::BufferView> &, UCarlaEpisode &, TSet<AActor *, DefaultKeyFuncs<AActor *, false>, FDefaultSetAllocator> &>::value' "Can't construct object in make_shared"[0m
+    static_assert(is_constructible<_Tp, _Args...>::value, "Can't construct object in make_shared");
+[0;1;32m    ^             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[0m[1m/home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/CarlaDependencies/include/carla/streaming/detail/tcp/ServerSession.h:72:19: [0m[0;1;30mnote: [0min instantiation of function template specialization 'std::__1::make_shared<const carla::streaming::detail::tcp::MessageTmpl<2>, std::__1::shared_ptr<carla::BufferView> &, UCarlaEpisode &, TSet<AActor *, DefaultKeyFuncs<AActor *, false>, FDefaultSetAllocator> &>' requested here[0m
+      return std::make_shared<const Message>(buffers...);
+[0;1;32m                  ^
+[0m[1m/home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/CarlaDependencies/include/carla/streaming/detail/Stream.h:53:22: [0m[0;1;30mnote: [0min instantiation of function template specialization 'carla::streaming::detail::MultiStreamState::Write<std::__1::shared_ptr<carla::BufferView>, UCarlaEpisode, TSet<AActor *, DefaultKeyFuncs<AActor *, false>, FDefaultSetAllocator> >' requested here[0m
+      _shared_state->Write(std::move(buffers)...);
+[0;1;32m                     ^
+[0m[1m/home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/AsyncDataStream.h:197:10: [0m[0;1;30mnote: [0min instantiation of function template specialization 'carla::streaming::detail::Stream<carla::streaming::detail::MultiStreamState>::Write<std::__1::shared_ptr<carla::BufferView> &, const UCarlaEpisode &, TSet<AActor *, DefaultKeyFuncs<AActor *, false>, FDefaultSetAllocator> &>' requested here[0m
+  Stream.Write(ViewHeader, std::forward<ArgsT>(Args)...);
+[0;1;32m         ^
+[0m[1m/home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/SafeDistanceSensor.cpp:96:16: [0m[0;1;30mnote: [0min instantiation of function template specialization 'FAsyncDataStreamTmpl<carla::streaming::detail::Stream<carla::streaming::detail::MultiStreamState> >::Send<ASafeDistanceSensor, const UCarlaEpisode &, TSet<AActor *, DefaultKeyFuncs<AActor *, false>, FDefaultSetAllocator> &>' requested here[0m
+        Stream.Send(*this, GetEpisode(), DetectedActors);
+[0;1;32m               ^
+[0mIn file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Intermediate/Build/Linux/B4D820EA/UE4Editor/Development/Carla/Module.Carla.2_of_4.cpp:2:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Game/TaggerDelegate.cpp:10:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Game/Tagger.h:13:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/CarlaDependencies/include/carla/rpc/ObjectLabel.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/CarlaDependencies/include/carla/MsgPack.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/CarlaDependencies/include/carla/Buffer.h:11:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/CarlaDependencies/include/carla/Logging.h:43:
+In file included from ThirdParty/Linux/LibCxx/include/c++/v1/iostream:37:
+In file included from ThirdParty/Linux/LibCxx/include/c++/v1/ios:215:
+In file included from ThirdParty/Linux/LibCxx/include/c++/v1/__locale:14:
+In file included from ThirdParty/Linux/LibCxx/include/c++/v1/string:504:
+In file included from ThirdParty/Linux/LibCxx/include/c++/v1/string_view:175:
+In file included from ThirdParty/Linux/LibCxx/include/c++/v1/__string:57:
+In file included from ThirdParty/Linux/LibCxx/include/c++/v1/algorithm:643:
+[1m/home/test/UnrealEngine_4.26/Engine/Source/ThirdParty/Linux/LibCxx/include/c++/v1/memory:2214:18: [0m[0;1;31merror: [0m[1mcalling a private constructor of class 'UCarlaEpisode'[0m
+      : __value_(_VSTD::forward<_Args>(_VSTD::get<_Indexes>(__args))...) {}
+[0;1;32m                 ^
+[0m[1m/home/test/UnrealEngine_4.26/Engine/Source/ThirdParty/Linux/LibCxx/include/c++/v1/__config:782:15: [0m[0;1;30mnote: [0mexpanded from macro '_VSTD'[0m
+#define _VSTD std::_LIBCPP_ABI_NAMESPACE
+[0;1;32m              ^
+[0m[1m/home/test/UnrealEngine_4.26/Engine/Source/ThirdParty/Linux/LibCxx/include/c++/v1/memory:2298:9: [0m[0;1;30mnote: [0min instantiation of function template specialization 'std::__1::__compressed_pair_elem<const carla::streaming::detail::tcp::MessageTmpl<2>, 1, false>::__compressed_pair_elem<std::__1::shared_ptr<carla::BufferView> &, UCarlaEpisode &, TSet<AActor *, DefaultKeyFuncs<AActor *, false>, FDefaultSetAllocator> &, 0, 1, 2>' requested here[0m
+        _Base2(__pc, _VSTD::move(__second_args),
+[0;1;32m        ^
+[0m[1m/home/test/UnrealEngine_4.26/Engine/Source/ThirdParty/Linux/LibCxx/include/c++/v1/memory:3569:16: [0m[0;1;30mnote: [0min instantiation of function template specialization 'std::__1::__compressed_pair<std::__1::allocator<const carla::streaming::detail::tcp::MessageTmpl<2> >, const carla::streaming::detail::tcp::MessageTmpl<2> >::__compressed_pair<std::__1::allocator<const carla::streaming::detail::tcp::MessageTmpl<2> > &, std::__1::shared_ptr<carla::BufferView> &, UCarlaEpisode &, TSet<AActor *, DefaultKeyFuncs<AActor *, false>, FDefaultSetAllocator> &>' requested here[0m
+            :  __data_(piecewise_construct, _VSTD::forward_as_tuple(__a),
+[0;1;32m               ^
+[0m[1m/home/test/UnrealEngine_4.26/Engine/Source/ThirdParty/Linux/LibCxx/include/c++/v1/memory:4400:26: [0m[0;1;30mnote: [0min instantiation of function template specialization 'std::__1::__shared_ptr_emplace<const carla::streaming::detail::tcp::MessageTmpl<2>, std::__1::allocator<const carla::streaming::detail::tcp::MessageTmpl<2> > >::__shared_ptr_emplace<std::__1::shared_ptr<carla::BufferView> &, UCarlaEpisode &, TSet<AActor *, DefaultKeyFuncs<AActor *, false>, FDefaultSetAllocator> &>' requested here[0m
+    ::new(__hold2.get()) _CntrlBlk(__a2, _VSTD::forward<_Args>(__args)...);
+[0;1;32m                         ^
+[0m[1m/home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/CarlaDependencies/include/carla/streaming/detail/tcp/ServerSession.h:72:19: [0m[0;1;30mnote: [0min instantiation of function template specialization 'std::__1::make_shared<const carla::streaming::detail::tcp::MessageTmpl<2>, std::__1::shared_ptr<carla::BufferView> &, UCarlaEpisode &, TSet<AActor *, DefaultKeyFuncs<AActor *, false>, FDefaultSetAllocator> &>' requested here[0m
+      return std::make_shared<const Message>(buffers...);
+[0;1;32m                  ^
+[0m[1m/home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/CarlaDependencies/include/carla/streaming/detail/Stream.h:53:22: [0m[0;1;30mnote: [0min instantiation of function template specialization 'carla::streaming::detail::MultiStreamState::Write<std::__1::shared_ptr<carla::BufferView>, UCarlaEpisode, TSet<AActor *, DefaultKeyFuncs<AActor *, false>, FDefaultSetAllocator> >' requested here[0m
+      _shared_state->Write(std::move(buffers)...);
+[0;1;32m                     ^
+[0m[1m/home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/AsyncDataStream.h:197:10: [0m[0;1;30mnote: [0min instantiation of function template specialization 'carla::streaming::detail::Stream<carla::streaming::detail::MultiStreamState>::Write<std::__1::shared_ptr<carla::BufferView> &, const UCarlaEpisode &, TSet<AActor *, DefaultKeyFuncs<AActor *, false>, FDefaultSetAllocator> &>' requested here[0m
+  Stream.Write(ViewHeader, std::forward<ArgsT>(Args)...);
+[0;1;32m         ^
+[0m[1m/home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/SafeDistanceSensor.cpp:96:16: [0m[0;1;30mnote: [0min instantiation of function template specialization 'FAsyncDataStreamTmpl<carla::streaming::detail::Stream<carla::streaming::detail::MultiStreamState> >::Send<ASafeDistanceSensor, const UCarlaEpisode &, TSet<AActor *, DefaultKeyFuncs<AActor *, false>, FDefaultSetAllocator> &>' requested here[0m
+        Stream.Send(*this, GetEpisode(), DetectedActors);
+[0;1;32m               ^
+[0m[1m/home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Game/CarlaEpisode.h:40:3: [0m[0;1;30mnote: [0mdeclared private here[0m
+  GENERATED_BODY()
+[0;1;32m  ^
+[0m[1m/home/test/UnrealEngine_4.26/Engine/Source/Runtime/CoreUObject/Public/UObject/ObjectMacros.h:628:29: [0m[0;1;30mnote: [0mexpanded from macro 'GENERATED_BODY'[0m
+#define GENERATED_BODY(...) BODY_MACRO_COMBINE(CURRENT_FILE_ID,_,__LINE__,_GENERATED_BODY);
+[0;1;32m                            ^
+[0m[1m/home/test/UnrealEngine_4.26/Engine/Source/Runtime/CoreUObject/Public/UObject/ObjectMacros.h:623:37: [0m[0;1;30mnote: [0mexpanded from macro 'BODY_MACRO_COMBINE'[0m
+#define BODY_MACRO_COMBINE(A,B,C,D) BODY_MACRO_COMBINE_INNER(A,B,C,D)
+[0;1;32m                                    ^
+[0m[1m/home/test/UnrealEngine_4.26/Engine/Source/Runtime/CoreUObject/Public/UObject/ObjectMacros.h:622:43: [0m[0;1;30mnote: [0mexpanded from macro 'BODY_MACRO_COMBINE_INNER'[0m
+#define BODY_MACRO_COMBINE_INNER(A,B,C,D) A##B##C##D
+[0;1;32m                                          ^
+[0m[1m<scratch space>:2:1: [0m[0;1;30mnote: [0mexpanded from here[0m
+CarlaUE4_Plugins_Carla_Source_Carla_Game_CarlaEpisode_h_40_GENERATED_BODY
+[0;1;32m^
+[0m[1m/home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Carla/CarlaEpisode.generated.h:126:2: [0m[0;1;30mnote: [0mexpanded from macro 'CarlaUE4_Plugins_Carla_Source_Carla_Game_CarlaEpisode_h_40_GENERATED_BODY'[0m
+        CarlaUE4_Plugins_Carla_Source_Carla_Game_CarlaEpisode_h_40_ENHANCED_CONSTRUCTORS \
+[0;1;32m        ^
+[0m[1m/home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Carla/CarlaEpisode.generated.h:90:9: [0m[0;1;30mnote: [0mexpanded from macro 'CarlaUE4_Plugins_Carla_Source_Carla_Game_CarlaEpisode_h_40_ENHANCED_CONSTRUCTORS'[0m
+        NO_API UCarlaEpisode(const UCarlaEpisode&); \
+[0;1;32m               ^
+[0mIn file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Intermediate/Build/Linux/B4D820EA/UE4Editor/Development/Carla/Module.Carla.2_of_4.cpp:3:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Lights/CarlaLight.cpp:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Game/CarlaStatics.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Game/CarlaEpisode.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Actor/ActorDispatcher.h:11:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Actor/ActorRegistry.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Actor/CarlaActor.h:10:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Actor/ActorData.h:17:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/DataStream.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/AsyncDataStream.h:14:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/CarlaDependencies/include/carla/streaming/Stream.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/CarlaDependencies/include/carla/streaming/detail/MultiStreamState.h:11:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/CarlaDependencies/include/carla/streaming/detail/StreamStateBase.h:10:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/CarlaDependencies/include/carla/streaming/detail/Session.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/CarlaDependencies/include/carla/streaming/detail/tcp/ServerSession.h:14:
+[1m/home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/CarlaDependencies/include/carla/streaming/detail/tcp/Message.h:60:51: [0m[0;1;31merror: [0m[1mcalling a private constructor of class 'UCarlaEpisode'[0m
+      : MessageTmpl(sizeof...(Buffers) + 1u, buf, buffers...) {
+[0;1;32m                                                  ^
+[0m[1m/home/test/UnrealEngine_4.26/Engine/Source/ThirdParty/Linux/LibCxx/include/c++/v1/memory:2214:9: [0m[0;1;30mnote: [0min instantiation of function template specialization 'carla::streaming::detail::tcp::MessageTmpl<2>::MessageTmpl<UCarlaEpisode, TSet<AActor *, DefaultKeyFuncs<AActor *, false>, FDefaultSetAllocator> >' requested here[0m
+      : __value_(_VSTD::forward<_Args>(_VSTD::get<_Indexes>(__args))...) {}
+[0;1;32m        ^
+[0m[1m/home/test/UnrealEngine_4.26/Engine/Source/ThirdParty/Linux/LibCxx/include/c++/v1/memory:2298:9: [0m[0;1;30mnote: [0min instantiation of function template specialization 'std::__1::__compressed_pair_elem<const carla::streaming::detail::tcp::MessageTmpl<2>, 1, false>::__compressed_pair_elem<std::__1::shared_ptr<carla::BufferView> &, UCarlaEpisode &, TSet<AActor *, DefaultKeyFuncs<AActor *, false>, FDefaultSetAllocator> &, 0, 1, 2>' requested here[0m
+        _Base2(__pc, _VSTD::move(__second_args),
+[0;1;32m        ^
+[0m[1m/home/test/UnrealEngine_4.26/Engine/Source/ThirdParty/Linux/LibCxx/include/c++/v1/memory:3569:16: [0m[0;1;30mnote: [0min instantiation of function template specialization 'std::__1::__compressed_pair<std::__1::allocator<const carla::streaming::detail::tcp::MessageTmpl<2> >, const carla::streaming::detail::tcp::MessageTmpl<2> >::__compressed_pair<std::__1::allocator<const carla::streaming::detail::tcp::MessageTmpl<2> > &, std::__1::shared_ptr<carla::BufferView> &, UCarlaEpisode &, TSet<AActor *, DefaultKeyFuncs<AActor *, false>, FDefaultSetAllocator> &>' requested here[0m
+            :  __data_(piecewise_construct, _VSTD::forward_as_tuple(__a),
+[0;1;32m               ^
+[0m[1m/home/test/UnrealEngine_4.26/Engine/Source/ThirdParty/Linux/LibCxx/include/c++/v1/memory:4400:26: [0m[0;1;30mnote: [0min instantiation of function template specialization 'std::__1::__shared_ptr_emplace<const carla::streaming::detail::tcp::MessageTmpl<2>, std::__1::allocator<const carla::streaming::detail::tcp::MessageTmpl<2> > >::__shared_ptr_emplace<std::__1::shared_ptr<carla::BufferView> &, UCarlaEpisode &, TSet<AActor *, DefaultKeyFuncs<AActor *, false>, FDefaultSetAllocator> &>' requested here[0m
+    ::new(__hold2.get()) _CntrlBlk(__a2, _VSTD::forward<_Args>(__args)...);
+[0;1;32m                         ^
+[0m[1m/home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/CarlaDependencies/include/carla/streaming/detail/tcp/ServerSession.h:72:19: [0m[0;1;30mnote: [0min instantiation of function template specialization 'std::__1::make_shared<const carla::streaming::detail::tcp::MessageTmpl<2>, std::__1::shared_ptr<carla::BufferView> &, UCarlaEpisode &, TSet<AActor *, DefaultKeyFuncs<AActor *, false>, FDefaultSetAllocator> &>' requested here[0m
+      return std::make_shared<const Message>(buffers...);
+[0;1;32m                  ^
+[0m[1m/home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/CarlaDependencies/include/carla/streaming/detail/Stream.h:53:22: [0m[0;1;30mnote: [0min instantiation of function template specialization 'carla::streaming::detail::MultiStreamState::Write<std::__1::shared_ptr<carla::BufferView>, UCarlaEpisode, TSet<AActor *, DefaultKeyFuncs<AActor *, false>, FDefaultSetAllocator> >' requested here[0m
+      _shared_state->Write(std::move(buffers)...);
+[0;1;32m                     ^
+[0m[1m/home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/AsyncDataStream.h:197:10: [0m[0;1;30mnote: [0min instantiation of function template specialization 'carla::streaming::detail::Stream<carla::streaming::detail::MultiStreamState>::Write<std::__1::shared_ptr<carla::BufferView> &, const UCarlaEpisode &, TSet<AActor *, DefaultKeyFuncs<AActor *, false>, FDefaultSetAllocator> &>' requested here[0m
+  Stream.Write(ViewHeader, std::forward<ArgsT>(Args)...);
+[0;1;32m         ^
+[0m[1m/home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/SafeDistanceSensor.cpp:96:16: [0m[0;1;30mnote: [0min instantiation of function template specialization 'FAsyncDataStreamTmpl<carla::streaming::detail::Stream<carla::streaming::detail::MultiStreamState> >::Send<ASafeDistanceSensor, const UCarlaEpisode &, TSet<AActor *, DefaultKeyFuncs<AActor *, false>, FDefaultSetAllocator> &>' requested here[0m
+        Stream.Send(*this, GetEpisode(), DetectedActors);
+[0;1;32m               ^
+[0m[1m/home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Game/CarlaEpisode.h:40:3: [0m[0;1;30mnote: [0mdeclared private here[0m
+  GENERATED_BODY()
+[0;1;32m  ^
+[0m[1m/home/test/UnrealEngine_4.26/Engine/Source/Runtime/CoreUObject/Public/UObject/ObjectMacros.h:628:29: [0m[0;1;30mnote: [0mexpanded from macro 'GENERATED_BODY'[0m
+#define GENERATED_BODY(...) BODY_MACRO_COMBINE(CURRENT_FILE_ID,_,__LINE__,_GENERATED_BODY);
+[0;1;32m                            ^
+[0m[1m/home/test/UnrealEngine_4.26/Engine/Source/Runtime/CoreUObject/Public/UObject/ObjectMacros.h:623:37: [0m[0;1;30mnote: [0mexpanded from macro 'BODY_MACRO_COMBINE'[0m
+#define BODY_MACRO_COMBINE(A,B,C,D) BODY_MACRO_COMBINE_INNER(A,B,C,D)
+[0;1;32m                                    ^
+[0m[1m/home/test/UnrealEngine_4.26/Engine/Source/Runtime/CoreUObject/Public/UObject/ObjectMacros.h:622:43: [0m[0;1;30mnote: [0mexpanded from macro 'BODY_MACRO_COMBINE_INNER'[0m
+#define BODY_MACRO_COMBINE_INNER(A,B,C,D) A##B##C##D
+[0;1;32m                                          ^
+[0m[1m<scratch space>:2:1: [0m[0;1;30mnote: [0mexpanded from here[0m
+CarlaUE4_Plugins_Carla_Source_Carla_Game_CarlaEpisode_h_40_GENERATED_BODY
+[0;1;32m^
+[0m[1m/home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Carla/CarlaEpisode.generated.h:126:2: [0m[0;1;30mnote: [0mexpanded from macro 'CarlaUE4_Plugins_Carla_Source_Carla_Game_CarlaEpisode_h_40_GENERATED_BODY'[0m
+        CarlaUE4_Plugins_Carla_Source_Carla_Game_CarlaEpisode_h_40_ENHANCED_CONSTRUCTORS \
+[0;1;32m        ^
+[0m[1m/home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Carla/CarlaEpisode.generated.h:90:9: [0m[0;1;30mnote: [0mexpanded from macro 'CarlaUE4_Plugins_Carla_Source_Carla_Game_CarlaEpisode_h_40_ENHANCED_CONSTRUCTORS'[0m
+        NO_API UCarlaEpisode(const UCarlaEpisode&); \
+[0;1;32m               ^
+[0mIn file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Intermediate/Build/Linux/B4D820EA/UE4Editor/Development/Carla/Module.Carla.2_of_4.cpp:3:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Lights/CarlaLight.cpp:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Game/CarlaStatics.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Game/CarlaEpisode.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Actor/ActorDispatcher.h:11:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Actor/ActorRegistry.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Actor/CarlaActor.h:10:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Actor/ActorData.h:17:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/DataStream.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/AsyncDataStream.h:14:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/CarlaDependencies/include/carla/streaming/Stream.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/CarlaDependencies/include/carla/streaming/detail/MultiStreamState.h:11:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/CarlaDependencies/include/carla/streaming/detail/StreamStateBase.h:10:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/CarlaDependencies/include/carla/streaming/detail/Session.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/CarlaDependencies/include/carla/streaming/detail/tcp/ServerSession.h:14:
+[1m/home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/CarlaDependencies/include/carla/streaming/detail/tcp/Message.h:61:7: [0m[0;1;31merror: [0m[1mstatic_assert failed due to requirement 'sizeof...(Buffers) < max_size()' "Too many buffers!"[0m
+      static_assert(sizeof...(Buffers) < max_size(), "Too many buffers!");
+[0;1;32m      ^             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[0m[1m/home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/CarlaDependencies/include/carla/streaming/detail/tcp/Message.h:49:9: [0m[0;1;31merror: [0m[1mno matching constructor for initialization of 'carla::streaming::detail::tcp::MessageTmpl<2>'[0m
+      : MessageTmpl(size, buffers...) {
+[0;1;32m        ^           ~~~~~~~~~~~~~
+[0m[1m/home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/CarlaDependencies/include/carla/streaming/detail/tcp/Message.h:60:9: [0m[0;1;30mnote: [0min instantiation of function template specialization 'carla::streaming::detail::tcp::MessageTmpl<2>::MessageTmpl<UCarlaEpisode, TSet<AActor *, DefaultKeyFuncs<AActor *, false>, FDefaultSetAllocator> >' requested here[0m
+      : MessageTmpl(sizeof...(Buffers) + 1u, buf, buffers...) {
+[0;1;32m        ^
+[0m[1m/home/test/UnrealEngine_4.26/Engine/Source/ThirdParty/Linux/LibCxx/include/c++/v1/memory:2214:9: [0m[0;1;30mnote: [0min instantiation of function template specialization 'carla::streaming::detail::tcp::MessageTmpl<2>::MessageTmpl<UCarlaEpisode, TSet<AActor *, DefaultKeyFuncs<AActor *, false>, FDefaultSetAllocator> >' requested here[0m
+      : __value_(_VSTD::forward<_Args>(_VSTD::get<_Indexes>(__args))...) {}
+[0;1;32m        ^
+[0m[1m/home/test/UnrealEngine_4.26/Engine/Source/ThirdParty/Linux/LibCxx/include/c++/v1/memory:2298:9: [0m[0;1;30mnote: [0min instantiation of function template specialization 'std::__1::__compressed_pair_elem<const carla::streaming::detail::tcp::MessageTmpl<2>, 1, false>::__compressed_pair_elem<std::__1::shared_ptr<carla::BufferView> &, UCarlaEpisode &, TSet<AActor *, DefaultKeyFuncs<AActor *, false>, FDefaultSetAllocator> &, 0, 1, 2>' requested here[0m
+        _Base2(__pc, _VSTD::move(__second_args),
+[0;1;32m        ^
+[0m[1m/home/test/UnrealEngine_4.26/Engine/Source/ThirdParty/Linux/LibCxx/include/c++/v1/memory:3569:16: [0m[0;1;30mnote: [0min instantiation of function template specialization 'std::__1::__compressed_pair<std::__1::allocator<const carla::streaming::detail::tcp::MessageTmpl<2> >, const carla::streaming::detail::tcp::MessageTmpl<2> >::__compressed_pair<std::__1::allocator<const carla::streaming::detail::tcp::MessageTmpl<2> > &, std::__1::shared_ptr<carla::BufferView> &, UCarlaEpisode &, TSet<AActor *, DefaultKeyFuncs<AActor *, false>, FDefaultSetAllocator> &>' requested here[0m
+            :  __data_(piecewise_construct, _VSTD::forward_as_tuple(__a),
+[0;1;32m               ^
+[0m[1m/home/test/UnrealEngine_4.26/Engine/Source/ThirdParty/Linux/LibCxx/include/c++/v1/memory:4400:26: [0m[0;1;30mnote: [0min instantiation of function template specialization 'std::__1::__shared_ptr_emplace<const carla::streaming::detail::tcp::MessageTmpl<2>, std::__1::allocator<const carla::streaming::detail::tcp::MessageTmpl<2> > >::__shared_ptr_emplace<std::__1::shared_ptr<carla::BufferView> &, UCarlaEpisode &, TSet<AActor *, DefaultKeyFuncs<AActor *, false>, FDefaultSetAllocator> &>' requested here[0m
+    ::new(__hold2.get()) _CntrlBlk(__a2, _VSTD::forward<_Args>(__args)...);
+[0;1;32m                         ^
+[0m[1m/home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/CarlaDependencies/include/carla/streaming/detail/tcp/ServerSession.h:72:19: [0m[0;1;30mnote: [0min instantiation of function template specialization 'std::__1::make_shared<const carla::streaming::detail::tcp::MessageTmpl<2>, std::__1::shared_ptr<carla::BufferView> &, UCarlaEpisode &, TSet<AActor *, DefaultKeyFuncs<AActor *, false>, FDefaultSetAllocator> &>' requested here[0m
+      return std::make_shared<const Message>(buffers...);
+[0;1;32m                  ^
+[0m[1m/home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/CarlaDependencies/include/carla/streaming/detail/Stream.h:53:22: [0m[0;1;30mnote: [0min instantiation of function template specialization 'carla::streaming::detail::MultiStreamState::Write<std::__1::shared_ptr<carla::BufferView>, UCarlaEpisode, TSet<AActor *, DefaultKeyFuncs<AActor *, false>, FDefaultSetAllocator> >' requested here[0m
+      _shared_state->Write(std::move(buffers)...);
+[0;1;32m                     ^
+[0m[1m/home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/AsyncDataStream.h:197:10: [0m[0;1;30mnote: [0min instantiation of function template specialization 'carla::streaming::detail::Stream<carla::streaming::detail::MultiStreamState>::Write<std::__1::shared_ptr<carla::BufferView> &, const UCarlaEpisode &, TSet<AActor *, DefaultKeyFuncs<AActor *, false>, FDefaultSetAllocator> &>' requested here[0m
+  Stream.Write(ViewHeader, std::forward<ArgsT>(Args)...);
+[0;1;32m         ^
+[0m[1m/home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/SafeDistanceSensor.cpp:96:16: [0m[0;1;30mnote: [0min instantiation of function template specialization 'FAsyncDataStreamTmpl<carla::streaming::detail::Stream<carla::streaming::detail::MultiStreamState> >::Send<ASafeDistanceSensor, const UCarlaEpisode &, TSet<AActor *, DefaultKeyFuncs<AActor *, false>, FDefaultSetAllocator> &>' requested here[0m
+        Stream.Send(*this, GetEpisode(), DetectedActors);
+[0;1;32m               ^
+[0m[1m/home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/CarlaDependencies/include/carla/streaming/detail/tcp/Message.h:48:5: [0m[0;1;30mnote: [0mcandidate constructor template not viable: no known conversion from 'UCarlaEpisode' to 'carla::SharedBufferView' (aka 'shared_ptr<carla::BufferView>') for 2nd argument[0m
+    MessageTmpl(size_t size, SharedBufferView buffer, Buffers... buffers)
+[0;1;32m    ^
+[0m[1m/home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/CarlaDependencies/include/carla/streaming/detail/tcp/Message.h:59:5: [0m[0;1;30mnote: [0mcandidate constructor template not viable: no known conversion from 'size_t' (aka 'unsigned long') to 'carla::SharedBufferView' (aka 'shared_ptr<carla::BufferView>') for 1st argument[0m
+    MessageTmpl(SharedBufferView buf, Buffers... buffers)
+[0;1;32m    ^
+[0m[1m/home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/CarlaDependencies/include/carla/streaming/detail/tcp/Message.h:45:5: [0m[0;1;30mnote: [0mcandidate constructor not viable: requires 1 argument, but 3 were provided[0m
+    MessageTmpl(size_t) {}
+[0;1;32m    ^
+[0m[1m/home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/CarlaDependencies/include/carla/streaming/detail/tcp/Message.h:34:9: [0m[0;1;30mnote: [0mcandidate constructor (the implicit copy constructor) not viable: requires 1 argument, but 3 were provided[0m
+  class MessageTmpl
+[0;1;32m        ^
+[0m12 warnings and 10 errors generated.
+[0m20 warnings and 1 error generated.
+make[1]: Leaving directory '/home/test/carla-0.9.16/Unreal/CarlaUE4'

@@ -30,6 +30,8 @@
 #include "carla/sensor/s11n/GBufferUint8Serializer.h"
 #include "carla/sensor/s11n/GBufferFloatSerializer.h"
 #include "carla/sensor/s11n/V2XSerializer.h"
+// add the new serializer include here
+#include "carla/sensor/s11n/SafeDistanceSerializer.h"
 
 // 2. Add a forward-declaration of the sensor here.
 class ACollisionSensor;
@@ -54,45 +56,48 @@ struct FCameraGBufferUint8;
 struct FCameraGBufferFloat;
 class AV2XSensor;
 class ACustomV2XSensor;
+// add the new sensor forward-declaration here
+class ASafeDistanceSensor;
 
-namespace carla {
-namespace sensor {
+namespace carla
+{
+  namespace sensor
+  {
 
-  // 3. Register the sensor and its serializer in the SensorRegistry.
+    // 3. Register the sensor and its serializer in the SensorRegistry.
 
-  /// Contains a registry of all the sensors available and allows serializing
-  /// and deserializing sensor data for the types registered.
-  ///
-  /// Use s11n::NoopSerializer if the sensor does not send data (sensors that
-  /// work only on client-side).
-  using SensorRegistry = CompositeSerializer<
-    std::pair<ACollisionSensor *, s11n::CollisionEventSerializer>,
-    std::pair<ADepthCamera *, s11n::ImageSerializer>,
-    std::pair<ANormalsCamera *, s11n::NormalsImageSerializer>,
-    std::pair<ADVSCamera *, s11n::DVSEventArraySerializer>,
-    std::pair<AGnssSensor *, s11n::GnssSerializer>,
-    std::pair<AInertialMeasurementUnit *, s11n::IMUSerializer>,
-    std::pair<ALaneInvasionSensor *, s11n::NoopSerializer>,
-    std::pair<AObstacleDetectionSensor *, s11n::ObstacleDetectionEventSerializer>,
-    std::pair<AOpticalFlowCamera *, s11n::OpticalFlowImageSerializer>,
-    std::pair<ARadar *, s11n::RadarSerializer>,
-    std::pair<ARayCastSemanticLidar *, s11n::SemanticLidarSerializer>,
-    std::pair<ARayCastLidar *, s11n::LidarSerializer>,
-    std::pair<ARssSensor *, s11n::NoopSerializer>,
-    std::pair<ASceneCaptureCamera *, s11n::ImageSerializer>,
-    std::pair<ASemanticSegmentationCamera *, s11n::ImageSerializer>,
-    std::pair<AInstanceSegmentationCamera *, s11n::ImageSerializer>,
-    std::pair<ACosmosControlSensor *, s11n::ImageSerializer>,
-    std::pair<FWorldObserver *, s11n::EpisodeStateSerializer>,
-    std::pair<FCameraGBufferUint8 *, s11n::GBufferUint8Serializer>,
-    std::pair<FCameraGBufferFloat *, s11n::GBufferFloatSerializer>,
-    std::pair<AV2XSensor *, s11n::CAMDataSerializer>,
-    std::pair<ACustomV2XSensor *, s11n::CustomV2XDataSerializer>
-    
+    /// Contains a registry of all the sensors available and allows serializing
+    /// and deserializing sensor data for the types registered.
+    ///
+    /// Use s11n::NoopSerializer if the sensor does not send data (sensors that
+    /// work only on client-side).
+    using SensorRegistry = CompositeSerializer<
+        std::pair<ACollisionSensor *, s11n::CollisionEventSerializer>,
+        std::pair<ADepthCamera *, s11n::ImageSerializer>,
+        std::pair<ANormalsCamera *, s11n::NormalsImageSerializer>,
+        std::pair<ADVSCamera *, s11n::DVSEventArraySerializer>,
+        std::pair<AGnssSensor *, s11n::GnssSerializer>,
+        std::pair<AInertialMeasurementUnit *, s11n::IMUSerializer>,
+        std::pair<ALaneInvasionSensor *, s11n::NoopSerializer>,
+        std::pair<AObstacleDetectionSensor *, s11n::ObstacleDetectionEventSerializer>,
+        std::pair<AOpticalFlowCamera *, s11n::OpticalFlowImageSerializer>,
+        std::pair<ARadar *, s11n::RadarSerializer>,
+        std::pair<ARayCastSemanticLidar *, s11n::SemanticLidarSerializer>,
+        std::pair<ARayCastLidar *, s11n::LidarSerializer>,
+        std::pair<ARssSensor *, s11n::NoopSerializer>,
+        std::pair<ASceneCaptureCamera *, s11n::ImageSerializer>,
+        std::pair<ASemanticSegmentationCamera *, s11n::ImageSerializer>,
+        std::pair<AInstanceSegmentationCamera *, s11n::ImageSerializer>,
+        std::pair<ACosmosControlSensor *, s11n::ImageSerializer>,
+        std::pair<FWorldObserver *, s11n::EpisodeStateSerializer>,
+        std::pair<FCameraGBufferUint8 *, s11n::GBufferUint8Serializer>,
+        std::pair<FCameraGBufferFloat *, s11n::GBufferFloatSerializer>,
+        std::pair<AV2XSensor *, s11n::CAMDataSerializer>,
+        std::pair<ACustomV2XSensor *, s11n::CustomV2XDataSerializer>,
+        // add the new sensor and its serializer here
+        std::pair<ASafeDistanceSensor *, s11n::SafeDistanceSerializer>>;
 
-  >;
-
-} // namespace sensor
+  } // namespace sensor
 } // namespace carla
 
 #endif // LIBCARLA_SENSOR_REGISTRY_INCLUDE_H
@@ -120,5 +125,7 @@ namespace sensor {
 #include "Carla/Sensor/WorldObserver.h"
 #include "Carla/Sensor/V2XSensor.h"
 #include "Carla/Sensor/CustomV2XSensor.h"
+// add the new sensor include here
+#include "Carla/Sensor/SafeDistanceSensor.h"
 
 #endif // LIBCARLA_SENSOR_REGISTRY_WITH_SENSOR_INCLUDES

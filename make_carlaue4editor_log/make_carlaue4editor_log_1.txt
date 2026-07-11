@@ -1,0 +1,769 @@
+[1;35mBuildUE4Plugins.sh: Downloading STREETMAP plugin.[0m
+[1;35mBuildUE4Plugins.sh: StreetMap Success![0m
+[1;35mSetup.sh: Generating CMake configuration files.[0m
+[1;35mSetup.sh: boost-1.84.0-c10 already installed.[0m
+[1;35mSetup.sh: rpclib-v2.2.1_c5-c10 already installed.[0m
+[1;35mSetup.sh: gtest-1.8.1-c10 already installed.[0m
+[1;35mSetup.sh: recast-c10 already installed.[0m
+[1;35mSetup.sh: Libpng already installed.[0m
+[1;35mSetup.sh: Xerces-c already installed.[0m
+[1;35mSetup.sh: Eigen already installed.[0m
+[1;35mSetup.sh: Sqlite already installed.[0m
+[1;35mSetup.sh: PROJ already installed.[0m
+[1;35mSetup.sh: Patchelf already installed.[0m
+[1;35mSetup.sh: CARLA version ef3412669-dirty.[0m
+[1;35mSetup.sh: Success![0m
+[1;35mBuildLibCarla.sh: Building LibCarla "Server.Release" configuration.[0m
+ninja: no work to do.
+[0/1] Install the project...
+-- Install configuration: "Server"
+[1;35mBuildLibCarla.sh: Success![0m
+[1;35mBuildOSM2ODR.sh: Building OSM2ODR.[0m
+-- Eclipse version is set to 3.6 (Helios). Adjust CMAKE_ECLIPSE_VERSION if this is wrong.
+-- CMAKE_BINARY_DIR: /home/test/carla-0.9.16/Build/libosm2dr-build
+-- CMAKE_SOURCE_DIR: /home/test/carla-0.9.16/Build/libosm2dr-source
+-- 
+-- Platform: 
+--     Host: Linux-6.8.0-124-generic x86_64
+--     Target: Linux-6.8.0-124-generic x86_64
+--     CMake: 3.22.1
+--     CMake generator: Ninja
+--     CMake build tool: /usr/bin/ninja
+--     Compiler: Clang 10.0.1
+-- 
+-- Found Proj: /home/test/carla-0.9.16/Build/proj-install/lib/libproj.a
+-- Could NOT find X11 (missing: X11_X11_INCLUDE_PATH X11_X11_LIB) 
+-- Enabled features: Linux-6.8.0-124-generic x86_64 Clang 10.0.1 Release Proj
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/test/carla-0.9.16/Build/libosm2dr-build
+ninja: no work to do.
+[0/1] Install the project...
+-- Install configuration: "Release"
+-- Up-to-date: /home/test/carla-0.9.16/PythonAPI/carla/dependencies/lib/libosm2odr.a
+-- Up-to-date: /home/test/carla-0.9.16/PythonAPI/carla/dependencies/include/OSM2ODR.h
+/home/test/UnrealEngine_4.26/Engine/Source/ThirdParty/Linux/LibCxx/include/c++/v1
+/home/test/UnrealEngine_4.26/Engine/Source/ThirdParty/Linux/LibCxx/lib/Linux/x86_64-unknown-linux-gnu
+-- Eclipse version is set to 3.6 (Helios). Adjust CMAKE_ECLIPSE_VERSION if this is wrong.
+-- CMAKE_BINARY_DIR: /home/test/carla-0.9.16/Build/libosm2dr-build-server
+-- CMAKE_SOURCE_DIR: /home/test/carla-0.9.16/Build/libosm2dr-source
+-- 
+-- Platform: 
+--     Host: Linux-6.8.0-124-generic x86_64
+--     Target: Linux-6.8.0-124-generic x86_64
+--     CMake: 3.22.1
+--     CMake generator: Ninja
+--     CMake build tool: /usr/bin/ninja
+--     Compiler: Clang 10.0.1
+-- 
+-- Found Proj: /home/test/carla-0.9.16/Build/proj-install-server/lib/libproj.a
+-- Could NOT find X11 (missing: X11_X11_INCLUDE_PATH X11_X11_LIB) 
+-- Enabled features: Linux-6.8.0-124-generic x86_64 Clang 10.0.1 Release Proj
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/test/carla-0.9.16/Build/libosm2dr-build-server
+ninja: no work to do.
+[0/1] Install the project...
+-- Install configuration: "Release"
+-- Up-to-date: /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/CarlaDependencies/lib/libosm2odr.a
+-- Up-to-date: /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/CarlaDependencies/include/OSM2ODR.h
+-- Eclipse version is set to 3.6 (Helios). Adjust CMAKE_ECLIPSE_VERSION if this is wrong.
+-- CMAKE_BINARY_DIR: /home/test/carla-0.9.16/Build/libosm2dr-build-server
+-- CMAKE_SOURCE_DIR: /home/test/carla-0.9.16/Build/libosm2dr-source
+-- 
+-- Platform: 
+--     Host: Linux-6.8.0-124-generic x86_64
+--     Target: Linux-6.8.0-124-generic x86_64
+--     CMake: 3.22.1
+--     CMake generator: Ninja
+--     CMake build tool: /usr/bin/ninja
+--     Compiler: Clang 10.0.1
+-- 
+-- Found Proj: /home/test/carla-0.9.16/Build/proj-install-server/lib/libproj.a
+-- Could NOT find X11 (missing: X11_X11_INCLUDE_PATH X11_X11_LIB) 
+-- Enabled features: Linux-6.8.0-124-generic x86_64 Clang 10.0.1 Release Proj
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/test/carla-0.9.16/Build/libosm2dr-build-server
+ninja: no work to do.
+[0/1] Install the project...
+-- Install configuration: "Release"
+-- Up-to-date: /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/CarlaDependencies/lib/libosm2odr.a
+-- Up-to-date: /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/CarlaDependencies/include/OSM2ODR.h
+[1;35mBuildOSM2ODR.sh:  OSM2ODR Success![0m
+[1;35mBuildUE4Plugins.sh: Downloading STREETMAP plugin.[0m
+[1;35mBuildUE4Plugins.sh: StreetMap Success![0m
+[1;35mBuildCarlaUE4.sh: Using Unreal Engine at '/home/test/UnrealEngine_4.26'[0m
+Removing existing SimReady Plugin ThirdParty dependencies
+Pulling SimReady dependencies
+Pulling MDL dependencies
+Installing and patching Engine Material source
+Success: HLSLMaterialTranslator.cpp newer than /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Converters/MDL/Dependencies/Engine/HLSLMaterialTranslator.cpp.patch
+         Continuing without installing and patching Engine Material source
+[1;35mBuildCarlaUE4.sh: Build CarlaUE4 project.[0m
+make[1]: Entering directory '/home/test/carla-0.9.16/Unreal/CarlaUE4'
+bash "/home/test/UnrealEngine_4.26/Engine/Build/BatchFiles/Linux/RunMono.sh" "/home/test/UnrealEngine_4.26/Engine/Binaries/DotNET/UnrealBuildTool.exe" CarlaUE4Editor Linux Development  -project="/home/test/carla-0.9.16/Unreal/CarlaUE4/CarlaUE4.uproject" 
+
+Running Mono...
+
+Fixing inconsistent case in filenames.
+Setting up Mono
+~/UnrealEngine_4.26/Engine ~/carla-0.9.16/Unreal/CarlaUE4
+Using 'git status' to determine working set for adaptive non-unity build (/home/test/UnrealEngine_4.26).
+Building CarlaUE4Editor...
+[Upgrade]
+[Upgrade] Using backward-compatible build settings. The latest version of UE4 sets the following values by default, which may require code changes:
+[Upgrade]     bLegacyPublicIncludePaths = false                 => Omits subfolders from public include paths to reduce compiler command line length. (Previously: true).
+[Upgrade]     ShadowVariableWarningLevel = WarningLevel.Error   => Treats shadowed variable warnings as errors. (Previously: WarningLevel.Warning).
+[Upgrade]     PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs   => Set in build.cs files to enables IWYU-style PCH model. See https://docs.unrealengine.com/en-US/Programming/BuildTools/UnrealBuildTool/IWYU/index.html. (Previously: PCHUsageMode.UseSharedPCHs).
+[Upgrade] Suppress this message by setting 'DefaultBuildSettings = BuildSettingsVersion.V2;' in CarlaUE4Editor.Target.cs, and explicitly overriding settings that differ from the new defaults.
+[Upgrade]
+Performing 23 actions (24 in parallel)
+[14/23] Compile Module.CarlaTools.gen.2_of_2.cpp
+[4/23] Compile Module.Carla.3_of_4.cpp
+[5/23] Compile Module.Carla.4_of_4.cpp
+[9/23] Compile Module.Carla.gen.4_of_8.cpp
+[13/23] Compile Module.CarlaTools.gen.1_of_2.cpp
+[12/23] Compile Module.CarlaTools.cpp
+[10/23] Compile Module.Carla.gen.5_of_8.cpp
+[8/23] Compile Module.Carla.gen.3_of_8.cpp
+[11/23] Compile Module.Carla.gen.6_of_8.cpp
+[1/23] Compile Module.Carla.gen.7_of_8.cpp
+[6/23] Compile Module.Carla.gen.1_of_8.cpp
+[3/23] Compile Module.Carla.2_of_4.cpp
+[7/23] Compile Module.Carla.gen.2_of_8.cpp
+[2/23] Compile Module.Carla.1_of_4.cpp
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Intermediate/Build/Linux/B4D820EA/UE4Editor/Development/Carla/Module.Carla.gen.3_of_8.cpp:2:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Carla/CarlaWheeledVehicleNW.gen.cpp:8:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Vehicle/CarlaWheeledVehicleNW.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Vehicle/CarlaWheeledVehicle.h:22:
+[1m/home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Vehicle/WheeledVehicleMovementComponentNW.h:120:61: [0m[0;1;35mwarning: [0m[1m'UWheeledVehicleMovementComponent' is deprecated: PhysX is deprecated. Use the UChaosWheeledVehicleMovementComponent fron the ChaosVehiclePhysics Plugin. Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile. [-Wdeprecated-declarations][0m
+class CARLA_API UWheeledVehicleMovementComponentNW : public UWheeledVehicleMovementComponent
+[0;1;32m                                                            ^
+[0m[1m/home/test/UnrealEngine_4.26/Engine/Plugins/Runtime/PhysXVehicles/Source/PhysXVehicles/Public/WheeledVehicleMovementComponent.h:202:7: [0m[0;1;30mnote: [0m'UWheeledVehicleMovementComponent' has been explicitly marked deprecated here[0m
+class UE_DEPRECATED(4.26, "PhysX is deprecated. Use the UChaosWheeledVehicleMovementComponent fron the ChaosVehiclePhysics Plugin.") UWheeledVehicleMovementComponent;
+[0;1;32m      ^
+[0m[1m/home/test/UnrealEngine_4.26/Engine/Source/Runtime/Core/Public/Misc/CoreMiscDefines.h:234:43: [0m[0;1;30mnote: [0mexpanded from macro 'UE_DEPRECATED'[0m
+#define UE_DEPRECATED(Version, Message) [[deprecated(Message " Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.")]]
+[0;1;32m                                          ^
+[0mIn file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Intermediate/Build/Linux/B4D820EA/UE4Editor/Development/Carla/Module.Carla.gen.3_of_8.cpp:2:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Carla/CarlaWheeledVehicleNW.gen.cpp:8:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Vehicle/CarlaWheeledVehicleNW.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Vehicle/CarlaWheeledVehicle.h:22:
+[1m/home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Vehicle/WheeledVehicleMovementComponentNW.h:148:66: [0m[0;1;35mwarning: [0m[1m'UVehicleWheel' is deprecated: PhysX is deprecated. Use the UChaosVehicleWheel from the ChaosVehiclePhysics Plugin. Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile. [-Wdeprecated-declarations][0m
+        virtual const void* GetTireData(physx::PxVehicleWheels* Wheels, UVehicleWheel* Wheel);
+[0;1;32m                                                                        ^
+[0m[1m/home/test/UnrealEngine_4.26/Engine/Plugins/Runtime/PhysXVehicles/Source/PhysXVehicles/Public/VehicleWheel.h:37:7: [0m[0;1;30mnote: [0m'UVehicleWheel' has been explicitly marked deprecated here[0m
+class UE_DEPRECATED(4.26, "PhysX is deprecated. Use the UChaosVehicleWheel from the ChaosVehiclePhysics Plugin.") UVehicleWheel;
+[0;1;32m      ^
+[0m[1m/home/test/UnrealEngine_4.26/Engine/Source/Runtime/Core/Public/Misc/CoreMiscDefines.h:234:43: [0m[0;1;30mnote: [0mexpanded from macro 'UE_DEPRECATED'[0m
+#define UE_DEPRECATED(Version, Message) [[deprecated(Message " Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.")]]
+[0;1;32m                                          ^
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Intermediate/Build/Linux/B4D820EA/UE4Editor/Development/Carla/Module.Carla.gen.2_of_8.cpp:5:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Carla/CarlaBlueprintRegistry.gen.cpp:8:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Actor/CarlaBlueprintRegistry.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Actor/ActorBlueprintFunctionLibrary.h:13:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Actor/VehicleParameters.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Vehicle/CarlaWheeledVehicle.h:22:
+[1m/home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Vehicle/WheeledVehicleMovementComponentNW.h:120:61: [0m[0;1;35mwarning: [0m[1m'UWheeledVehicleMovementComponent' is deprecated: PhysX is deprecated. Use the UChaosWheeledVehicleMovementComponent fron the ChaosVehiclePhysics Plugin. Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile. [-Wdeprecated-declarations][0m
+class CARLA_API UWheeledVehicleMovementComponentNW : public UWheeledVehicleMovementComponent
+[0;1;32m                                                            ^
+[0m[1m/home/test/UnrealEngine_4.26/Engine/Plugins/Runtime/PhysXVehicles/Source/PhysXVehicles/Public/WheeledVehicleMovementComponent.h:202:7: [0m[0;1;30mnote: [0m'UWheeledVehicleMovementComponent' has been explicitly marked deprecated here[0m
+class UE_DEPRECATED(4.26, "PhysX is deprecated. Use the UChaosWheeledVehicleMovementComponent fron the ChaosVehiclePhysics Plugin.") UWheeledVehicleMovementComponent;
+[0;1;32m      ^
+[0m[1m/home/test/UnrealEngine_4.26/Engine/Source/Runtime/Core/Public/Misc/CoreMiscDefines.h:234:43: [0m[0;1;30mnote: [0mexpanded from macro 'UE_DEPRECATED'[0m
+#define UE_DEPRECATED(Version, Message) [[deprecated(Message " Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.")]]
+[0;1;32m                                          ^
+[0mIn file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Intermediate/Build/Linux/B4D820EA/UE4Editor/Development/Carla/Module.Carla.gen.2_of_8.cpp:5:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Carla/CarlaBlueprintRegistry.gen.cpp:8:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Actor/CarlaBlueprintRegistry.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Actor/ActorBlueprintFunctionLibrary.h:13:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Actor/VehicleParameters.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Vehicle/CarlaWheeledVehicle.h:22:
+[1m/home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Vehicle/WheeledVehicleMovementComponentNW.h:148:66: [0m[0;1;35mwarning: [0m[1m'UVehicleWheel' is deprecated: PhysX is deprecated. Use the UChaosVehicleWheel from the ChaosVehiclePhysics Plugin. Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile. [-Wdeprecated-declarations][0m
+        virtual const void* GetTireData(physx::PxVehicleWheels* Wheels, UVehicleWheel* Wheel);
+[0;1;32m                                                                        ^
+[0m[1m/home/test/UnrealEngine_4.26/Engine/Plugins/Runtime/PhysXVehicles/Source/PhysXVehicles/Public/VehicleWheel.h:37:7: [0m[0;1;30mnote: [0m'UVehicleWheel' has been explicitly marked deprecated here[0m
+class UE_DEPRECATED(4.26, "PhysX is deprecated. Use the UChaosVehicleWheel from the ChaosVehiclePhysics Plugin.") UVehicleWheel;
+[0;1;32m      ^
+[0m[1m/home/test/UnrealEngine_4.26/Engine/Source/Runtime/Core/Public/Misc/CoreMiscDefines.h:234:43: [0m[0;1;30mnote: [0mexpanded from macro 'UE_DEPRECATED'[0m
+#define UE_DEPRECATED(Version, Message) [[deprecated(Message " Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.")]]
+[0;1;32m                                          ^
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Intermediate/Build/Linux/B4D820EA/UE4Editor/Development/Carla/Module.Carla.gen.5_of_8.cpp:5:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Carla/Radar.gen.cpp:8:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/Radar.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/Sensor.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Game/CarlaEpisode.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Actor/ActorDispatcher.h:11:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Actor/ActorRegistry.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Actor/CarlaActor.h:10:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Actor/ActorData.h:17:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/DataStream.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/AsyncDataStream.h:12:
+[1m/home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/CarlaDependencies/include/carla/sensor/SensorRegistry.h:34:10: [0m[0;1;31mfatal error: [0m[1m'carla/sensor/s11n/DistanceSerializer.h' file not found[0m
+#include "carla/sensor/s11n/DistanceSerializer.h"
+[0;1;32m         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Intermediate/Build/Linux/B4D820EA/UE4Editor/Development/Carla/Module.Carla.2_of_4.cpp:3:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Lights/CarlaLight.cpp:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Game/CarlaStatics.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Game/CarlaEpisode.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Actor/ActorDispatcher.h:11:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Actor/ActorRegistry.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Actor/CarlaActor.h:10:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Actor/ActorData.h:17:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/DataStream.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/AsyncDataStream.h:12:
+[1m/home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/CarlaDependencies/include/carla/sensor/SensorRegistry.h:34:10: [0m[0;1;31mfatal error: [0m[1m'carla/sensor/s11n/DistanceSerializer.h' file not found[0m
+#include "carla/sensor/s11n/DistanceSerializer.h"
+[0;1;32m         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Intermediate/Build/Linux/B4D820EA/UE4Editor/Development/Carla/Module.Carla.3_of_4.cpp:2:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/SemanticSegmentationCamera.cpp:8:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/SemanticSegmentationCamera.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/ShaderBasedSensor.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/SceneCaptureSensor.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/PixelReader.h:18:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Game/CarlaEngine.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Recorder/CarlaRecorder.h:22:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Recorder/CarlaRecorderAnimVehicleWheels.h:11:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Vehicle/CarlaWheeledVehicle.h:22:
+[1m/home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Vehicle/WheeledVehicleMovementComponentNW.h:120:61: [0m[0;1;35mwarning: [0m[1m'UWheeledVehicleMovementComponent' is deprecated: PhysX is deprecated. Use the UChaosWheeledVehicleMovementComponent fron the ChaosVehiclePhysics Plugin. Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile. [-Wdeprecated-declarations][0m
+class CARLA_API UWheeledVehicleMovementComponentNW : public UWheeledVehicleMovementComponent
+[0;1;32m                                                            ^
+[0m[1m/home/test/UnrealEngine_4.26/Engine/Plugins/Runtime/PhysXVehicles/Source/PhysXVehicles/Public/WheeledVehicleMovementComponent.h:202:7: [0m[0;1;30mnote: [0m'UWheeledVehicleMovementComponent' has been explicitly marked deprecated here[0m
+class UE_DEPRECATED(4.26, "PhysX is deprecated. Use the UChaosWheeledVehicleMovementComponent fron the ChaosVehiclePhysics Plugin.") UWheeledVehicleMovementComponent;
+[0;1;32m      ^
+[0m[1m/home/test/UnrealEngine_4.26/Engine/Source/Runtime/Core/Public/Misc/CoreMiscDefines.h:234:43: [0m[0;1;30mnote: [0mexpanded from macro 'UE_DEPRECATED'[0m
+#define UE_DEPRECATED(Version, Message) [[deprecated(Message " Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.")]]
+[0;1;32m                                          ^
+[0mIn file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Intermediate/Build/Linux/B4D820EA/UE4Editor/Development/Carla/Module.Carla.3_of_4.cpp:2:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/SemanticSegmentationCamera.cpp:8:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/SemanticSegmentationCamera.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/ShaderBasedSensor.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/SceneCaptureSensor.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/PixelReader.h:18:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Game/CarlaEngine.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Recorder/CarlaRecorder.h:22:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Recorder/CarlaRecorderAnimVehicleWheels.h:11:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Vehicle/CarlaWheeledVehicle.h:22:
+[1m/home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Vehicle/WheeledVehicleMovementComponentNW.h:148:66: [0m[0;1;35mwarning: [0m[1m'UVehicleWheel' is deprecated: PhysX is deprecated. Use the UChaosVehicleWheel from the ChaosVehiclePhysics Plugin. Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile. [-Wdeprecated-declarations][0m
+        virtual const void* GetTireData(physx::PxVehicleWheels* Wheels, UVehicleWheel* Wheel);
+[0;1;32m                                                                        ^
+[0m[1m/home/test/UnrealEngine_4.26/Engine/Plugins/Runtime/PhysXVehicles/Source/PhysXVehicles/Public/VehicleWheel.h:37:7: [0m[0;1;30mnote: [0m'UVehicleWheel' has been explicitly marked deprecated here[0m
+class UE_DEPRECATED(4.26, "PhysX is deprecated. Use the UChaosVehicleWheel from the ChaosVehiclePhysics Plugin.") UVehicleWheel;
+[0;1;32m      ^
+[0m[1m/home/test/UnrealEngine_4.26/Engine/Source/Runtime/Core/Public/Misc/CoreMiscDefines.h:234:43: [0m[0;1;30mnote: [0mexpanded from macro 'UE_DEPRECATED'[0m
+#define UE_DEPRECATED(Version, Message) [[deprecated(Message " Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.")]]
+[0;1;32m                                          ^
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Intermediate/Build/Linux/B4D820EA/UE4Editor/Development/Carla/Module.Carla.gen.6_of_8.cpp:2:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Carla/SemanticSegmentationCamera.gen.cpp:8:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/SemanticSegmentationCamera.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/ShaderBasedSensor.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/SceneCaptureSensor.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/PixelReader.h:18:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Game/CarlaEngine.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Recorder/CarlaRecorder.h:22:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Recorder/CarlaRecorderAnimVehicleWheels.h:11:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Vehicle/CarlaWheeledVehicle.h:22:
+[1m/home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Vehicle/WheeledVehicleMovementComponentNW.h:120:61: [0m[0;1;35mwarning: [0m[1m'UWheeledVehicleMovementComponent' is deprecated: PhysX is deprecated. Use the UChaosWheeledVehicleMovementComponent fron the ChaosVehiclePhysics Plugin. Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile. [-Wdeprecated-declarations][0m
+class CARLA_API UWheeledVehicleMovementComponentNW : public UWheeledVehicleMovementComponent
+[0;1;32m                                                            ^
+[0m[1m/home/test/UnrealEngine_4.26/Engine/Plugins/Runtime/PhysXVehicles/Source/PhysXVehicles/Public/WheeledVehicleMovementComponent.h:202:7: [0m[0;1;30mnote: [0m'UWheeledVehicleMovementComponent' has been explicitly marked deprecated here[0m
+class UE_DEPRECATED(4.26, "PhysX is deprecated. Use the UChaosWheeledVehicleMovementComponent fron the ChaosVehiclePhysics Plugin.") UWheeledVehicleMovementComponent;
+[0;1;32m      ^
+[0m[1m/home/test/UnrealEngine_4.26/Engine/Source/Runtime/Core/Public/Misc/CoreMiscDefines.h:234:43: [0m[0;1;30mnote: [0mexpanded from macro 'UE_DEPRECATED'[0m
+#define UE_DEPRECATED(Version, Message) [[deprecated(Message " Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.")]]
+[0;1;32m                                          ^
+[0mIn file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Intermediate/Build/Linux/B4D820EA/UE4Editor/Development/Carla/Module.Carla.gen.6_of_8.cpp:2:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Carla/SemanticSegmentationCamera.gen.cpp:8:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/SemanticSegmentationCamera.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/ShaderBasedSensor.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/SceneCaptureSensor.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/PixelReader.h:18:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Game/CarlaEngine.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Recorder/CarlaRecorder.h:22:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Recorder/CarlaRecorderAnimVehicleWheels.h:11:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Vehicle/CarlaWheeledVehicle.h:22:
+[1m/home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Vehicle/WheeledVehicleMovementComponentNW.h:148:66: [0m[0;1;35mwarning: [0m[1m'UVehicleWheel' is deprecated: PhysX is deprecated. Use the UChaosVehicleWheel from the ChaosVehiclePhysics Plugin. Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile. [-Wdeprecated-declarations][0m
+        virtual const void* GetTireData(physx::PxVehicleWheels* Wheels, UVehicleWheel* Wheel);
+[0;1;32m                                                                        ^
+[0m[1m/home/test/UnrealEngine_4.26/Engine/Plugins/Runtime/PhysXVehicles/Source/PhysXVehicles/Public/VehicleWheel.h:37:7: [0m[0;1;30mnote: [0m'UVehicleWheel' has been explicitly marked deprecated here[0m
+class UE_DEPRECATED(4.26, "PhysX is deprecated. Use the UChaosVehicleWheel from the ChaosVehiclePhysics Plugin.") UVehicleWheel;
+[0;1;32m      ^
+[0m[1m/home/test/UnrealEngine_4.26/Engine/Source/Runtime/Core/Public/Misc/CoreMiscDefines.h:234:43: [0m[0;1;30mnote: [0mexpanded from macro 'UE_DEPRECATED'[0m
+#define UE_DEPRECATED(Version, Message) [[deprecated(Message " Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.")]]
+[0;1;32m                                          ^
+[0mIn file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Intermediate/Build/Linux/B4D820EA/UE4Editor/Development/Carla/Module.Carla.gen.3_of_8.cpp:2:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Carla/CarlaWheeledVehicleNW.gen.cpp:8:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Vehicle/CarlaWheeledVehicleNW.h:9:
+[1m/home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Vehicle/CarlaWheeledVehicle.h:73:47: [0m[0;1;35mwarning: [0m[1m'AWheeledVehicle' is deprecated: PhysX is deprecated. Use the AWheeledVehiclePawn from the ChaosVehiclePhysics Plugin. Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile. [-Wdeprecated-declarations][0m
+class CARLA_API ACarlaWheeledVehicle : public AWheeledVehicle
+[0;1;32m                                              ^
+[0m[1m/home/test/UnrealEngine_4.26/Engine/Plugins/Runtime/PhysXVehicles/Source/PhysXVehicles/Public/WheeledVehicle.h:22:7: [0m[0;1;30mnote: [0m'AWheeledVehicle' has been explicitly marked deprecated here[0m
+class UE_DEPRECATED(4.26, "PhysX is deprecated. Use the AWheeledVehiclePawn from the ChaosVehiclePhysics Plugin.") AWheeledVehicle;
+[0;1;32m      ^
+[0m[1m/home/test/UnrealEngine_4.26/Engine/Source/Runtime/Core/Public/Misc/CoreMiscDefines.h:234:43: [0m[0;1;30mnote: [0mexpanded from macro 'UE_DEPRECATED'[0m
+#define UE_DEPRECATED(Version, Message) [[deprecated(Message " Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.")]]
+[0;1;32m                                          ^
+[0mIn file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Intermediate/Build/Linux/B4D820EA/UE4Editor/Development/Carla/Module.Carla.gen.3_of_8.cpp:2:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Carla/CarlaWheeledVehicleNW.gen.cpp:8:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Vehicle/CarlaWheeledVehicleNW.h:9:
+[1m/home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Vehicle/CarlaWheeledVehicle.h:189:26: [0m[0;1;35mwarning: [0m[1m'UWheeledVehicleMovementComponent4W' is deprecated: PhysX is deprecated. Use the UChaosWheeledVehicleMovementComponent from the ChaosVehiclePhysics Plugin. Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile. [-Wdeprecated-declarations][0m
+  void SetWheelCollision(UWheeledVehicleMovementComponent4W *Vehicle4W, const FVehiclePhysicsControl &PhysicsControl);
+[0;1;32m                         ^
+[0m[1m/home/test/UnrealEngine_4.26/Engine/Plugins/Runtime/PhysXVehicles/Source/PhysXVehicles/Public/WheeledVehicleMovementComponent4W.h:153:7: [0m[0;1;30mnote: [0m'UWheeledVehicleMovementComponent4W' has been explicitly marked deprecated here[0m
+class UE_DEPRECATED(4.26, "PhysX is deprecated. Use the UChaosWheeledVehicleMovementComponent from the ChaosVehiclePhysics Plugin.") UWheeledVehicleMovementComponent4W;
+[0;1;32m      ^
+[0m[1m/home/test/UnrealEngine_4.26/Engine/Source/Runtime/Core/Public/Misc/CoreMiscDefines.h:234:43: [0m[0;1;30mnote: [0mexpanded from macro 'UE_DEPRECATED'[0m
+#define UE_DEPRECATED(Version, Message) [[deprecated(Message " Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.")]]
+[0;1;32m                                          ^
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Intermediate/Build/Linux/B4D820EA/UE4Editor/Development/Carla/Module.Carla.gen.1_of_8.cpp:5:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Carla/ActorBlueprintFunctionLibrary.gen.cpp:8:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Actor/ActorBlueprintFunctionLibrary.h:13:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Actor/VehicleParameters.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Vehicle/CarlaWheeledVehicle.h:22:
+[1m/home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Vehicle/WheeledVehicleMovementComponentNW.h:120:61: [0m[0;1;35mwarning: [0m[1m'UWheeledVehicleMovementComponent' is deprecated: PhysX is deprecated. Use the UChaosWheeledVehicleMovementComponent fron the ChaosVehiclePhysics Plugin. Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile. [-Wdeprecated-declarations][0m
+class CARLA_API UWheeledVehicleMovementComponentNW : public UWheeledVehicleMovementComponent
+[0;1;32m                                                            ^
+[0m[1m/home/test/UnrealEngine_4.26/Engine/Plugins/Runtime/PhysXVehicles/Source/PhysXVehicles/Public/WheeledVehicleMovementComponent.h:202:7: [0m[0;1;30mnote: [0m'UWheeledVehicleMovementComponent' has been explicitly marked deprecated here[0m
+class UE_DEPRECATED(4.26, "PhysX is deprecated. Use the UChaosWheeledVehicleMovementComponent fron the ChaosVehiclePhysics Plugin.") UWheeledVehicleMovementComponent;
+[0;1;32m      ^
+[0m[1m/home/test/UnrealEngine_4.26/Engine/Source/Runtime/Core/Public/Misc/CoreMiscDefines.h:234:43: [0m[0;1;30mnote: [0mexpanded from macro 'UE_DEPRECATED'[0m
+#define UE_DEPRECATED(Version, Message) [[deprecated(Message " Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.")]]
+[0;1;32m                                          ^
+[0mIn file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Intermediate/Build/Linux/B4D820EA/UE4Editor/Development/Carla/Module.Carla.gen.1_of_8.cpp:5:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Carla/ActorBlueprintFunctionLibrary.gen.cpp:8:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Actor/ActorBlueprintFunctionLibrary.h:13:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Actor/VehicleParameters.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Vehicle/CarlaWheeledVehicle.h:22:
+[1m/home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Vehicle/WheeledVehicleMovementComponentNW.h:148:66: [0m[0;1;35mwarning: [0m[1m'UVehicleWheel' is deprecated: PhysX is deprecated. Use the UChaosVehicleWheel from the ChaosVehiclePhysics Plugin. Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile. [-Wdeprecated-declarations][0m
+        virtual const void* GetTireData(physx::PxVehicleWheels* Wheels, UVehicleWheel* Wheel);
+[0;1;32m                                                                        ^
+[0m[1m/home/test/UnrealEngine_4.26/Engine/Plugins/Runtime/PhysXVehicles/Source/PhysXVehicles/Public/VehicleWheel.h:37:7: [0m[0;1;30mnote: [0m'UVehicleWheel' has been explicitly marked deprecated here[0m
+class UE_DEPRECATED(4.26, "PhysX is deprecated. Use the UChaosVehicleWheel from the ChaosVehiclePhysics Plugin.") UVehicleWheel;
+[0;1;32m      ^
+[0m[1m/home/test/UnrealEngine_4.26/Engine/Source/Runtime/Core/Public/Misc/CoreMiscDefines.h:234:43: [0m[0;1;30mnote: [0mexpanded from macro 'UE_DEPRECATED'[0m
+#define UE_DEPRECATED(Version, Message) [[deprecated(Message " Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.")]]
+[0;1;32m                                          ^
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Intermediate/Build/Linux/B4D820EA/UE4Editor/Development/Carla/Module.Carla.4_of_4.cpp:2:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Vegetation/VegetationManager.cpp:10:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Vegetation/VegetationManager.h:18:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/MapGen/LargeMapManager.h:8:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Actor/CarlaActor.h:10:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Actor/ActorData.h:17:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/DataStream.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/AsyncDataStream.h:12:
+[1m/home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/CarlaDependencies/include/carla/sensor/SensorRegistry.h:34:10: [0m[0;1;31mfatal error: [0m[1m'carla/sensor/s11n/DistanceSerializer.h' file not found[0m
+#include "carla/sensor/s11n/DistanceSerializer.h"
+[0;1;32m         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[0mIn file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Intermediate/Build/Linux/B4D820EA/UE4Editor/Development/Carla/Module.Carla.gen.2_of_8.cpp:5:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Carla/CarlaBlueprintRegistry.gen.cpp:8:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Actor/CarlaBlueprintRegistry.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Actor/ActorBlueprintFunctionLibrary.h:13:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Actor/VehicleParameters.h:9:
+[1m/home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Vehicle/CarlaWheeledVehicle.h:73:47: [0m[0;1;35mwarning: [0m[1m'AWheeledVehicle' is deprecated: PhysX is deprecated. Use the AWheeledVehiclePawn from the ChaosVehiclePhysics Plugin. Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile. [-Wdeprecated-declarations][0m
+class CARLA_API ACarlaWheeledVehicle : public AWheeledVehicle
+[0;1;32m                                              ^
+[0m[1m/home/test/UnrealEngine_4.26/Engine/Plugins/Runtime/PhysXVehicles/Source/PhysXVehicles/Public/WheeledVehicle.h:22:7: [0m[0;1;30mnote: [0m'AWheeledVehicle' has been explicitly marked deprecated here[0m
+class UE_DEPRECATED(4.26, "PhysX is deprecated. Use the AWheeledVehiclePawn from the ChaosVehiclePhysics Plugin.") AWheeledVehicle;
+[0;1;32m      ^
+[0m[1m/home/test/UnrealEngine_4.26/Engine/Source/Runtime/Core/Public/Misc/CoreMiscDefines.h:234:43: [0m[0;1;30mnote: [0mexpanded from macro 'UE_DEPRECATED'[0m
+#define UE_DEPRECATED(Version, Message) [[deprecated(Message " Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.")]]
+[0;1;32m                                          ^
+[0mIn file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Intermediate/Build/Linux/B4D820EA/UE4Editor/Development/Carla/Module.Carla.gen.2_of_8.cpp:5:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Carla/CarlaBlueprintRegistry.gen.cpp:8:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Actor/CarlaBlueprintRegistry.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Actor/ActorBlueprintFunctionLibrary.h:13:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Actor/VehicleParameters.h:9:
+[1m/home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Vehicle/CarlaWheeledVehicle.h:189:26: [0m[0;1;35mwarning: [0m[1m'UWheeledVehicleMovementComponent4W' is deprecated: PhysX is deprecated. Use the UChaosWheeledVehicleMovementComponent from the ChaosVehiclePhysics Plugin. Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile. [-Wdeprecated-declarations][0m
+  void SetWheelCollision(UWheeledVehicleMovementComponent4W *Vehicle4W, const FVehiclePhysicsControl &PhysicsControl);
+[0;1;32m                         ^
+[0m[1m/home/test/UnrealEngine_4.26/Engine/Plugins/Runtime/PhysXVehicles/Source/PhysXVehicles/Public/WheeledVehicleMovementComponent4W.h:153:7: [0m[0;1;30mnote: [0m'UWheeledVehicleMovementComponent4W' has been explicitly marked deprecated here[0m
+class UE_DEPRECATED(4.26, "PhysX is deprecated. Use the UChaosWheeledVehicleMovementComponent from the ChaosVehiclePhysics Plugin.") UWheeledVehicleMovementComponent4W;
+[0;1;32m      ^
+[0m[1m/home/test/UnrealEngine_4.26/Engine/Source/Runtime/Core/Public/Misc/CoreMiscDefines.h:234:43: [0m[0;1;30mnote: [0mexpanded from macro 'UE_DEPRECATED'[0m
+#define UE_DEPRECATED(Version, Message) [[deprecated(Message " Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.")]]
+[0;1;32m                                          ^
+[0mIn file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Intermediate/Build/Linux/B4D820EA/UE4Editor/Development/Carla/Module.Carla.3_of_4.cpp:2:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/SemanticSegmentationCamera.cpp:8:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/SemanticSegmentationCamera.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/ShaderBasedSensor.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/SceneCaptureSensor.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/PixelReader.h:18:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Game/CarlaEngine.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Recorder/CarlaRecorder.h:22:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Recorder/CarlaRecorderAnimVehicleWheels.h:11:
+[1m/home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Vehicle/CarlaWheeledVehicle.h:73:47: [0m[0;1;35mwarning: [0m[1m'AWheeledVehicle' is deprecated: PhysX is deprecated. Use the AWheeledVehiclePawn from the ChaosVehiclePhysics Plugin. Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile. [-Wdeprecated-declarations][0m
+class CARLA_API ACarlaWheeledVehicle : public AWheeledVehicle
+[0;1;32m                                              ^
+[0m[1m/home/test/UnrealEngine_4.26/Engine/Plugins/Runtime/PhysXVehicles/Source/PhysXVehicles/Public/WheeledVehicle.h:22:7: [0m[0;1;30mnote: [0m'AWheeledVehicle' has been explicitly marked deprecated here[0m
+class UE_DEPRECATED(4.26, "PhysX is deprecated. Use the AWheeledVehiclePawn from the ChaosVehiclePhysics Plugin.") AWheeledVehicle;
+[0;1;32m      ^
+[0m[1m/home/test/UnrealEngine_4.26/Engine/Source/Runtime/Core/Public/Misc/CoreMiscDefines.h:234:43: [0m[0;1;30mnote: [0mexpanded from macro 'UE_DEPRECATED'[0m
+#define UE_DEPRECATED(Version, Message) [[deprecated(Message " Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.")]]
+[0;1;32m                                          ^
+[0mIn file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Intermediate/Build/Linux/B4D820EA/UE4Editor/Development/Carla/Module.Carla.3_of_4.cpp:2:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/SemanticSegmentationCamera.cpp:8:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/SemanticSegmentationCamera.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/ShaderBasedSensor.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/SceneCaptureSensor.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/PixelReader.h:18:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Game/CarlaEngine.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Recorder/CarlaRecorder.h:22:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Recorder/CarlaRecorderAnimVehicleWheels.h:11:
+[1m/home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Vehicle/CarlaWheeledVehicle.h:189:26: [0m[0;1;35mwarning: [0m[1m'UWheeledVehicleMovementComponent4W' is deprecated: PhysX is deprecated. Use the UChaosWheeledVehicleMovementComponent from the ChaosVehiclePhysics Plugin. Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile. [-Wdeprecated-declarations][0m
+  void SetWheelCollision(UWheeledVehicleMovementComponent4W *Vehicle4W, const FVehiclePhysicsControl &PhysicsControl);
+[0;1;32m                         ^
+[0m[1m/home/test/UnrealEngine_4.26/Engine/Plugins/Runtime/PhysXVehicles/Source/PhysXVehicles/Public/WheeledVehicleMovementComponent4W.h:153:7: [0m[0;1;30mnote: [0m'UWheeledVehicleMovementComponent4W' has been explicitly marked deprecated here[0m
+class UE_DEPRECATED(4.26, "PhysX is deprecated. Use the UChaosWheeledVehicleMovementComponent from the ChaosVehiclePhysics Plugin.") UWheeledVehicleMovementComponent4W;
+[0;1;32m      ^
+[0m[1m/home/test/UnrealEngine_4.26/Engine/Source/Runtime/Core/Public/Misc/CoreMiscDefines.h:234:43: [0m[0;1;30mnote: [0mexpanded from macro 'UE_DEPRECATED'[0m
+#define UE_DEPRECATED(Version, Message) [[deprecated(Message " Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.")]]
+[0;1;32m                                          ^
+[0mIn file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Intermediate/Build/Linux/B4D820EA/UE4Editor/Development/Carla/Module.Carla.gen.6_of_8.cpp:2:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Carla/SemanticSegmentationCamera.gen.cpp:8:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/SemanticSegmentationCamera.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/ShaderBasedSensor.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/SceneCaptureSensor.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/PixelReader.h:18:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Game/CarlaEngine.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Recorder/CarlaRecorder.h:22:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Recorder/CarlaRecorderAnimVehicleWheels.h:11:
+[1m/home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Vehicle/CarlaWheeledVehicle.h:73:47: [0m[0;1;35mwarning: [0m[1m'AWheeledVehicle' is deprecated: PhysX is deprecated. Use the AWheeledVehiclePawn from the ChaosVehiclePhysics Plugin. Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile. [-Wdeprecated-declarations][0m
+class CARLA_API ACarlaWheeledVehicle : public AWheeledVehicle
+[0;1;32m                                              ^
+[0m[1m/home/test/UnrealEngine_4.26/Engine/Plugins/Runtime/PhysXVehicles/Source/PhysXVehicles/Public/WheeledVehicle.h:22:7: [0m[0;1;30mnote: [0m'AWheeledVehicle' has been explicitly marked deprecated here[0m
+class UE_DEPRECATED(4.26, "PhysX is deprecated. Use the AWheeledVehiclePawn from the ChaosVehiclePhysics Plugin.") AWheeledVehicle;
+[0;1;32m      ^
+[0m[1m/home/test/UnrealEngine_4.26/Engine/Source/Runtime/Core/Public/Misc/CoreMiscDefines.h:234:43: [0m[0;1;30mnote: [0mexpanded from macro 'UE_DEPRECATED'[0m
+#define UE_DEPRECATED(Version, Message) [[deprecated(Message " Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.")]]
+[0;1;32m                                          ^
+[0mIn file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Intermediate/Build/Linux/B4D820EA/UE4Editor/Development/Carla/Module.Carla.gen.6_of_8.cpp:2:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Carla/SemanticSegmentationCamera.gen.cpp:8:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/SemanticSegmentationCamera.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/ShaderBasedSensor.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/SceneCaptureSensor.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/PixelReader.h:18:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Game/CarlaEngine.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Recorder/CarlaRecorder.h:22:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Recorder/CarlaRecorderAnimVehicleWheels.h:11:
+[1m/home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Vehicle/CarlaWheeledVehicle.h:189:26: [0m[0;1;35mwarning: [0m[1m'UWheeledVehicleMovementComponent4W' is deprecated: PhysX is deprecated. Use the UChaosWheeledVehicleMovementComponent from the ChaosVehiclePhysics Plugin. Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile. [-Wdeprecated-declarations][0m
+  void SetWheelCollision(UWheeledVehicleMovementComponent4W *Vehicle4W, const FVehiclePhysicsControl &PhysicsControl);
+[0;1;32m                         ^
+[0m[1m/home/test/UnrealEngine_4.26/Engine/Plugins/Runtime/PhysXVehicles/Source/PhysXVehicles/Public/WheeledVehicleMovementComponent4W.h:153:7: [0m[0;1;30mnote: [0m'UWheeledVehicleMovementComponent4W' has been explicitly marked deprecated here[0m
+class UE_DEPRECATED(4.26, "PhysX is deprecated. Use the UChaosWheeledVehicleMovementComponent from the ChaosVehiclePhysics Plugin.") UWheeledVehicleMovementComponent4W;
+[0;1;32m      ^
+[0m[1m/home/test/UnrealEngine_4.26/Engine/Source/Runtime/Core/Public/Misc/CoreMiscDefines.h:234:43: [0m[0;1;30mnote: [0mexpanded from macro 'UE_DEPRECATED'[0m
+#define UE_DEPRECATED(Version, Message) [[deprecated(Message " Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.")]]
+[0;1;32m                                          ^
+[0mIn file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Intermediate/Build/Linux/B4D820EA/UE4Editor/Development/Carla/Module.Carla.gen.1_of_8.cpp:5:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Carla/ActorBlueprintFunctionLibrary.gen.cpp:8:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Actor/ActorBlueprintFunctionLibrary.h:13:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Actor/VehicleParameters.h:9:
+[1m/home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Vehicle/CarlaWheeledVehicle.h:73:47: [0m[0;1;35mwarning: [0m[1m'AWheeledVehicle' is deprecated: PhysX is deprecated. Use the AWheeledVehiclePawn from the ChaosVehiclePhysics Plugin. Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile. [-Wdeprecated-declarations][0m
+class CARLA_API ACarlaWheeledVehicle : public AWheeledVehicle
+[0;1;32m                                              ^
+[0m[1m/home/test/UnrealEngine_4.26/Engine/Plugins/Runtime/PhysXVehicles/Source/PhysXVehicles/Public/WheeledVehicle.h:22:7: [0m[0;1;30mnote: [0m'AWheeledVehicle' has been explicitly marked deprecated here[0m
+class UE_DEPRECATED(4.26, "PhysX is deprecated. Use the AWheeledVehiclePawn from the ChaosVehiclePhysics Plugin.") AWheeledVehicle;
+[0;1;32m      ^
+[0m[1m/home/test/UnrealEngine_4.26/Engine/Source/Runtime/Core/Public/Misc/CoreMiscDefines.h:234:43: [0m[0;1;30mnote: [0mexpanded from macro 'UE_DEPRECATED'[0m
+#define UE_DEPRECATED(Version, Message) [[deprecated(Message " Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.")]]
+[0;1;32m                                          ^
+[0mIn file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Intermediate/Build/Linux/B4D820EA/UE4Editor/Development/Carla/Module.Carla.gen.1_of_8.cpp:5:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Carla/ActorBlueprintFunctionLibrary.gen.cpp:8:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Actor/ActorBlueprintFunctionLibrary.h:13:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Actor/VehicleParameters.h:9:
+[1m/home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Vehicle/CarlaWheeledVehicle.h:189:26: [0m[0;1;35mwarning: [0m[1m'UWheeledVehicleMovementComponent4W' is deprecated: PhysX is deprecated. Use the UChaosWheeledVehicleMovementComponent from the ChaosVehiclePhysics Plugin. Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile. [-Wdeprecated-declarations][0m
+  void SetWheelCollision(UWheeledVehicleMovementComponent4W *Vehicle4W, const FVehiclePhysicsControl &PhysicsControl);
+[0;1;32m                         ^
+[0m[1m/home/test/UnrealEngine_4.26/Engine/Plugins/Runtime/PhysXVehicles/Source/PhysXVehicles/Public/WheeledVehicleMovementComponent4W.h:153:7: [0m[0;1;30mnote: [0m'UWheeledVehicleMovementComponent4W' has been explicitly marked deprecated here[0m
+class UE_DEPRECATED(4.26, "PhysX is deprecated. Use the UChaosWheeledVehicleMovementComponent from the ChaosVehiclePhysics Plugin.") UWheeledVehicleMovementComponent4W;
+[0;1;32m      ^
+[0m[1m/home/test/UnrealEngine_4.26/Engine/Source/Runtime/Core/Public/Misc/CoreMiscDefines.h:234:43: [0m[0;1;30mnote: [0mexpanded from macro 'UE_DEPRECATED'[0m
+#define UE_DEPRECATED(Version, Message) [[deprecated(Message " Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.")]]
+[0;1;32m                                          ^
+[0mIn file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Intermediate/Build/Linux/B4D820EA/UE4Editor/Development/Carla/Module.Carla.gen.1_of_8.cpp:5:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Carla/ActorBlueprintFunctionLibrary.gen.cpp:8:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Actor/ActorBlueprintFunctionLibrary.h:14:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/GnssSensor.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/Sensor.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Game/CarlaEpisode.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Actor/ActorDispatcher.h:11:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Actor/ActorRegistry.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Actor/CarlaActor.h:10:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Actor/ActorData.h:17:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/DataStream.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/AsyncDataStream.h:12:
+[1m/home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/CarlaDependencies/include/carla/sensor/SensorRegistry.h:34:10: [0m[0;1;31mfatal error: [0m[1m'carla/sensor/s11n/DistanceSerializer.h' file not found[0m
+#include "carla/sensor/s11n/DistanceSerializer.h"
+[0;1;32m         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[0mIn file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Intermediate/Build/Linux/B4D820EA/UE4Editor/Development/Carla/Module.Carla.3_of_4.cpp:2:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/SemanticSegmentationCamera.cpp:8:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/SemanticSegmentationCamera.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/ShaderBasedSensor.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/SceneCaptureSensor.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/PixelReader.h:18:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Game/CarlaEngine.h:10:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/WorldObserver.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/DataStream.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/AsyncDataStream.h:12:
+[1m/home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/CarlaDependencies/include/carla/sensor/SensorRegistry.h:34:10: [0m[0;1;31mfatal error: [0m[1m'carla/sensor/s11n/DistanceSerializer.h' file not found[0m
+#include "carla/sensor/s11n/DistanceSerializer.h"
+[0;1;32m         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[0mIn file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Intermediate/Build/Linux/B4D820EA/UE4Editor/Development/Carla/Module.Carla.gen.2_of_8.cpp:5:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Carla/CarlaBlueprintRegistry.gen.cpp:8:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Actor/CarlaBlueprintRegistry.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Actor/ActorBlueprintFunctionLibrary.h:14:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/GnssSensor.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/Sensor.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Game/CarlaEpisode.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Actor/ActorDispatcher.h:11:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Actor/ActorRegistry.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Actor/CarlaActor.h:10:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Actor/ActorData.h:17:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/DataStream.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/AsyncDataStream.h:12:
+[1m/home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/CarlaDependencies/include/carla/sensor/SensorRegistry.h:34:10: [0m[0;1;31mfatal error: [0m[1m'carla/sensor/s11n/DistanceSerializer.h' file not found[0m
+#include "carla/sensor/s11n/DistanceSerializer.h"
+[0;1;32m         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[0mIn file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Intermediate/Build/Linux/B4D820EA/UE4Editor/Development/Carla/Module.Carla.gen.6_of_8.cpp:2:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Carla/SemanticSegmentationCamera.gen.cpp:8:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/SemanticSegmentationCamera.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/ShaderBasedSensor.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/SceneCaptureSensor.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/PixelReader.h:18:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Game/CarlaEngine.h:10:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/WorldObserver.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/DataStream.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/AsyncDataStream.h:12:
+[1m/home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/CarlaDependencies/include/carla/sensor/SensorRegistry.h:34:10: [0m[0;1;31mfatal error: [0m[1m'carla/sensor/s11n/DistanceSerializer.h' file not found[0m
+#include "carla/sensor/s11n/DistanceSerializer.h"
+[0;1;32m         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[0mIn file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Intermediate/Build/Linux/B4D820EA/UE4Editor/Development/Carla/Module.Carla.gen.3_of_8.cpp:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Carla/CollisionSensor.gen.cpp:8:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/CollisionSensor.h:10:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/Sensor.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Game/CarlaEpisode.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Actor/ActorDispatcher.h:11:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Actor/ActorRegistry.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Actor/CarlaActor.h:10:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Actor/ActorData.h:17:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/DataStream.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/AsyncDataStream.h:12:
+[1m/home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/CarlaDependencies/include/carla/sensor/SensorRegistry.h:34:10: [0m[0;1;31mfatal error: [0m[1m'carla/sensor/s11n/DistanceSerializer.h' file not found[0m
+#include "carla/sensor/s11n/DistanceSerializer.h"
+[0;1;32m         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[0m1 error generated.
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Intermediate/Build/Linux/B4D820EA/UE4Editor/Development/Carla/Module.Carla.gen.7_of_8.cpp:3:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Carla/TrafficLightController.gen.cpp:8:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Traffic/TrafficLightController.h:14:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Actor/CarlaActor.h:10:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Actor/ActorData.h:17:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/DataStream.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/AsyncDataStream.h:12:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Intermediate/Build/Linux/B4D820EA/UE4Editor/Development/Carla/Module.Carla.1_of_4.cpp:2:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Actor/ActorBlueprintFunctionLibrary.cpp:8:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Actor/ActorBlueprintFunctionLibrary.h:13:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Actor/VehicleParameters.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Vehicle/CarlaWheeledVehicle.h:22:
+[1m/home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/CarlaDependencies/include/carla/sensor/SensorRegistry.h:34:10: [0m[0;1;31mfatal error: [0m[1m'carla/sensor/s11n/DistanceSerializer.h' file not found[0m
+#include "carla/sensor/s11n/DistanceSerializer.h"
+[0;1;32m         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[1m/home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Vehicle/WheeledVehicleMovementComponentNW.h:120:61: [0m[0;1;35mwarning: [0m[1m'UWheeledVehicleMovementComponent' is deprecated: PhysX is deprecated. Use the UChaosWheeledVehicleMovementComponent fron the ChaosVehiclePhysics Plugin. Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile. [-Wdeprecated-declarations][0m
+class CARLA_API UWheeledVehicleMovementComponentNW : public UWheeledVehicleMovementComponent
+[0;1;32m                                                            ^
+[0m[1m/home/test/UnrealEngine_4.26/Engine/Plugins/Runtime/PhysXVehicles/Source/PhysXVehicles/Public/WheeledVehicleMovementComponent.h:202:7: [0m[0;1;30mnote: [0m'UWheeledVehicleMovementComponent' has been explicitly marked deprecated here[0m
+class UE_DEPRECATED(4.26, "PhysX is deprecated. Use the UChaosWheeledVehicleMovementComponent fron the ChaosVehiclePhysics Plugin.") UWheeledVehicleMovementComponent;
+[0;1;32m      ^
+[0m[1m/home/test/UnrealEngine_4.26/Engine/Source/Runtime/Core/Public/Misc/CoreMiscDefines.h:234:43: [0m[0;1;30mnote: [0mexpanded from macro 'UE_DEPRECATED'[0m
+#define UE_DEPRECATED(Version, Message) [[deprecated(Message " Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.")]]
+[0;1;32m                                          ^
+[0mIn file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Intermediate/Build/Linux/B4D820EA/UE4Editor/Development/Carla/Module.Carla.1_of_4.cpp:2:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Actor/ActorBlueprintFunctionLibrary.cpp:8:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Actor/ActorBlueprintFunctionLibrary.h:13:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Actor/VehicleParameters.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Vehicle/CarlaWheeledVehicle.h:22:
+[1m/home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Vehicle/WheeledVehicleMovementComponentNW.h:148:66: [0m[0;1;35mwarning: [0m[1m'UVehicleWheel' is deprecated: PhysX is deprecated. Use the UChaosVehicleWheel from the ChaosVehiclePhysics Plugin. Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile. [-Wdeprecated-declarations][0m
+        virtual const void* GetTireData(physx::PxVehicleWheels* Wheels, UVehicleWheel* Wheel);
+[0;1;32m                                                                        ^
+[0m[1m/home/test/UnrealEngine_4.26/Engine/Plugins/Runtime/PhysXVehicles/Source/PhysXVehicles/Public/VehicleWheel.h:37:7: [0m[0;1;30mnote: [0m'UVehicleWheel' has been explicitly marked deprecated here[0m
+class UE_DEPRECATED(4.26, "PhysX is deprecated. Use the UChaosVehicleWheel from the ChaosVehiclePhysics Plugin.") UVehicleWheel;
+[0;1;32m      ^
+[0m[1m/home/test/UnrealEngine_4.26/Engine/Source/Runtime/Core/Public/Misc/CoreMiscDefines.h:234:43: [0m[0;1;30mnote: [0mexpanded from macro 'UE_DEPRECATED'[0m
+#define UE_DEPRECATED(Version, Message) [[deprecated(Message " Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.")]]
+[0;1;32m                                          ^
+[0mIn file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Intermediate/Build/Linux/B4D820EA/UE4Editor/Development/Carla/Module.Carla.1_of_4.cpp:2:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Actor/ActorBlueprintFunctionLibrary.cpp:8:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Actor/ActorBlueprintFunctionLibrary.h:13:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Actor/VehicleParameters.h:9:
+[1m/home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Vehicle/CarlaWheeledVehicle.h:73:47: [0m[0;1;35mwarning: [0m[1m'AWheeledVehicle' is deprecated: PhysX is deprecated. Use the AWheeledVehiclePawn from the ChaosVehiclePhysics Plugin. Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile. [-Wdeprecated-declarations][0m
+class CARLA_API ACarlaWheeledVehicle : public AWheeledVehicle
+[0;1;32m                                              ^
+[0m[1m/home/test/UnrealEngine_4.26/Engine/Plugins/Runtime/PhysXVehicles/Source/PhysXVehicles/Public/WheeledVehicle.h:22:7: [0m[0;1;30mnote: [0m'AWheeledVehicle' has been explicitly marked deprecated here[0m
+class UE_DEPRECATED(4.26, "PhysX is deprecated. Use the AWheeledVehiclePawn from the ChaosVehiclePhysics Plugin.") AWheeledVehicle;
+[0;1;32m      ^
+[0m[1m/home/test/UnrealEngine_4.26/Engine/Source/Runtime/Core/Public/Misc/CoreMiscDefines.h:234:43: [0m[0;1;30mnote: [0mexpanded from macro 'UE_DEPRECATED'[0m
+#define UE_DEPRECATED(Version, Message) [[deprecated(Message " Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.")]]
+[0;1;32m                                          ^
+[0mIn file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Intermediate/Build/Linux/B4D820EA/UE4Editor/Development/Carla/Module.Carla.1_of_4.cpp:2:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Actor/ActorBlueprintFunctionLibrary.cpp:8:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Actor/ActorBlueprintFunctionLibrary.h:13:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Actor/VehicleParameters.h:9:
+[1m/home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Vehicle/CarlaWheeledVehicle.h:189:26: [0m[0;1;35mwarning: [0m[1m'UWheeledVehicleMovementComponent4W' is deprecated: PhysX is deprecated. Use the UChaosWheeledVehicleMovementComponent from the ChaosVehiclePhysics Plugin. Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile. [-Wdeprecated-declarations][0m
+  void SetWheelCollision(UWheeledVehicleMovementComponent4W *Vehicle4W, const FVehiclePhysicsControl &PhysicsControl);
+[0;1;32m                         ^
+[0m[1m/home/test/UnrealEngine_4.26/Engine/Plugins/Runtime/PhysXVehicles/Source/PhysXVehicles/Public/WheeledVehicleMovementComponent4W.h:153:7: [0m[0;1;30mnote: [0m'UWheeledVehicleMovementComponent4W' has been explicitly marked deprecated here[0m
+class UE_DEPRECATED(4.26, "PhysX is deprecated. Use the UChaosWheeledVehicleMovementComponent from the ChaosVehiclePhysics Plugin.") UWheeledVehicleMovementComponent4W;
+[0;1;32m      ^
+[0m[1m/home/test/UnrealEngine_4.26/Engine/Source/Runtime/Core/Public/Misc/CoreMiscDefines.h:234:43: [0m[0;1;30mnote: [0mexpanded from macro 'UE_DEPRECATED'[0m
+#define UE_DEPRECATED(Version, Message) [[deprecated(Message " Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.")]]
+[0;1;32m                                          ^
+[0mIn file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Intermediate/Build/Linux/B4D820EA/UE4Editor/Development/Carla/Module.Carla.1_of_4.cpp:2:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Actor/ActorBlueprintFunctionLibrary.cpp:8:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Actor/ActorBlueprintFunctionLibrary.h:14:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/GnssSensor.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/Sensor.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Game/CarlaEpisode.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Actor/ActorDispatcher.h:11:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Actor/ActorRegistry.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Actor/CarlaActor.h:10:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Actor/ActorData.h:17:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/DataStream.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/AsyncDataStream.h:12:
+[1m/home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/CarlaDependencies/include/carla/sensor/SensorRegistry.h:34:10: [0m[0;1;31mfatal error: [0m[1m'carla/sensor/s11n/DistanceSerializer.h' file not found[0m
+#include "carla/sensor/s11n/DistanceSerializer.h"
+[0;1;32m         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/CarlaTools/Intermediate/Build/Linux/B4D820EA/UE4Editor/Development/CarlaTools/Module.CarlaTools.cpp:6:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/CarlaTools/Source/CarlaTools/Private/HoudiniImporterWidget.cpp:7:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/CarlaTools/Source/CarlaTools/Public/HoudiniImporterWidget.h:11:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/MapGen/LargeMapManager.h:8:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Actor/CarlaActor.h:10:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Actor/ActorData.h:17:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/DataStream.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/AsyncDataStream.h:12:
+[1m/home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/CarlaDependencies/include/carla/sensor/SensorRegistry.h:34:10: [0m[0;1;31mfatal error: [0m[1m'carla/sensor/s11n/DistanceSerializer.h' file not found[0m
+#include "carla/sensor/s11n/DistanceSerializer.h"
+[0;1;32m         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/CarlaTools/Intermediate/Build/Linux/B4D820EA/UE4Editor/Development/CarlaTools/Module.CarlaTools.gen.1_of_2.cpp:7:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/CarlaTools/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/CarlaTools/HoudiniImporterWidget.gen.cpp:8:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/CarlaTools/Source/CarlaTools/Public/HoudiniImporterWidget.h:11:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/MapGen/LargeMapManager.h:8:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Actor/CarlaActor.h:10:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Actor/ActorData.h:17:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/DataStream.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/AsyncDataStream.h:12:
+[1m/home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/CarlaDependencies/include/carla/sensor/SensorRegistry.h:34:10: [0m[0;1;31mfatal error: [0m[1m'carla/sensor/s11n/DistanceSerializer.h' file not found[0m
+#include "carla/sensor/s11n/DistanceSerializer.h"
+[0;1;32m         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Intermediate/Build/Linux/B4D820EA/UE4Editor/Development/Carla/Module.Carla.gen.4_of_8.cpp:7:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Carla/NormalsCamera.gen.cpp:8:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/NormalsCamera.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/ShaderBasedSensor.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/SceneCaptureSensor.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/PixelReader.h:18:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Game/CarlaEngine.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Recorder/CarlaRecorder.h:22:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Recorder/CarlaRecorderAnimVehicleWheels.h:11:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Vehicle/CarlaWheeledVehicle.h:22:
+[1m/home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Vehicle/WheeledVehicleMovementComponentNW.h:120:61: [0m[0;1;35mwarning: [0m[1m'UWheeledVehicleMovementComponent' is deprecated: PhysX is deprecated. Use the UChaosWheeledVehicleMovementComponent fron the ChaosVehiclePhysics Plugin. Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile. [-Wdeprecated-declarations][0m
+class CARLA_API UWheeledVehicleMovementComponentNW : public UWheeledVehicleMovementComponent
+[0;1;32m                                                            ^
+[0m[1m/home/test/UnrealEngine_4.26/Engine/Plugins/Runtime/PhysXVehicles/Source/PhysXVehicles/Public/WheeledVehicleMovementComponent.h:202:7: [0m[0;1;30mnote: [0m'UWheeledVehicleMovementComponent' has been explicitly marked deprecated here[0m
+class UE_DEPRECATED(4.26, "PhysX is deprecated. Use the UChaosWheeledVehicleMovementComponent fron the ChaosVehiclePhysics Plugin.") UWheeledVehicleMovementComponent;
+[0;1;32m      ^
+[0m[1m/home/test/UnrealEngine_4.26/Engine/Source/Runtime/Core/Public/Misc/CoreMiscDefines.h:234:43: [0m[0;1;30mnote: [0mexpanded from macro 'UE_DEPRECATED'[0m
+#define UE_DEPRECATED(Version, Message) [[deprecated(Message " Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.")]]
+[0;1;32m                                          ^
+[0mIn file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Intermediate/Build/Linux/B4D820EA/UE4Editor/Development/Carla/Module.Carla.gen.4_of_8.cpp:7:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Carla/NormalsCamera.gen.cpp:8:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/NormalsCamera.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/ShaderBasedSensor.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/SceneCaptureSensor.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/PixelReader.h:18:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Game/CarlaEngine.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Recorder/CarlaRecorder.h:22:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Recorder/CarlaRecorderAnimVehicleWheels.h:11:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Vehicle/CarlaWheeledVehicle.h:22:
+[1m/home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Vehicle/WheeledVehicleMovementComponentNW.h:148:66: [0m[0;1;35mwarning: [0m[1m'UVehicleWheel' is deprecated: PhysX is deprecated. Use the UChaosVehicleWheel from the ChaosVehiclePhysics Plugin. Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile. [-Wdeprecated-declarations][0m
+        virtual const void* GetTireData(physx::PxVehicleWheels* Wheels, UVehicleWheel* Wheel);
+[0;1;32m                                                                        ^
+[0m[1m/home/test/UnrealEngine_4.26/Engine/Plugins/Runtime/PhysXVehicles/Source/PhysXVehicles/Public/VehicleWheel.h:37:7: [0m[0;1;30mnote: [0m'UVehicleWheel' has been explicitly marked deprecated here[0m
+class UE_DEPRECATED(4.26, "PhysX is deprecated. Use the UChaosVehicleWheel from the ChaosVehiclePhysics Plugin.") UVehicleWheel;
+[0;1;32m      ^
+[0m[1m/home/test/UnrealEngine_4.26/Engine/Source/Runtime/Core/Public/Misc/CoreMiscDefines.h:234:43: [0m[0;1;30mnote: [0mexpanded from macro 'UE_DEPRECATED'[0m
+#define UE_DEPRECATED(Version, Message) [[deprecated(Message " Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.")]]
+[0;1;32m                                          ^
+[0m1 error generated.
+[0m1 error generated.
+[0mIn file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Intermediate/Build/Linux/B4D820EA/UE4Editor/Development/Carla/Module.Carla.gen.4_of_8.cpp:7:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Carla/NormalsCamera.gen.cpp:8:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/NormalsCamera.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/ShaderBasedSensor.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/SceneCaptureSensor.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/PixelReader.h:18:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Game/CarlaEngine.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Recorder/CarlaRecorder.h:22:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Recorder/CarlaRecorderAnimVehicleWheels.h:11:
+[1m/home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Vehicle/CarlaWheeledVehicle.h:73:47: [0m[0;1;35mwarning: [0m[1m'AWheeledVehicle' is deprecated: PhysX is deprecated. Use the AWheeledVehiclePawn from the ChaosVehiclePhysics Plugin. Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile. [-Wdeprecated-declarations][0m
+class CARLA_API ACarlaWheeledVehicle : public AWheeledVehicle
+[0;1;32m                                              ^
+[0m[1m/home/test/UnrealEngine_4.26/Engine/Plugins/Runtime/PhysXVehicles/Source/PhysXVehicles/Public/WheeledVehicle.h:22:7: [0m[0;1;30mnote: [0m'AWheeledVehicle' has been explicitly marked deprecated here[0m
+class UE_DEPRECATED(4.26, "PhysX is deprecated. Use the AWheeledVehiclePawn from the ChaosVehiclePhysics Plugin.") AWheeledVehicle;
+[0;1;32m      ^
+[0m[1m/home/test/UnrealEngine_4.26/Engine/Source/Runtime/Core/Public/Misc/CoreMiscDefines.h:234:43: [0m[0;1;30mnote: [0mexpanded from macro 'UE_DEPRECATED'[0m
+#define UE_DEPRECATED(Version, Message) [[deprecated(Message " Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.")]]
+[0;1;32m                                          ^
+[0mIn file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Intermediate/Build/Linux/B4D820EA/UE4Editor/Development/Carla/Module.Carla.gen.4_of_8.cpp:7:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Carla/NormalsCamera.gen.cpp:8:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/NormalsCamera.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/ShaderBasedSensor.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/SceneCaptureSensor.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/PixelReader.h:18:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Game/CarlaEngine.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Recorder/CarlaRecorder.h:22:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Recorder/CarlaRecorderAnimVehicleWheels.h:11:
+[1m/home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Vehicle/CarlaWheeledVehicle.h:189:26: [0m[0;1;35mwarning: [0m[1m'UWheeledVehicleMovementComponent4W' is deprecated: PhysX is deprecated. Use the UChaosWheeledVehicleMovementComponent from the ChaosVehiclePhysics Plugin. Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile. [-Wdeprecated-declarations][0m
+  void SetWheelCollision(UWheeledVehicleMovementComponent4W *Vehicle4W, const FVehiclePhysicsControl &PhysicsControl);
+[0;1;32m                         ^
+[0m[1m/home/test/UnrealEngine_4.26/Engine/Plugins/Runtime/PhysXVehicles/Source/PhysXVehicles/Public/WheeledVehicleMovementComponent4W.h:153:7: [0m[0;1;30mnote: [0m'UWheeledVehicleMovementComponent4W' has been explicitly marked deprecated here[0m
+class UE_DEPRECATED(4.26, "PhysX is deprecated. Use the UChaosWheeledVehicleMovementComponent from the ChaosVehiclePhysics Plugin.") UWheeledVehicleMovementComponent4W;
+[0;1;32m      ^
+[0m[1m/home/test/UnrealEngine_4.26/Engine/Source/Runtime/Core/Public/Misc/CoreMiscDefines.h:234:43: [0m[0;1;30mnote: [0mexpanded from macro 'UE_DEPRECATED'[0m
+#define UE_DEPRECATED(Version, Message) [[deprecated(Message " Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.")]]
+[0;1;32m                                          ^
+[0m1 error generated.
+[0mIn file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Intermediate/Build/Linux/B4D820EA/UE4Editor/Development/Carla/Module.Carla.gen.4_of_8.cpp:7:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/Carla/NormalsCamera.gen.cpp:8:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/NormalsCamera.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/ShaderBasedSensor.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/SceneCaptureSensor.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/PixelReader.h:18:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Game/CarlaEngine.h:10:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/WorldObserver.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/DataStream.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/AsyncDataStream.h:12:
+[1m/home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/CarlaDependencies/include/carla/sensor/SensorRegistry.h:34:10: [0m[0;1;31mfatal error: [0m[1m'carla/sensor/s11n/DistanceSerializer.h' file not found[0m
+#include "carla/sensor/s11n/DistanceSerializer.h"
+[0;1;32m         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[0m4 warnings and 1 error generated.
+[0m1 error generated.
+[0m4 warnings and 1 error generated.
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/CarlaTools/Intermediate/Build/Linux/B4D820EA/UE4Editor/Development/CarlaTools/Module.CarlaTools.gen.2_of_2.cpp:6:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/CarlaTools/Intermediate/Build/Linux/B4D820EA/UE4Editor/Inc/CarlaTools/RegionOfInterest.gen.cpp:8:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/CarlaTools/Source/CarlaTools/Public/RegionOfInterest.h:7:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/MapGen/SoilTypeManager.h:7:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/MapGen/LargeMapManager.h:8:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Actor/CarlaActor.h:10:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Actor/ActorData.h:17:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/DataStream.h:9:
+In file included from /home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/Source/Carla/Sensor/AsyncDataStream.h:12:
+[1m/home/test/carla-0.9.16/Unreal/CarlaUE4/Plugins/Carla/CarlaDependencies/include/carla/sensor/SensorRegistry.h:34:10: [0m[0;1;31mfatal error: [0m[1m'carla/sensor/s11n/DistanceSerializer.h' file not found[0m
+#include "carla/sensor/s11n/DistanceSerializer.h"
+[0;1;32m         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[0m1 error generated.
+[0m4 warnings and 1 error generated.
+[0m1 error generated.
+[0m4 warnings and 1 error generated.
+[0m4 warnings and 1 error generated.
+[0m4 warnings and 1 error generated.
+[0m4 warnings and 1 error generated.
+make[1]: Leaving directory '/home/test/carla-0.9.16/Unreal/CarlaUE4'

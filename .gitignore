@@ -58,3 +58,7 @@ devcontainer.json
 
 
 .DS_Store
+
+
+*.bak
+.ignore

@@ -1,0 +1,59 @@
+{
+	"folders": [
+		{
+			"name": "CarlaUE4",
+			"path": "Unreal/CarlaUE4"
+		},
+		{
+			"name": "UE4",
+			"path": "/home/test/UnrealEngine_4.26"
+		},
+		{
+			"path": "LibCarla"
+		},
+		{
+			"name": "PythonAPI",
+			"path": "PythonAPI"
+		}
+	],
+	"settings": {
+		"typescript.tsc.autoDetect": "off"
+	},
+	"extensions": {
+		"recommendations": [
+			"ms-vscode.cpptools",
+			"ms-dotnettools.csharp",
+			"vadimcn.vscode-lldb",
+			"ms-vscode.mono-debug"
+		]
+	}
+}
+// {
+// 	"folders": [
+// 		{
+// 			"name": "CarlaUE4",
+// 			"path": "Unreal/CarlaUE4"
+// 		},
+// 		{
+// 			"name": "UE4",
+// 			"path": "/home/test/UnrealEngine_4.26"
+// 		},
+// 		{
+// 			"name": "LibCarla",
+// 			"path": "LibCarla"
+// 		}
+// 	],
+// 	"settings": {
+// 		"typescript.tsc.autoDetect": "off",
+// 		"cmake.configureOnOpen": false,
+// 		"git.openRepositoryInParentFolders": "always"
+// 	},
+// 	"extensions": {
+// 		"recommendations": [
+// 			"ms-vscode.cpptools",
+// 			"ms-dotnettools.csharp",
+// 			"vadimcn.vscode-lldb",
+// 			"ms-vscode.mono-debug"
+// 		]
+// 	}
+// }
