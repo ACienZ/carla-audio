@@ -1,7 +1,12 @@
+// safe distance sensor 目标：
+// 每帧检测 box 内有哪些车辆
+// 如果检测到车辆，就把 actor id 发给 Python
+
 // 声明一个继承自 ASensor 的 CARLA sensor：ASafeDistanceSensor
 // 声明它如何注册 blueprint：GetSensorDefinition()
 // 声明它如何在仿真中工作：Set()、SetOwner()、PostPhysTick()
 
+//////////////////////
 // 在 CARLA 里，blueprint 可以理解为“可生成对象的模板/配置说明书”。
 // 它不是已经存在于世界里的车或 sensor，而是告诉 CARLA：
 // 我想生成什么类型的 actor？
@@ -34,6 +39,7 @@
 // 然后 C++ 端的：
 // void ASafeDistanceSensor::Set(const FActorDescription &ActorDescription)
 // 就会读取这些属性，并真正设置 sensor 的行为。
+//////////////////////
 
 #pragma once // 防止头文件被重复包含
 
@@ -129,8 +135,7 @@ public:
     void SetOwner(AActor *Owner) override;
 
     // CARLA 0.9.16 里的 ASensor::Tick() 是 final，子类不能 override。
-    // 如果写：
-    // void Tick(float DeltaSeconds) override;
+    // 如果写： void Tick(float DeltaSeconds) override;
     // 会编译失败。
     // 所以官方教程里让 override Tick()，在 0.9.16 里就是不适用的。
     // void Tick(float DeltaSeconds) override;
