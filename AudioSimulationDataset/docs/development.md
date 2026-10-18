@@ -28,18 +28,31 @@ test -f "$UE4_ROOT/GenerateProjectFiles.sh"
 
 ## Issue 分支与同步
 
-当前流程是任务分支 → `7-audio-gen-demo/main` → `main`。下面的 #10 命令是本次创建记录，分支已经存在时不要重复创建；后续新任务替换编号和名称。开始前确认工作区干净，已有修改先妥善保存。
+当前流程是任务分支 → `7-audio-gen-demo/main` → `main`。Demo 子任务分支保留 `7-audio-gen-demo/` 前缀。下面以 #10 展示创建方式；#10 已完成改名，分支已经存在，不要重复创建。后续新任务替换编号和名称。开始前确认工作区干净，已有修改先妥善保存。
 
 ```bash
 git fetch origin --prune
 gh issue develop 10 --repo ACienZ/carla-audio \
-  --base 7-audio-gen-demo/main --name 10-python-client-binding --checkout
+  --base 7-audio-gen-demo/main --name 7-audio-gen-demo/10-python-client-binding --checkout
 gh issue develop 10 --repo ACienZ/carla-audio --list
 git status --short --branch
 git rev-parse HEAD origin/7-audio-gen-demo/main
 ```
 
-创建时两条提交 ID 应相同，Issue Development 应显示关联分支，本地应检出 `10-python-client-binding` 并跟踪同名远端分支。后续创建 PR 时仍显式核对目标为 `7-audio-gen-demo/main`，并确认 PR 出现在 Issue 的 Development 中。
+创建时两条提交 ID 应相同，Issue Development 应显示关联分支，本地应检出 `7-audio-gen-demo/10-python-client-binding` 并跟踪同名远端分支。后续创建 PR 时仍显式核对目标为 `7-audio-gen-demo/main`，并确认 PR 出现在 Issue 的 Development 中。
+
+创建 Issue 关联分支只使用 GitHub 已有的集成分支提交，不表示开发期间可以上传本地改动。分支改名后重新核对 Development 关联；不能只看分支名改成功就认为关联仍在。
+
+### 本地开发、审阅与交付
+
+依据 [Issue #3](https://github.com/ACienZ/carla-audio/issues/3#issuecomment-4759475264) 及用户最新确认，执行顺序为：
+
+1. 在服务器任务分支修改代码或文档，完成对应检查，查看完整 `git diff` 和未跟踪文件。
+2. 提供改动、验证结果和待审阅差异，保留未提交修改，等待用户审阅确认。
+3. 用户确认后精确暂存已审阅文件，检查 `git diff --cached` 与 `git diff --cached --check`，再执行本地 commit。中间提交留在服务器，不 push。
+4. 模块开发完成、验收检查完成且用户确认交付后，才 push 任务分支，再创建指向集成分支的 PR，并核对 Issue 关联。
+
+用户对某一版本的本地提交确认不自动授权推送，也不覆盖后续新增改动。助手自查通过、项目管理授权、分支已在 GitHub 存在，都不替代上述审阅与交付确认。
 
 ### Squash 合并后的收尾
 
@@ -51,10 +64,10 @@ git rev-parse HEAD origin/7-audio-gen-demo/main
 git switch 7-audio-gen-demo/main
 git pull --ff-only origin 7-audio-gen-demo/main
 # 若已在 GitHub 删除远端任务分支，跳过下一条。
-git push origin --delete 10-python-client-binding
-git branch -m 10-python-client-binding archive/10-python-client-binding_backup
+git push origin --delete 7-audio-gen-demo/10-python-client-binding
+git branch -m 7-audio-gen-demo/10-python-client-binding archive/7-audio-gen-demo/10-python-client-binding_backup
 # 归档只保留本地，不继续跟踪已删除的远端任务分支。
-git branch --unset-upstream archive/10-python-client-binding_backup
+git branch --unset-upstream archive/7-audio-gen-demo/10-python-client-binding_backup
 git fetch origin --prune
 git branch -vv
 ```
@@ -77,7 +90,7 @@ git log --oneline --left-right HEAD...origin/7-audio-gen-demo/main
 
 先检查本地与同名远端是否有尚未同步的工作；可快进时用 `git merge --ff-only origin/7-audio-gen-demo/8-scene-create` 同步。若双方分叉，先审阅各自提交再合并，不重置或覆盖。
 
-随后将最新集成分支合入任务分支：没有独有提交且可快进时使用 `git merge --ff-only origin/7-audio-gen-demo/main`；已有独有提交造成分叉时，审阅后使用普通 `git merge origin/7-audio-gen-demo/main` 并解决冲突，避免对已有共享历史 rebase 或强推。验证差异和依赖后普通 push 同名任务分支。
+随后将最新集成分支合入任务分支：没有独有提交且可快进时使用 `git merge --ff-only origin/7-audio-gen-demo/main`；已有独有提交造成分叉时，使用 `git merge --no-commit --no-ff origin/7-audio-gen-demo/main` 准备合并，解决冲突并检查，交用户审阅确认后再创建本地合并提交，避免对已有共享历史 rebase 或强推。同步结果先留在服务器；仍需等模块完成且用户确认交付后才 push。
 
 更新必须包含 #9 和 #19；若 #8 依赖 #10 的成果，还要确认 #10 已合入集成分支再同步。#10 尚未合并时，不把它当作集成分支已有内容。保留 #8 的旧分支名，并核对其 Issue Development 关联。
 
@@ -165,4 +178,4 @@ make launch
 
 #19 已通过 PR #20 交付：检查了六份 Markdown 文档的链接、仓库路径、命令语法、接口说明、完整 diff，以及 GitHub 字段回读；这些检查不代表 CARLA 运行时测试、音频验收或 CI 已通过。
 
-#10 的本次准备仅修改协作与进度文档，检查链接、Shell 示例语法、diff、Issue 分支关联和 Project 状态。客户端代码和测试仍待后续实施。提交时精确暂存本次文档；生成索引、日志、音频、配置与凭证不属于文档交付。Actions/CD 仍待另行确认。
+#10 的本次准备仅修改协作与进度文档，检查链接、Shell 示例语法、diff、Issue 分支关联和 Project 状态。客户端代码和测试仍待后续实施。文档先留在工作区供用户审阅，确认后再精确暂存和本地提交；生成索引、日志、音频、配置与凭证不属于文档交付。Actions/CD 仍待另行确认。

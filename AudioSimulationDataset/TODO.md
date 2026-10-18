@@ -4,7 +4,9 @@
 
 ## 当前工作
 
-[Issue #10：与 Python 客户端绑定](https://github.com/ACienZ/carla-audio/issues/10) 已进入 In progress，使用关联分支 `10-python-client-binding`。分支从最新 `7-audio-gen-demo/main` 的 `e85293db9` 创建，本地工作区已切换至该分支。本次先完成分支准备和协作流程文档更新；客户端测试脚本及运行验证尚未交付。
+[Issue #10：与 Python 客户端绑定](https://github.com/ACienZ/carla-audio/issues/10) 已进入 In progress，使用关联分支 `7-audio-gen-demo/10-python-client-binding`。分支从最新 `7-audio-gen-demo/main` 的 `e85293db9` 创建，本地工作区已切换至该分支。本次先完成分支准备和协作流程文档更新；客户端测试脚本及运行验证尚未交付。
+
+2026-10-19 修正协作流程：先完成修改和检查，用户审阅确认后再本地 commit；模块完成且用户确认交付后才 push、创建 PR。本次文档修正保留为未提交修改，等待用户审阅，再进入 #10 的正式开发。此前准备提交 `917dc1739` 已提前推送，本次保留该历史，远端仅调整分支名称并恢复 Issue 关联，没有上传新的提交。
 
 #19 已通过 [PR #20](https://github.com/ACienZ/carla-audio/pull/20) squash 合入集成分支，用户已关闭 Issue，Project 为 Done。原任务分支已从 GitHub 删除，本地保留为 `archive/19-project-foundation`；#9 的旧分支也已在远端删除、本地保留为 `archive/7-audio-gen-demo/9-carla-sensor`。这些既有归档不补改名称，之后按 `archive/<原分支名>_backup` 归档。
 

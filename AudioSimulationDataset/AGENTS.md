@@ -13,7 +13,9 @@
 
 - 开始前核对 TODO、对应 Issue、Project 状态、当前分支、未提交修改和远端状态；保留已有修改及未跟踪文件。
 - 先确认目标、边界和可验证的验收标准，再实施业务代码。每次推进一个可独立审阅的子任务，不顺手扩大范围。
-- 用户已授权助手管理 carla-audio 全部历史和未来任务的标签、Priority、Size、状态及验收记录，以及已确认范围内的分支、提交、推送和 PR。普通操作不重复请求业务确认。
+- 用户已授权助手管理 carla-audio 全部历史和未来任务的标签、Priority、Size、状态及验收记录，以及已确认范围内的分支操作。该管理授权不替代用户对文件改动和交付的审阅。
+- 修改代码或文档后，先完成必要检查并提供 diff 供用户审阅；用户审阅确认后才在服务器本地 commit。未获确认时保留工作区修改，不自动提交，也不将“检查通过”视为用户已审阅。
+- 模块开发完成且用户确认交付后，才 push 并创建 PR。中间改动及获准创建的本地提交保留在服务器；不能因已获本地 commit 授权就推送，也不为备份、准备工作或文档调整提前推送。
 - 授权范围是 carla-audio，不扩展到账号下其他项目；具体任务要求“仅提交 PR”时停在 PR 创建完成。PR 合并服从当前任务的交付边界与验证结果。
 - 新的技术选择、依赖、接口变化和范围变化先说明用途及影响，再与用户讨论。发布、CD 和破坏性操作不因拥有仓库权限而自动纳入任务。
 - 已确认的需求和设计写入 `docs/planning/`；区分已确认、待决和历史方案。完成当前子任务后再进入下一项。
@@ -51,11 +53,11 @@ Issue 的 open/closed 与 Project Status 是不同信息。整理字段时不得
 ## 分支、提交与 PR
 
 - 当前 Demo 使用“任务分支 → `7-audio-gen-demo/main` → `main`”。Demo 任务默认从最新远端集成分支创建，PR 也以该集成分支为目标。
-- 通过对应 Issue 的 Development 创建关联分支，并在本地检出该分支后再修改文件。命令行使用 `gh issue develop <编号> --base 7-audio-gen-demo/main --name <编号>-<任务描述> --checkout`，核对 Issue 关联、本地当前分支、远端跟踪分支和起点提交；仅在分支名或提交标题写 Issue 编号不等于建立 Development 关联。
-- 新任务分支一律命名为 `<issue编号>-<任务描述>`，不加 `codex/`。这覆盖通用工具或旧文档中的默认前缀；不为统一名称而重命名已有分支。
+- 通过对应 Issue 的 Development 创建关联分支，并在本地检出该分支后再修改文件。当前 Demo 使用 `gh issue develop <编号> --base 7-audio-gen-demo/main --name 7-audio-gen-demo/<编号>-<任务描述> --checkout`，核对 Issue 关联、本地当前分支、远端跟踪分支和起点提交；仅在分支名或提交标题写 Issue 编号不等于建立 Development 关联。创建关联分支只指向 GitHub 已有基线，不上传本地开发改动。
+- 子任务保留所属模块的分支前缀：当前 Demo 统一为 `7-audio-gen-demo/<issue编号>-<任务描述>`，例如 `7-audio-gen-demo/10-python-client-binding`，不加 `codex/`。这覆盖此前只使用 `<issue编号>-<任务描述>` 的约定；已有历史归档不为统一名称而重命名。
 - 不改写历史提交、不擅自强推或更改仓库保护规则。同步时保留其他人的工作；旧任务分支开始开发前先检查差异，并同步最新集成分支，具体流程见 [开发指南](docs/development.md)。
 - PR 使用 squash and merge。确认已合并且验收完成后，删除 GitHub 上对应的任务分支，本地分支重命名为 `archive/<原分支名>_backup` 保留历史，不执行本地分支删除。已存在的 archive 分支保留原名；归档名冲突时先核对，不覆盖。集成分支和其他未完成任务分支不属于清理范围。
-- 提交前阅读完整 diff，精确暂存本任务文件，再阅读 `git diff --cached` 并运行 `git diff --cached --check`。空白检查不能代替审阅。
+- 用户审阅前先阅读完整 diff 并检查，保留未提交修改；用户确认后精确暂存已审阅的本任务文件，再阅读 `git diff --cached` 并运行 `git diff --cached --check`，然后本地 commit。审阅后若有实质改动，重新提供差异供用户确认。空白检查和助手自查不能代替用户审阅。
 - 提交标题使用 `type: description(#编号)`，如 `docs: establish dataset project foundation(#19)`。type 按实际改动选择 `feat`、`fix`、`test`、`docs`、`ci`、`chore` 等，不全部使用 chore。
 - 提交中的编号关联当前 Issue；PR 正文另给 Issue 链接。Codex 协助提交保留 `Co-authored-by: Codex <noreply@openai.com>`。
 - PR 说明问题、最终变化、实际验证及未完成边界，不复制聊天过程。使用符合当前任务的标题，不沿用旧 PR 的笼统描述。
