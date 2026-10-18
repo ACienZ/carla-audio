@@ -26,6 +26,61 @@ test -f "$UE4_ROOT/GenerateProjectFiles.sh"
 
 这个 export 只对当前终端有效。后续业务开发在 `AudioSimulationDataset/`，构建命令仍从 CARLA 仓库根目录执行。
 
+## Issue 分支与同步
+
+当前流程是任务分支 → `7-audio-gen-demo/main` → `main`。下面的 #10 命令是本次创建记录，分支已经存在时不要重复创建；后续新任务替换编号和名称。开始前确认工作区干净，已有修改先妥善保存。
+
+```bash
+git fetch origin --prune
+gh issue develop 10 --repo ACienZ/carla-audio \
+  --base 7-audio-gen-demo/main --name 10-python-client-binding --checkout
+gh issue develop 10 --repo ACienZ/carla-audio --list
+git status --short --branch
+git rev-parse HEAD origin/7-audio-gen-demo/main
+```
+
+创建时两条提交 ID 应相同，Issue Development 应显示关联分支，本地应检出 `10-python-client-binding` 并跟踪同名远端分支。后续创建 PR 时仍显式核对目标为 `7-audio-gen-demo/main`，并确认 PR 出现在 Issue 的 Development 中。
+
+### Squash 合并后的收尾
+
+参考 [Issue #3](https://github.com/ACienZ/carla-audio/issues/3#issuecomment-4759475264)，采用用户最新约定：远端任务分支删除，本地任务分支改名归档。先确认 PR 已 squash 合并、交付验收完成，以及任务分支没有合并后新增的待交付提交；再核对 Issue 已关闭、Project 为 Done。当前集成分支不是仓库默认分支，不能依赖关闭关键词自动完成收尾。
+
+以下以尚未完成的 #10 为未来操作示例，现在不要执行：
+
+```bash
+git switch 7-audio-gen-demo/main
+git pull --ff-only origin 7-audio-gen-demo/main
+# 若已在 GitHub 删除远端任务分支，跳过下一条。
+git push origin --delete 10-python-client-binding
+git branch -m 10-python-client-binding archive/10-python-client-binding_backup
+# 归档只保留本地，不继续跟踪已删除的远端任务分支。
+git branch --unset-upstream archive/10-python-client-binding_backup
+git fetch origin --prune
+git branch -vv
+```
+
+归档分支不自动推送至 GitHub，不使用 `git branch -d/-D` 删除它。已有 `archive/19-project-foundation` 和 `archive/7-audio-gen-demo/9-carla-sensor` 保持原名，不为了新增 `_backup` 后缀再次改名。Squash 会生成新提交，不能单凭 `git branch --merged` 判断旧任务是否交付，应结合 PR 状态、合并提交和文件差异核对。
+
+`git pull` 的远端和分支是两个参数：`git pull --ff-only origin 7-audio-gen-demo/main`。`origin/7-audio-gen-demo/main` 是远端跟踪引用，不能作为这里的远端名；在集成分支上执行 `git pull origin main` 取的是仓库 `main`，不会取得 Demo 集成分支更新。`git fetch --prune` 只更新并清理远端跟踪引用，不会自动更新本地工作分支或删除本地归档。
+
+### 启动旧任务分支前更新
+
+#8 的 `7-audio-gen-demo/8-scene-create` 建立较早。开始该任务时再执行以下核对，本次不修改它：
+
+```bash
+git fetch origin --prune
+git switch 7-audio-gen-demo/8-scene-create
+git status --short --branch
+git log --oneline --left-right HEAD...origin/7-audio-gen-demo/8-scene-create
+git log --oneline --left-right HEAD...origin/7-audio-gen-demo/main
+```
+
+先检查本地与同名远端是否有尚未同步的工作；可快进时用 `git merge --ff-only origin/7-audio-gen-demo/8-scene-create` 同步。若双方分叉，先审阅各自提交再合并，不重置或覆盖。
+
+随后将最新集成分支合入任务分支：没有独有提交且可快进时使用 `git merge --ff-only origin/7-audio-gen-demo/main`；已有独有提交造成分叉时，审阅后使用普通 `git merge origin/7-audio-gen-demo/main` 并解决冲突，避免对已有共享历史 rebase 或强推。验证差异和依赖后普通 push 同名任务分支。
+
+更新必须包含 #9 和 #19；若 #8 依赖 #10 的成果，还要确认 #10 已合入集成分支再同步。#10 尚未合并时，不把它当作集成分支已有内容。保留 #8 的旧分支名，并核对其 Issue Development 关联。
+
 ## 构建 sensor 相关改动
 
 下面是服务端和绑定一起变化时的完整检查顺序，逐条执行，上一条成功后再继续。纯文档修改不需要执行这些构建。
@@ -106,8 +161,8 @@ make launch
 4. 等待超时、迟到事件、缺失记录的区别。不得把无效距离写成零或将估算值混入原始记录。
 5. 正常结束或异常时如何停止监听、销毁本次 actor，并恢复原世界设置。
 
-## 本轮文档交付检查
+## 文档交付检查
 
-本轮 #19 检查 Markdown 链接、仓库路径、命令语法、接口说明、完整 diff，以及 GitHub 字段回读；不会据此声明 CARLA 运行时测试、音频验收或 CI 已通过。
+#19 已通过 PR #20 交付：检查了六份 Markdown 文档的链接、仓库路径、命令语法、接口说明、完整 diff，以及 GitHub 字段回读；这些检查不代表 CARLA 运行时测试、音频验收或 CI 已通过。
 
-提交时仅暂存本轮六份 Markdown 文档。生成索引、日志、音频、配置与凭证不属于本轮交付。Actions/CD 和业务测试入口等对应需求确认后再处理。
+#10 的本次准备仅修改协作与进度文档，检查链接、Shell 示例语法、diff、Issue 分支关联和 Project 状态。客户端代码和测试仍待后续实施。提交时精确暂存本次文档；生成索引、日志、音频、配置与凭证不属于文档交付。Actions/CD 仍待另行确认。

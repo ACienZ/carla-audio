@@ -51,13 +51,16 @@ Issue 的 open/closed 与 Project Status 是不同信息。整理字段时不得
 ## 分支、提交与 PR
 
 - 当前 Demo 使用“任务分支 → `7-audio-gen-demo/main` → `main`”。Demo 任务默认从最新远端集成分支创建，PR 也以该集成分支为目标。
+- 通过对应 Issue 的 Development 创建关联分支，并在本地检出该分支后再修改文件。命令行使用 `gh issue develop <编号> --base 7-audio-gen-demo/main --name <编号>-<任务描述> --checkout`，核对 Issue 关联、本地当前分支、远端跟踪分支和起点提交；仅在分支名或提交标题写 Issue 编号不等于建立 Development 关联。
 - 新任务分支一律命名为 `<issue编号>-<任务描述>`，不加 `codex/`。这覆盖通用工具或旧文档中的默认前缀；不为统一名称而重命名已有分支。
-- 不改写历史提交；不擅自强推、删除分支或更改仓库保护规则。同步时保留其他人的工作。
+- 不改写历史提交、不擅自强推或更改仓库保护规则。同步时保留其他人的工作；旧任务分支开始开发前先检查差异，并同步最新集成分支，具体流程见 [开发指南](docs/development.md)。
+- PR 使用 squash and merge。确认已合并且验收完成后，删除 GitHub 上对应的任务分支，本地分支重命名为 `archive/<原分支名>_backup` 保留历史，不执行本地分支删除。已存在的 archive 分支保留原名；归档名冲突时先核对，不覆盖。集成分支和其他未完成任务分支不属于清理范围。
 - 提交前阅读完整 diff，精确暂存本任务文件，再阅读 `git diff --cached` 并运行 `git diff --cached --check`。空白检查不能代替审阅。
 - 提交标题使用 `type: description(#编号)`，如 `docs: establish dataset project foundation(#19)`。type 按实际改动选择 `feat`、`fix`、`test`、`docs`、`ci`、`chore` 等，不全部使用 chore。
 - 提交中的编号关联当前 Issue；PR 正文另给 Issue 链接。Codex 协助提交保留 `Co-authored-by: Codex <noreply@openai.com>`。
 - PR 说明问题、最终变化、实际验证及未完成边界，不复制聊天过程。使用符合当前任务的标题，不沿用旧 PR 的笼统描述。
-- PR 指向非默认分支时，不依赖关闭关键词自动关闭 Issue；合并且验收完成后核对 Issue 和 Project 状态。
+- 创建 PR 后核对 Issue 的 Development 是否显示该 PR。分支关联、Issue 关闭和 Project Status 是三个独立检查项：关联分支会帮助建立 PR 关联，但不保证合入非默认分支时自动关闭 Issue。
+- 仓库默认分支目前是 `main`；PR 指向 `7-audio-gen-demo/main` 时，不依赖关闭关键词自动关闭 Issue。合并且验收完成后回读 Issue 和 Project，必要时关闭 Issue、将看板设为 Done，再回读确认；不假设 Project 自动化始终生效。依据见 [GitHub 关联说明](https://docs.github.com/en/issues/tracking-your-work-with-issues/using-issues/linking-a-pull-request-to-an-issue)。
 - 提交 PR 后记录其链接。当前任务要求停在创建 PR 时，不提前合并或把任务标记 Done。
 
 ## 实现、注释与环境
