@@ -26,6 +26,74 @@ test -f "$UE4_ROOT/GenerateProjectFiles.sh"
 
 这个 export 只对当前终端有效。后续业务开发在 `AudioSimulationDataset/`，构建命令仍从 CARLA 仓库根目录执行。
 
+## Issue 分支与同步
+
+当前流程是任务分支 → `7-audio-gen-demo/main` → `main`。Demo 子任务分支保留 `7-audio-gen-demo/` 前缀。下面以 #10 展示创建方式；#10 已完成改名，分支已经存在，不要重复创建。后续新任务替换编号和名称。开始前确认工作区干净，已有修改先妥善保存。
+
+```bash
+git fetch origin --prune
+gh issue develop 10 --repo ACienZ/carla-audio \
+  --base 7-audio-gen-demo/main --name 7-audio-gen-demo/10-python-client-binding --checkout
+gh issue develop 10 --repo ACienZ/carla-audio --list
+git status --short --branch
+git rev-parse HEAD origin/7-audio-gen-demo/main
+```
+
+创建时两条提交 ID 应相同，Issue Development 应显示关联分支，本地应检出 `7-audio-gen-demo/10-python-client-binding` 并跟踪同名远端分支。后续创建 PR 时仍显式核对目标为 `7-audio-gen-demo/main`，并确认 PR 出现在 Issue 的 Development 中。
+
+创建 Issue 关联分支只使用 GitHub 已有的集成分支提交，不表示开发期间可以上传本地改动。分支改名后重新核对 Development 关联；不能只看分支名改成功就认为关联仍在。
+
+### 本地开发、审阅与交付
+
+依据 [Issue #3](https://github.com/ACienZ/carla-audio/issues/3#issuecomment-4759475264) 及用户最新确认，执行顺序为：
+
+1. 在服务器任务分支修改代码或文档，完成对应检查，查看完整 `git diff` 和未跟踪文件。
+2. 提供改动、验证结果和待审阅差异，保留未提交修改，等待用户审阅确认。
+3. 用户确认后精确暂存已审阅文件，检查 `git diff --cached` 与 `git diff --cached --check`，再执行本地 commit。中间提交留在服务器，不 push。
+4. 模块开发完成、验收检查完成且用户确认交付后，才 push 任务分支，再创建指向集成分支的 PR，并核对 Issue 关联。
+
+用户对某一版本的本地提交确认不自动授权推送，也不覆盖后续新增改动。助手自查通过、项目管理授权、分支已在 GitHub 存在，都不替代上述审阅与交付确认。
+
+### Squash 合并后的收尾
+
+参考 [Issue #3](https://github.com/ACienZ/carla-audio/issues/3#issuecomment-4759475264)，采用用户最新约定：远端任务分支删除，本地任务分支改名归档。先确认 PR 已 squash 合并、交付验收完成，以及任务分支没有合并后新增的待交付提交；再核对 Issue 已关闭、Project 为 Done。当前集成分支不是仓库默认分支，不能依赖关闭关键词自动完成收尾。
+
+以下以尚未完成的 #10 为未来操作示例，现在不要执行：
+
+```bash
+git switch 7-audio-gen-demo/main
+git pull --ff-only origin 7-audio-gen-demo/main
+# 若已在 GitHub 删除远端任务分支，跳过下一条。
+git push origin --delete 7-audio-gen-demo/10-python-client-binding
+git branch -m 7-audio-gen-demo/10-python-client-binding archive/7-audio-gen-demo/10-python-client-binding_backup
+# 归档只保留本地，不继续跟踪已删除的远端任务分支。
+git branch --unset-upstream archive/7-audio-gen-demo/10-python-client-binding_backup
+git fetch origin --prune
+git branch -vv
+```
+
+归档分支不自动推送至 GitHub，不使用 `git branch -d/-D` 删除它。已有 `archive/19-project-foundation` 和 `archive/7-audio-gen-demo/9-carla-sensor` 保持原名，不为了新增 `_backup` 后缀再次改名。Squash 会生成新提交，不能单凭 `git branch --merged` 判断旧任务是否交付，应结合 PR 状态、合并提交和文件差异核对。
+
+`git pull` 的远端和分支是两个参数：`git pull --ff-only origin 7-audio-gen-demo/main`。`origin/7-audio-gen-demo/main` 是远端跟踪引用，不能作为这里的远端名；在集成分支上执行 `git pull origin main` 取的是仓库 `main`，不会取得 Demo 集成分支更新。`git fetch --prune` 只更新并清理远端跟踪引用，不会自动更新本地工作分支或删除本地归档。
+
+### 启动旧任务分支前更新
+
+#8 的 `7-audio-gen-demo/8-scene-create` 建立较早。开始该任务时再执行以下核对，本次不修改它：
+
+```bash
+git fetch origin --prune
+git switch 7-audio-gen-demo/8-scene-create
+git status --short --branch
+git log --oneline --left-right HEAD...origin/7-audio-gen-demo/8-scene-create
+git log --oneline --left-right HEAD...origin/7-audio-gen-demo/main
+```
+
+先检查本地与同名远端是否有尚未同步的工作；可快进时用 `git merge --ff-only origin/7-audio-gen-demo/8-scene-create` 同步。若双方分叉，先审阅各自提交再合并，不重置或覆盖。
+
+随后将最新集成分支合入任务分支：没有独有提交且可快进时使用 `git merge --ff-only origin/7-audio-gen-demo/main`；已有独有提交造成分叉时，使用 `git merge --no-commit --no-ff origin/7-audio-gen-demo/main` 准备合并，解决冲突并检查，交用户审阅确认后再创建本地合并提交，避免对已有共享历史 rebase 或强推。同步结果先留在服务器；仍需等模块完成且用户确认交付后才 push。
+
+更新必须包含 #9 和 #19；若 #8 依赖 #10 的成果，还要确认 #10 已合入集成分支再同步。#10 尚未合并时，不把它当作集成分支已有内容。保留 #8 的旧分支名，并核对其 Issue Development 关联。
+
 ## 构建 sensor 相关改动
 
 下面是服务端和绑定一起变化时的完整检查顺序，逐条执行，上一条成功后再继续。纯文档修改不需要执行这些构建。
@@ -91,23 +159,37 @@ make launch
 
 开始测试前应打印客户端的 `carla.__file__`，核对使用的新绑定，并确保服务端也来自对应构建。使用同步模式时，仅允许一个客户端推进世界，避免测量与快照跨帧。
 
-### 当前已有与缺少的验证
+### #10 静态接收入口
 
-- sensor 静态端到端测试的代码和历史成功记录位于 [#9 的评论](https://github.com/ACienZ/carla-audio/issues/9#issuecomment-6250272390)。历史对话也提供了连续 10 帧、15 米距离的成功输出。
-- 该脚本尚未提交到当前仓库，因此这里没有宣称已经存在可运行的仓库测试入口。
-- #10 的原计划保持不变；后续正式测试应放入 `AudioSimulationDataset/` 中的测试目录，提交后再补上准确运行命令。
-- 静止车辆验证不能排除移动时距离落后一帧的问题；动态距离验证、长时间接收完整性和离线声音验收仍需后续实现。
+脚本与说明位于 [audio_source_tests](../tests/audio_source_tests/README.md)。在服务端已 Play、没有其他客户端推进世界时运行：
 
-### 后续测试应说明的内容
+```bash
+conda activate carla
+cd /home/test/carla-0.9.16
+python AudioSimulationDataset/tests/audio_source_tests/receive_audio_source.py
+```
 
-1. 测试的环境、代码版本、运行命令以及实际导入包。
-2. Blueprint、事件类型、帧号、时间戳和 `distance_m` 是否正确。
-3. 参考距离来自相同帧的世界快照，测量双方都是车辆 Actor 原点；参考值仅用于验证，不代替 sensor 测量。
-4. 等待超时、迟到事件、缺失记录的区别。不得把无效距离写成零或将估算值混入原始记录。
-5. 正常结束或异常时如何停止监听、销毁本次 actor，并恢复原世界设置。
+默认创建两辆间隔 15 米的静止车辆，设置同步步长 0.05 秒，接收 10 次事件，打印事件自身的帧号、仿真时间戳和距离。参数集中在脚本顶部；若出生位置被占用，调整出生点索引，不增加自动重试。脚本不切换地图，不保存数据，也不要求 DatasetGenerator 已实现。
 
-## 本轮文档交付检查
+回调将事件放入队列，主循环推进世界并等待事件。超时会直接报错；`finally` 负责停止监听、销毁本次对象和恢复世界设置。服务端断连时清理也可能失败，当前不提供复杂恢复机制。
 
-本轮 #19 检查 Markdown 链接、仓库路径、命令语法、接口说明、完整 diff，以及 GitHub 字段回读；不会据此声明 CARLA 运行时测试、音频验收或 CI 已通过。
+### 验证范围与当前结果
 
-提交时仅暂存本轮六份 Markdown 文档。生成索引、日志、音频、配置与凭证不属于本轮交付。Actions/CD 和业务测试入口等对应需求确认后再处理。
+- 2026-10-19：Conda `carla` 可以导入 `carla.AudioSourceEvent`，实际包位于 `/home/test/miniconda3/envs/carla/lib/python3.11/site-packages/carla/__init__.py`。
+- 前期助手连接本机服务端超时；此后用户实际运行成功，提供了连续 10 次测量（frame 9387～9396），时间戳间隔 0.05 秒、距离均显示 15.000 米，并执行到清理末尾。完整输出见 [用户运行记录](../tests/audio_source_tests/README.md#本轮检查)，不作为助手重跑结果。清理后的独立状态核验、再次运行和异常清理尚无新增证据。
+- 此次运行有客户端 `ef3412669-dirty` 与服务端 `a3f0e372e-dirty` 的版本警告。源码仅比较版本字符串；标识来源与判断边界见 [版本警告说明](../tests/audio_source_tests/README.md#版本警告的含义)。当前接收成功不等于所有 API 全面兼容，本轮不隐藏警告或为消除标识差异全量重编。
+- 本脚本只验证能接收并访问 frame、timestamp、distance_m。它不将事件帧号假定为刚 tick 的帧，也不做同帧快照对照或测距误差计算。
+- [#9 历史记录](https://github.com/ACienZ/carla-audio/issues/9#issuecomment-6250272390) 包含更完整的静态测试及用户成功说明；这些不是本脚本的运行结果。
+- 后续动态验证需要用同帧世界快照中的 Actor 原点计算参考距离；不得把参考值替代为 sensor 测量。迟到、缺失、超时和长时间接收完整性在相应采集任务中处理。
+
+## 正式生成器与批量运行
+
+目录与职责见 [DatasetGenerator](../DatasetGenerator/README.md)，场景和数据设想见 [设计概览](planning/project-overview.md)。#10 的独立脚本使用顶部参数；正式生成器再实现配置读取。YAML 为推荐，格式未定，本轮不增加依赖。
+
+后续批量执行将由脚本生成具体配置，并复用场景控制器运行。无头图像采集使用离屏渲染，不能开启会使相机返回空数据的 `no_rendering_mode`。打包服务端、自定义 sensor 集成、无头启动和批量调度尚未验收，不能把官方支持等同于本项目已经跑通。参考 [CARLA 渲染选项](https://carla.readthedocs.io/en/0.9.16/adv_rendering_options/)。
+
+## 文档交付检查
+
+#19 已通过 PR #20 交付：检查了六份 Markdown 文档的链接、仓库路径、命令语法、接口说明、完整 diff，以及 GitHub 字段回读；这些检查不代表 CARLA 运行时测试、音频验收或 CI 已通过。
+
+#10 本轮增加架构说明和静态接收脚本，用户已审阅此前文件并提供成功运行结果。随后按接口问答补充注释与验收记录，保持执行逻辑不变；检查 Python AST、完整差异、链接、Shell 示例语法和空白。用户已完成最终审阅并授权交付，按精确暂存、本地 commit、push、创建指向 `7-audio-gen-demo/main` 的 PR 的顺序执行；PR 待用户检查并 squash 合并，合并前不关闭 Issue 或清理分支。不修改 Actions/CD。

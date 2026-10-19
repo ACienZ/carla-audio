@@ -4,7 +4,11 @@
 
 ## 当前工作
 
-[Issue #19：整理开发目录与项目协作规范](https://github.com/ACienZ/carla-audio/issues/19) 使用 `19-project-foundation`，从 `7-audio-gen-demo/main` 创建并向其提交 PR。本轮仅交付文档、目录和任务字段整理，PR 合并前保持 In progress。
+[Issue #10：与 Python 客户端绑定](https://github.com/ACienZ/carla-audio/issues/10) 保持 In progress，使用关联分支 `7-audio-gen-demo/10-python-client-binding`。分支从 `7-audio-gen-demo/main` 的 `e85293db9` 创建。本次已编写 [静态接收脚本与说明](tests/audio_source_tests/README.md)，并记录 [DatasetGenerator 架构](DatasetGenerator/README.md)。用户已审阅此前文件并提供成功运行输出，最小接收目标得到验证；补充注释和验收记录也已通过用户审阅，用户已授权本地提交、推送并创建 PR。目标分支为 `7-audio-gen-demo/main`，合并前状态保持 In progress；关联 PR 从 Issue 的 Development 查看。
+
+2026-10-19 修正协作流程：先完成修改和检查，用户审阅确认后再本地 commit；模块完成且用户确认交付后才 push、创建 PR。此前流程文档经用户审阅后已本地提交为 `a3f0e372e`，本轮与架构文档、接收脚本一并交付。此前准备提交 `917dc1739` 已提前推送，保留该历史，随后已调整远端分支名称并恢复 Issue 关联，没有上传新的提交。
+
+#19 已通过 [PR #20](https://github.com/ACienZ/carla-audio/pull/20) squash 合入集成分支，用户已关闭 Issue，Project 为 Done。原任务分支已从 GitHub 删除，本地保留为 `archive/19-project-foundation`；#9 的旧分支也已在远端删除、本地保留为 `archive/7-audio-gen-demo/9-carla-sensor`。这些既有归档不补改名称，之后按 `archive/<原分支名>_backup` 归档。
 
 ## 完整任务清单
 
@@ -21,28 +25,35 @@
 | [#7](https://github.com/ACienZ/carla-audio/issues/7) | 音频生成 Demo | In progress | enhancement | P1 | XL |
 | [#8](https://github.com/ACienZ/carla-audio/issues/8) | 编写场景脚本 | TODO | enhancement、testing | P1 | M |
 | [#9](https://github.com/ACienZ/carla-audio/issues/9) | 编写 CARLA sensor | Done | enhancement、testing | P1 | L |
-| [#10](https://github.com/ACienZ/carla-audio/issues/10) | 与 Python 客户端绑定 | TODO | enhancement、testing | P1 | M |
+| [#10](https://github.com/ACienZ/carla-audio/issues/10) | 与 Python 客户端绑定 | In progress | enhancement、testing | P1 | M |
 | [#11](https://github.com/ACienZ/carla-audio/issues/11) | 利用 Python 合成声音 | TODO | enhancement、testing | P1 | M |
 | [#12](https://github.com/ACienZ/carla-audio/issues/12) | 数据集规模 | Attention | attention、research | P2 | S |
 | [#14](https://github.com/ACienZ/carla-audio/issues/14) | 如何评价数据质量 | Attention | attention、research | P2 | L |
 | [#15](https://github.com/ACienZ/carla-audio/issues/15) | 分析复现的 sensor 示例 | Done | research、documentation | P2 | M |
 | [#16](https://github.com/ACienZ/carla-audio/issues/16) | 解决头文件引用报错问题 | Attention | attention、documentation | P2 | M |
 | [#17](https://github.com/ACienZ/carla-audio/issues/17) | 每次完成模块后的测试前操作 | Attention | attention、documentation、testing | P2 | S |
-| [#19](https://github.com/ACienZ/carla-audio/issues/19) | 整理开发目录与项目协作规范 | In progress | documentation、maintenance | P1 | M |
+| [#19](https://github.com/ACienZ/carla-audio/issues/19) | 整理开发目录与项目协作规范 | Done | documentation、maintenance | P1 | M |
 
-#13 已由用户删除，不重建。#18 是已合并的 PR，不是本表遗漏的 Issue。
+#13 已由用户删除，不重建。#18、#20 是已合并的 PR，不是本表遗漏的 Issue。
 
 ## 验收证据与限制
 
 - [PR #18](https://github.com/ACienZ/carla-audio/pull/18) 已合入 `7-audio-gen-demo/main`，合并提交为 `d14da83d3c755162438e8fcba1f62f2e8794b4d2`；它没有合入仓库 `main`。
 - #9 的实现包括 Unreal 测距、LibCarla 序列化与事件类型、注册，以及 Python `AudioSourceEvent.distance_m` 绑定，因此 #9 保持 Done。
 - [#9 的测试记录](https://github.com/ACienZ/carla-audio/issues/9#issuecomment-6250272390) 包含测试脚本和用户测试成功的说明。用户提供的历史对话末尾还有连续 10 帧静态测试输出：距离为 15 米，帧号一致，打印精度内距离与时间戳误差为零，无等待超时。本轮没有重跑该端到端测试。
-- 测试脚本尚未纳入当前仓库，历史记录不能代替可复现的正式交付。因此 #10 保持原标题、范围和 TODO，后续仍由该任务完成客户端验证交付。
+- #10 新增的是简化接收脚本：两车静止、15 米间隔、0.05 秒步长，打印 10 次事件；不包含旧脚本的同帧数值对照。本轮代码已通过用户审阅，另有本次用户实测记录；历史记录不能代替正式交付。#10 保持原标题和范围，状态为 In progress。
+- 前期助手检查确认 Conda `carla` 可导入 `AudioSourceEvent`，当时连接服务端超时；此后用户提供了实际运行输出：frame 9387～9396 共 10 次测量，timestamp 164.448～164.898 秒，相邻间隔 0.05 秒，distance_m 均显示 15.000 米，并执行到清理末尾且没有报错。完整输出及边界见 [运行记录](tests/audio_source_tests/README.md#本轮检查)。这是用户实测，不是助手重跑。
+- 本次输出同时包含客户端 `ef3412669-dirty`、服务端 `a3f0e372e-dirty` 的版本警告。已核对源码：该警告由版本字符串不相等触发，不直接判定协议兼容性；保留为验收限制，不隐藏警告或仅为版本字符串执行全量重编。
+- 最小接收已验证；清理后的状态回读、再次运行、异常清理、严格同帧数值对照与动态测距没有新增证据，不宣称通过。#10 在 PR 合并并确认验收前保持 In progress。
+- 本轮静态检查包括 Python 语法、事件字段导入、CARLA 向量摆放计算、文档链接、Bash 示例语法、diff 空白和生成数据忽略规则。补充注释前后脚本 AST 一致，执行逻辑不变。
+- PR #20 的合并提交为 `e85293db97ad0976fc81b66110bd3430e42ae801`。#19 的文档与 Project 字段整理已交付，未运行 CARLA 全量构建或端到端测试。
 - 早期曾运行接近场景和 WAV 实验，但使用的是传 Actor ID 的旧 sensor，距离由 Python 查询位置后另算。这些结果不能替代新版接口的验收，#8、#11 保持 TODO。
 - #5 是历史排错记录，已有说明指向 #16 的新流程；保留其 Done 状态与历史，不据此关闭仍作为操作参考的 #16、#17。
 
 ## 后续讨论入口
 
-先围绕 #10、#8、#11 继续完成当前声音 Demo；具体实施顺序和验收标准在各任务开始前确认。距离与帧记录的落盘格式、异常或缺失数据处理、声源素材和声音模型仍需设计。
+先推进 #10，再围绕 #8、#11 完成当前声音 Demo；具体实现与验收标准在实施前确认。距离与帧记录的落盘格式、异常或缺失数据处理、声源素材和声音模型仍需设计。
 
-Demo 完成后再讨论完整单条数据的定义。#12 的一万条数据备注、#14 的质量评价继续保留为 Attention；它们不是当前承诺交付。CD 是否采用 GitHub Actions 另行确定。
+#8 的既有分支 `7-audio-gen-demo/8-scene-create` 当前仍停在 `ef3412669`，缺少 #9 sensor 和 #19 文档，也不会自动获得 #10 的后续提交。开始 #8 时按 [开发指南](docs/development.md) 检查并同步届时最新的 `7-audio-gen-demo/main`；需要 #10 的成果时先确认其 PR 已合入集成分支，再同步。本次不更新 #8 分支，其状态保持 TODO。
+
+已记录多模态片段和围绕避让事件采样的初步设计：完整片段约 60 帧，每次输入与输出合计约 20～30 帧，具体采样频率和格式待定。配置驱动、批量场景、无头采集与不同用途的数据导出均为后续方向，未作为 #10 实现。#12 的一万条数据备注、#14 的质量评价继续保留为 Attention；它们不是当前承诺交付。CD 是否采用 GitHub Actions 另行确定。
