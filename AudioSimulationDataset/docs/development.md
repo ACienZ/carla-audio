@@ -159,23 +159,37 @@ make launch
 
 开始测试前应打印客户端的 `carla.__file__`，核对使用的新绑定，并确保服务端也来自对应构建。使用同步模式时，仅允许一个客户端推进世界，避免测量与快照跨帧。
 
-### 当前已有与缺少的验证
+### #10 静态接收入口
 
-- sensor 静态端到端测试的代码和历史成功记录位于 [#9 的评论](https://github.com/ACienZ/carla-audio/issues/9#issuecomment-6250272390)。历史对话也提供了连续 10 帧、15 米距离的成功输出。
-- 该脚本尚未提交到当前仓库，因此这里没有宣称已经存在可运行的仓库测试入口。
-- #10 的原计划保持不变；后续正式测试应放入 `AudioSimulationDataset/` 中的测试目录，提交后再补上准确运行命令。
-- 静止车辆验证不能排除移动时距离落后一帧的问题；动态距离验证、长时间接收完整性和离线声音验收仍需后续实现。
+脚本与说明位于 [audio_source_tests](../tests/audio_source_tests/README.md)。在服务端已 Play、没有其他客户端推进世界时运行：
 
-### 后续测试应说明的内容
+```bash
+conda activate carla
+cd /home/test/carla-0.9.16
+python AudioSimulationDataset/tests/audio_source_tests/receive_audio_source.py
+```
 
-1. 测试的环境、代码版本、运行命令以及实际导入包。
-2. Blueprint、事件类型、帧号、时间戳和 `distance_m` 是否正确。
-3. 参考距离来自相同帧的世界快照，测量双方都是车辆 Actor 原点；参考值仅用于验证，不代替 sensor 测量。
-4. 等待超时、迟到事件、缺失记录的区别。不得把无效距离写成零或将估算值混入原始记录。
-5. 正常结束或异常时如何停止监听、销毁本次 actor，并恢复原世界设置。
+默认创建两辆间隔 15 米的静止车辆，设置同步步长 0.05 秒，接收 10 次事件，打印事件自身的帧号、仿真时间戳和距离。参数集中在脚本顶部；若出生位置被占用，调整出生点索引，不增加自动重试。脚本不切换地图，不保存数据，也不要求 DatasetGenerator 已实现。
+
+回调将事件放入队列，主循环推进世界并等待事件。超时会直接报错；`finally` 负责停止监听、销毁本次对象和恢复世界设置。服务端断连时清理也可能失败，当前不提供复杂恢复机制。
+
+### 验证范围与当前结果
+
+- 2026-10-19：Conda `carla` 可以导入 `carla.AudioSourceEvent`，实际包位于 `/home/test/miniconda3/envs/carla/lib/python3.11/site-packages/carla/__init__.py`。
+- 前期助手连接本机服务端超时；此后用户实际运行成功，提供了连续 10 次测量（frame 9387～9396），时间戳间隔 0.05 秒、距离均显示 15.000 米，并执行到清理末尾。完整输出见 [用户运行记录](../tests/audio_source_tests/README.md#本轮检查)，不作为助手重跑结果。清理后的独立状态核验、再次运行和异常清理尚无新增证据。
+- 此次运行有客户端 `ef3412669-dirty` 与服务端 `a3f0e372e-dirty` 的版本警告。源码仅比较版本字符串；标识来源与判断边界见 [版本警告说明](../tests/audio_source_tests/README.md#版本警告的含义)。当前接收成功不等于所有 API 全面兼容，本轮不隐藏警告或为消除标识差异全量重编。
+- 本脚本只验证能接收并访问 frame、timestamp、distance_m。它不将事件帧号假定为刚 tick 的帧，也不做同帧快照对照或测距误差计算。
+- [#9 历史记录](https://github.com/ACienZ/carla-audio/issues/9#issuecomment-6250272390) 包含更完整的静态测试及用户成功说明；这些不是本脚本的运行结果。
+- 后续动态验证需要用同帧世界快照中的 Actor 原点计算参考距离；不得把参考值替代为 sensor 测量。迟到、缺失、超时和长时间接收完整性在相应采集任务中处理。
+
+## 正式生成器与批量运行
+
+目录与职责见 [DatasetGenerator](../DatasetGenerator/README.md)，场景和数据设想见 [设计概览](planning/project-overview.md)。#10 的独立脚本使用顶部参数；正式生成器再实现配置读取。YAML 为推荐，格式未定，本轮不增加依赖。
+
+后续批量执行将由脚本生成具体配置，并复用场景控制器运行。无头图像采集使用离屏渲染，不能开启会使相机返回空数据的 `no_rendering_mode`。打包服务端、自定义 sensor 集成、无头启动和批量调度尚未验收，不能把官方支持等同于本项目已经跑通。参考 [CARLA 渲染选项](https://carla.readthedocs.io/en/0.9.16/adv_rendering_options/)。
 
 ## 文档交付检查
 
 #19 已通过 PR #20 交付：检查了六份 Markdown 文档的链接、仓库路径、命令语法、接口说明、完整 diff，以及 GitHub 字段回读；这些检查不代表 CARLA 运行时测试、音频验收或 CI 已通过。
 
-#10 的本次准备仅修改协作与进度文档，检查链接、Shell 示例语法、diff、Issue 分支关联和 Project 状态。客户端代码和测试仍待后续实施。文档先留在工作区供用户审阅，确认后再精确暂存和本地提交；生成索引、日志、音频、配置与凭证不属于文档交付。Actions/CD 仍待另行确认。
+#10 本轮增加架构说明和静态接收脚本，用户已审阅此前文件并提供成功运行结果。随后按接口问答补充注释与验收记录，保持执行逻辑不变；检查 Python AST、完整差异、链接、Shell 示例语法和空白。用户已完成最终审阅并授权交付，按精确暂存、本地 commit、push、创建指向 `7-audio-gen-demo/main` 的 PR 的顺序执行；PR 待用户检查并 squash 合并，合并前不关闭 Issue 或清理分支。不修改 Actions/CD。
