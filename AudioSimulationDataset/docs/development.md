@@ -28,7 +28,7 @@ test -f "$UE4_ROOT/GenerateProjectFiles.sh"
 
 ## Issue 分支与同步
 
-当前流程是任务分支 → `7-audio-gen-demo/main` → `main`。Demo 子任务分支保留 `7-audio-gen-demo/` 前缀。下面以 #10 展示创建方式；#10 已完成改名，分支已经存在，不要重复创建。后续新任务替换编号和名称。开始前确认工作区干净，已有修改先妥善保存。
+当前流程是任务分支 → `7-audio-gen-demo/main` → `main`。Demo 子任务分支保留 `7-audio-gen-demo/` 前缀。下面保留 #10 当时的创建命令作为历史示例；该任务已经合并归档，不要重新执行。后续新任务替换编号和名称；#8 已有关联分支，使用下文的旧分支同步流程。开始前确认工作区干净，已有修改先妥善保存。
 
 ```bash
 git fetch origin --prune
@@ -58,7 +58,7 @@ git rev-parse HEAD origin/7-audio-gen-demo/main
 
 参考 [Issue #3](https://github.com/ACienZ/carla-audio/issues/3#issuecomment-4759475264)，采用用户最新约定：远端任务分支删除，本地任务分支改名归档。先确认 PR 已 squash 合并、交付验收完成，以及任务分支没有合并后新增的待交付提交；再核对 Issue 已关闭、Project 为 Done。当前集成分支不是仓库默认分支，不能依赖关闭关键词自动完成收尾。
 
-以下以尚未完成的 #10 为未来操作示例，现在不要执行：
+以下以 #10 展示归档步骤；该任务现已完成以下收尾，不要重复执行：
 
 ```bash
 git switch 7-audio-gen-demo/main
@@ -78,7 +78,7 @@ git branch -vv
 
 ### 启动旧任务分支前更新
 
-#8 的 `7-audio-gen-demo/8-scene-create` 建立较早。开始该任务时再执行以下核对，本次不修改它：
+#8 的 `7-audio-gen-demo/8-scene-create` 建立较早。2026-10-19 启动任务时已按以下流程核对并同步；后续继续开发时仍先检查远端与工作区：
 
 ```bash
 git fetch origin --prune
@@ -92,7 +92,7 @@ git log --oneline --left-right HEAD...origin/7-audio-gen-demo/main
 
 随后将最新集成分支合入任务分支：没有独有提交且可快进时使用 `git merge --ff-only origin/7-audio-gen-demo/main`；已有独有提交造成分叉时，使用 `git merge --no-commit --no-ff origin/7-audio-gen-demo/main` 准备合并，解决冲突并检查，交用户审阅确认后再创建本地合并提交，避免对已有共享历史 rebase 或强推。同步结果先留在服务器；仍需等模块完成且用户确认交付后才 push。
 
-更新必须包含 #9 和 #19；若 #8 依赖 #10 的成果，还要确认 #10 已合入集成分支再同步。#10 尚未合并时，不把它当作集成分支已有内容。保留 #8 的旧分支名，并核对其 Issue Development 关联。
+启动 #8 时已确认 #10 的 PR #21 合并，本地分支从 `ef3412669` 快进到 `935324bdc`，包含 #9、#19、#10 的成果。分支名和 Issue Development 关联保持不变，Project 已设为 In progress；该同步阶段远端 #8 分支保留原提交，没有提前推送。以后同步也先核对依赖确已进入集成分支。
 
 ## 构建 sensor 相关改动
 
@@ -173,14 +173,28 @@ python AudioSimulationDataset/tests/audio_source_tests/receive_audio_source.py
 
 回调将事件放入队列，主循环推进世界并等待事件。超时会直接报错；`finally` 负责停止监听、销毁本次对象和恢复世界设置。服务端断连时清理也可能失败，当前不提供复杂恢复机制。
 
-### 验证范围与当前结果
+### #10 验证范围与结果
 
 - 2026-10-19：Conda `carla` 可以导入 `carla.AudioSourceEvent`，实际包位于 `/home/test/miniconda3/envs/carla/lib/python3.11/site-packages/carla/__init__.py`。
 - 前期助手连接本机服务端超时；此后用户实际运行成功，提供了连续 10 次测量（frame 9387～9396），时间戳间隔 0.05 秒、距离均显示 15.000 米，并执行到清理末尾。完整输出见 [用户运行记录](../tests/audio_source_tests/README.md#本轮检查)，不作为助手重跑结果。清理后的独立状态核验、再次运行和异常清理尚无新增证据。
 - 此次运行有客户端 `ef3412669-dirty` 与服务端 `a3f0e372e-dirty` 的版本警告。源码仅比较版本字符串；标识来源与判断边界见 [版本警告说明](../tests/audio_source_tests/README.md#版本警告的含义)。当前接收成功不等于所有 API 全面兼容，本轮不隐藏警告或为消除标识差异全量重编。
 - 本脚本只验证能接收并访问 frame、timestamp、distance_m。它不将事件帧号假定为刚 tick 的帧，也不做同帧快照对照或测距误差计算。
 - [#9 历史记录](https://github.com/ACienZ/carla-audio/issues/9#issuecomment-6250272390) 包含更完整的静态测试及用户成功说明；这些不是本脚本的运行结果。
-- 后续动态验证需要用同帧世界快照中的 Actor 原点计算参考距离；不得把参考值替代为 sensor 测量。迟到、缺失、超时和长时间接收完整性在相应采集任务中处理。
+- 严格的动态测距精度验证需要用同帧世界快照中的 Actor 原点计算独立参考距离；不得把参考值替代为 sensor 测量。#8 当前只按已确认的计划距离初步核对线性变化，不宣称完成独立快照精度验证。
+
+### #8 匀速接近与采集入口
+
+脚本和说明位于 [scene_create_tests](../tests/scene_create_tests/README.md)。使用同一 Conda 环境，服务端 Play 后运行：
+
+```bash
+python AudioSimulationDataset/tests/scene_create_tests/create_scene.py
+```
+
+先选择适合当前地图的直路出生点，修改脚本顶部索引；不自动选路。默认 ego 静止，救护车关闭物理后按步数设置位置，从 30 米以 2 米/秒接近到 10 米。固定步长 0.05 秒，含初始位置共记录 201 次测量，首末时间差约 10 秒。
+
+每次 tick 后核对事件帧号；超时或帧号不符直接失败并进入清理。完整接收后保存 `tests/scene_create_tests/data/<运行时间>.json`，仅包含 `measurements` 原始测量，不保存运行配置；该数据目录已忽略。JSON 的读取方法、初步容差和异常边界见脚本说明。本次只为 #11 提供输入，不生成音频或修改 sensor。
+
+2026-10-19 用户实际运行后确认正常，助手回读该次 JSON：frame 1658～1858 共 201 条，首末时间差约 10 秒，距离从 30 米降至约 10 米，与计划距离的最大偏差约 3.81 × 10⁻⁶ 米。该结果来自用户运行，不是助手重跑；完整核对及清理、版本警告等限制见 [运行记录](../tests/scene_create_tests/README.md#用户实测与-json-回读2026-10-19)。
 
 ## 正式生成器与批量运行
 
@@ -192,4 +206,6 @@ python AudioSimulationDataset/tests/audio_source_tests/receive_audio_source.py
 
 #19 已通过 PR #20 交付：检查了六份 Markdown 文档的链接、仓库路径、命令语法、接口说明、完整 diff，以及 GitHub 字段回读；这些检查不代表 CARLA 运行时测试、音频验收或 CI 已通过。
 
-#10 本轮增加架构说明和静态接收脚本，用户已审阅此前文件并提供成功运行结果。随后按接口问答补充注释与验收记录，保持执行逻辑不变；检查 Python AST、完整差异、链接、Shell 示例语法和空白。用户已完成最终审阅并授权交付，按精确暂存、本地 commit、push、创建指向 `7-audio-gen-demo/main` 的 PR 的顺序执行；PR 待用户检查并 squash 合并，合并前不关闭 Issue 或清理分支。不修改 Actions/CD。
+#10 的架构说明、静态接收脚本、补充注释及验收记录已通过用户审阅，并随 PR #21 合并；检查过 Python AST、差异、链接、Shell 示例语法和空白。任务已关闭并归档。
+
+#8 本轮新增动态采集脚本、运行说明与数据忽略规则，同步上述进度。用户已审阅并提供实际运行结果，随后授权补充验收记录并 commit、push、创建 PR。交付按精确暂存、检查暂存差异、本地提交、推送、创建目标为 `7-audio-gen-demo/main` 的 PR 顺序执行；本轮停在 PR 创建完成，#8 保持 In progress，等待用户审阅合并。检查结果与未验证部分记录在 [TODO](../TODO.md)，不修改 Actions/CD。

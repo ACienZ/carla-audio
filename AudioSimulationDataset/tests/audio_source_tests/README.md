@@ -53,4 +53,4 @@ frame=9396  timestamp=164.898s  distance_m=15.000m
 
 因此，这次警告说明两端报告的构建版本标识不同，不等于已证实接口或协议不兼容。`-dirty` 也不能还原当时完整的源码内容；不能仅凭两个提交号推断安装包和服务端的所有差异，更不能把一次接收成功当作全面兼容验证。本轮保留警告记录，不隐藏警告或为消除字符串差异执行全量重编；后续若修改 sensor/API 或出现通信异常，需核对两端源码、构建产物与 Python 实际导入位置，再按受影响组件构建。
 
-用户已审阅代码、补充注释和验收记录，确认本次运行没有问题，并授权 commit、push 和创建 PR。注释补充前后脚本执行逻辑不变；PR 指向 `7-audio-gen-demo/main`，合并前 #10 保持 In progress。静态检查摘要见 [TODO](../../TODO.md)。
+用户已审阅代码、补充注释和验收记录，并确认本次运行没有问题。[PR #21](https://github.com/ACienZ/carla-audio/pull/21) 已于 2026-10-19 squash 合入 `7-audio-gen-demo/main`，合并提交为 `935324bdc`；#10 已关闭、Project 为 Done。远端任务分支已删除，本地保留为 `archive/7-audio-gen-demo/10-python-client-binding_backup`。注释补充前后脚本执行逻辑不变，后续动态采集另见 [#8 场景脚本](../scene_create_tests/README.md)。
