@@ -15,9 +15,10 @@
 | [目标与设计概览](docs/planning/project-overview.md) | 当前边界、模块职责、数据流和历史方案变化 |
 | [DatasetGenerator 架构](DatasetGenerator/README.md) | 规划目录、模块职责、配置驱动和数据生成流程 |
 | [#10 静态接收](tests/audio_source_tests/README.md) | 独立脚本、参数说明、运行方式与验证限制 |
+| [#8 匀速接近与采集](tests/scene_create_tests/README.md) | 最小动态场景、JSON 原始记录及 #11 输入 |
 | [开发指南](docs/development.md) | 服务器环境、构建、导入检查和测试方式 |
 | [GitHub Project](https://github.com/users/ACienZ/projects/9) | 实际进度的权威来源，需有访问权限 |
 
 后续业务代码、测试和脚本随对应任务在本目录中增加。已有 sensor 源码继续位于仓库的 `Unreal/`、`LibCarla/`、`PythonAPI/`，本轮没有移动或修改它们。
 
-当前 #10 只用两辆静止车辆接收并打印帧号、时间戳和距离。多模态片段及事件采样已有初步设计，具体格式、数据集规模、质量评价和 CD 留待后续讨论；当前不加入实时播放。架构文档和接收脚本不代表声音 Demo 已完成。
+#10 的静态接收已通过 PR #21 合入集成分支。#8 的最小动态采集已通过用户实测和 JSON 回读核对：ego 静止，救护车逐帧设置位置接近，保存 201 条原始测量；用户已审阅并授权提交 PR，合并前保持 In progress。#11 再读取记录离线合成声音。多模态片段及事件采样已有初步设计，具体格式、数据集规模、质量评价和 CD 留待后续讨论；当前不加入实时播放。
