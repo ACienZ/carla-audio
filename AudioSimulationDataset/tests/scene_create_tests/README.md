@@ -98,4 +98,4 @@ frame=1858  timestamp=35.587s  distance_m=10.000m
 
 此次客户端版本为 `ef3412669-dirty`，服务端为 `935324bdc-dirty`，仍有版本字符串不一致警告。判断边界沿用 [#10 的说明](../audio_source_tests/README.md#版本警告的含义)，本次接收成功不等于全面兼容；不隐藏警告，也不为统一版本字符串执行无关全量构建。
 
-用户已确认本模块可以交付，并授权记录验收结果、commit、push 和创建指向 `7-audio-gen-demo/main` 的 PR。合并前 #8 保持 open / In progress；关联 PR 从 Issue Development 查看。离线与静态检查见 [TODO](../../TODO.md#验收证据与限制)，#11 再实现音频合成。
+本模块已通过 [PR #22](https://github.com/ACienZ/carla-audio/pull/22) squash 合入 `7-audio-gen-demo/main`，合并提交 `8e943da0d`。#8 已关闭、Project 为 Done，远端任务分支已删除，本地保留为 `archive/7-audio-gen-demo/8-scene-create_backup` 并取消跟踪；归档前核对原任务 tip 与 squash 合并提交的文件树一致。离线与静态检查见 [TODO](../../TODO.md#验收证据与限制)。[#11 离线脚本](../audio_render_tests/README.md) 使用本次 JSON 的原样副本生成完整声音与帧区间索引，不改写本目录原始数据。

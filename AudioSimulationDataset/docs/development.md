@@ -196,6 +196,24 @@ python AudioSimulationDataset/tests/scene_create_tests/create_scene.py
 
 2026-10-19 用户实际运行后确认正常，助手回读该次 JSON：frame 1658～1858 共 201 条，首末时间差约 10 秒，距离从 30 米降至约 10 米，与计划距离的最大偏差约 3.81 × 10⁻⁶ 米。该结果来自用户运行，不是助手重跑；完整核对及清理、版本警告等限制见 [运行记录](../tests/scene_create_tests/README.md#用户实测与-json-回读2026-10-19)。
 
+### #11 离线警笛合成入口
+
+脚本、传播模型及帧索引读取示例位于 [audio_render_tests](../tests/audio_render_tests/README.md)。沿用 Conda `carla` 中已安装的 NumPy，不连接 CARLA、不启动服务端、不新增依赖：
+
+```bash
+conda activate carla
+cd /home/test/carla-0.9.16
+python AudioSimulationDataset/tests/audio_render_tests/render_audio.py
+```
+
+输入为 `tests/audio_render_tests/data/raw/20261019_133736_286515.json`（相对 `AudioSimulationDataset/`），是 #8 实测文件的原样副本。输入和输出路径相对脚本定位；新检出仓库需另行复制原始输入，数据不随源码提交。更换数据时修改顶部 `INPUT_PATH`。
+
+先在内存中生成完整连续波形，再建立相邻测量点之间的接收时间索引。输出到 `tests/audio_render_tests/data/derived/`，一份完整 WAV 和一份 `_frame_index.json`；重复运行覆盖同名派生结果，整个 `data/` 忽略。本次生成 48 kHz 单声道 16-bit PCM、480000 个采样点、10 秒声音及 200 个区间。
+
+已实际运行本离线脚本，回读 WAV 和索引，核对恒距无变调、匀速接近多普勒、切片拼接及相位连续；结果见 [检查记录](../tests/audio_render_tests/README.md#本轮验证2026-10-19)。尚待用户代码审阅和试听，不宣称真实声学验收或 CI 已通过。
+
+分步审阅入口见 [从正弦波到移动声源](../tests/audio_render_tests/step_by_step/README.md)。2026-10-22 用户将 01、02 改为 440 Hz，使用已有 SciPy 写入 float32 WAV；02 初始距离为 220 米、速度为 20 米/秒，10 秒终点为 20 米。运行两份脚本前需先创建其旁的 `data/`，正常运行不再输出完成提示。截至 2026-10-23，03 也已改为 440 Hz、220 米、20 米/秒，仍输出 16-bit PCM；04 保持 520 Hz、30 米、2 米/秒，完整脚本的依赖与输出格式不变。新版 01、02 已在临时目录运行并回读验证，未覆盖原有音频。
+
 ## 正式生成器与批量运行
 
 目录与职责见 [DatasetGenerator](../DatasetGenerator/README.md)，场景和数据设想见 [设计概览](planning/project-overview.md)。#10 的独立脚本使用顶部参数；正式生成器再实现配置读取。YAML 为推荐，格式未定，本轮不增加依赖。
@@ -208,4 +226,6 @@ python AudioSimulationDataset/tests/scene_create_tests/create_scene.py
 
 #10 的架构说明、静态接收脚本、补充注释及验收记录已通过用户审阅，并随 PR #21 合并；检查过 Python AST、差异、链接、Shell 示例语法和空白。任务已关闭并归档。
 
-#8 本轮新增动态采集脚本、运行说明与数据忽略规则，同步上述进度。用户已审阅并提供实际运行结果，随后授权补充验收记录并 commit、push、创建 PR。交付按精确暂存、检查暂存差异、本地提交、推送、创建目标为 `7-audio-gen-demo/main` 的 PR 顺序执行；本轮停在 PR 创建完成，#8 保持 In progress，等待用户审阅合并。检查结果与未验证部分记录在 [TODO](../TODO.md)，不修改 Actions/CD。
+#8 已通过 PR #22 squash 合入集成分支，Issue 关闭、Project 为 Done，本地任务分支保留为 `archive/7-audio-gen-demo/8-scene-create_backup`，已取消远端跟踪。
+
+#11 当前使用从最新集成分支创建的关联分支 `7-audio-gen-demo/11-python-audio-synthesis`，Project 为 In progress。2026-10-23 用户明确授权阶段性 commit 和 push，以便离开实验室后查看当前代码；本次不创建 PR，完整模块审阅和试听继续进行。实际检查与限制记录在 [TODO](../TODO.md)，不修改 sensor、Actions/CD，不运行 CARLA 全量构建。
